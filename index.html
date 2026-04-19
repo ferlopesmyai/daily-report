@@ -44,22 +44,87 @@
     padding:22px 20px 8px;
   }
 
+  /* ---- Best Departure Dates chart ---- */
+  .bdc-card{
+    background:#fff;border-radius:16px;
+    margin:0 16px 4px;
+    padding:14px 0 12px;
+    box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  .bdc-legend{
+    display:flex;align-items:center;gap:10px;
+    padding:0 16px 10px;
+    font-size:11px;color:#8e8e93;font-weight:600;
+    text-transform:uppercase;letter-spacing:.3px;
+  }
+  .bdc-key{display:inline-flex;align-items:center;gap:4px}
+  .bdc-sw{display:inline-block;width:9px;height:9px;border-radius:2px}
+  .bdc-spacer{flex:1}
+  .bdc-hint{color:#c7c7cc;font-weight:500;text-transform:none;letter-spacing:0}
+  .bdc-scroll{
+    overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    padding:0 16px;
+  }
+  .bdc-scroll::-webkit-scrollbar{display:none}
+  .bdc-row{
+    display:flex;align-items:flex-end;gap:3px;
+    height:178px;padding-top:16px;
+  }
+  .bdc-col{
+    flex:0 0 14px;display:flex;flex-direction:column;align-items:center;
+    height:100%;
+  }
+  .bdc-val{
+    font-size:8px;color:#8e8e93;font-weight:600;
+    margin-bottom:2px;white-space:nowrap;
+    visibility:hidden;
+  }
+  .bdc-col:nth-child(5n+1) .bdc-val{visibility:visible}
+  .bdc-bar{
+    width:10px;border-radius:3px 3px 0 0;
+    flex:0 0 auto;
+    transition:opacity .2s;
+  }
+  .bdc-bar:hover{opacity:.8}
+  .bdc-lbl{
+    font-size:9px;color:#3a3a3c;font-weight:600;
+    margin-top:5px;white-space:nowrap;
+    transform:rotate(-45deg);transform-origin:left top;
+    height:14px;
+  }
+  .bdc-sub{
+    font-size:8px;color:#8e8e93;
+    margin-top:-4px;white-space:nowrap;
+    transform:rotate(-45deg);transform-origin:left top;
+  }
+  .bdc-foot{
+    display:flex;justify-content:space-between;gap:8px;
+    padding:6px 16px 0;
+    font-size:11px;color:#8e8e93;font-weight:500;
+  }
+  .bdc-foot b{color:#1c1c1e}
+
   /* ---- Month cards carousel ---- */
   .months-scroll{
     display:flex;gap:12px;
     overflow-x:auto;overflow-y:hidden;
-    padding:0 20px 8px;
+    padding:0 16px 8px;
     scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch;
     scrollbar-width:none;
   }
   .months-scroll::-webkit-scrollbar{display:none}
   .month-card{
-    flex:0 0 280px;
+    flex:0 0 calc(100vw - 32px);
+    max-width:calc(100vw - 32px);
     background:#fff;border-radius:16px;
     padding:16px;
-    scroll-snap-align:start;
+    scroll-snap-align:center;
     box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  @media (min-width:720px){
+    .month-card{flex:0 0 calc(720px - 32px);max-width:calc(720px - 32px)}
   }
   .m-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
   .m-title{font-size:17px;font-weight:700;letter-spacing:-.3px}
@@ -107,13 +172,17 @@
     text-transform:uppercase;letter-spacing:.3px;
     margin-bottom:10px;
   }
-  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+  .chips{display:flex;gap:6px;flex-wrap:nowrap;margin-bottom:20px;overflow-x:auto;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chips-row{display:grid;grid-template-columns:repeat(var(--chip-cols,6),1fr);gap:5px;flex-wrap:nowrap;margin-bottom:20px}
   .chip{
     background:#f2f2f7;color:#3a3a3c;border:none;
-    padding:8px 14px;border-radius:100px;
-    font-size:14px;font-weight:500;
+    padding:7px 6px;border-radius:100px;
+    font-size:13px;font-weight:500;
     cursor:pointer;transition:all .15s;
     font-family:inherit;
+    text-align:center;white-space:nowrap;
+    min-width:0;
   }
   .chip:active{transform:scale(.96)}
   .chip-active{background:#007aff;color:#fff;font-weight:600}
@@ -179,23 +248,29 @@
   }
   .row{
     display:flex;justify-content:space-between;align-items:center;
-    padding:14px 16px;
+    padding:12px 14px;
     border-bottom:.5px solid #f2f2f7;
+    gap:8px;
   }
   .row:last-child{border-bottom:none}
   .row:active{background:#f9f9fb}
-  .row-dates{flex:1;min-width:0}
-  .row-dep{font-size:16px;font-weight:600;color:#1c1c1e;letter-spacing:-.2px}
-  .row-ret{font-size:13px;color:#8e8e93;margin-top:3px}
-  .row-ret-arrow{color:#c7c7cc;margin:0 4px}
-  .row-nights{
-    font-size:11px;font-weight:700;color:#8e8e93;
-    background:#f2f2f7;padding:3px 8px;border-radius:6px;
-    display:inline-block;margin-left:8px;
+  .row-dates{
+    flex:1;min-width:0;
+    display:flex;align-items:center;gap:6px;
+    font-size:14px;font-weight:600;color:#1c1c1e;letter-spacing:-.2px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
   }
-  .row-right{text-align:right;margin-left:12px}
-  .row-price{font-size:18px;font-weight:700;letter-spacing:-.3px}
-  .row-baseline{font-size:11px;margin-top:3px;font-weight:600;display:flex;align-items:center;justify-content:flex-end;gap:4px}
+  .row-dep{color:#1c1c1e}
+  .row-ret{color:#1c1c1e}
+  .row-ret-arrow{color:#c7c7cc;font-weight:400}
+  .row-nights{
+    font-size:10px;font-weight:700;color:#8e8e93;
+    background:#f2f2f7;padding:2px 6px;border-radius:5px;
+    display:inline-block;flex:0 0 auto;
+  }
+  .row-right{text-align:right;flex:0 0 auto}
+  .row-price{font-size:16px;font-weight:700;letter-spacing:-.3px;white-space:nowrap}
+  .row-baseline{font-size:10px;margin-top:2px;font-weight:600;display:flex;align-items:center;justify-content:flex-end;gap:3px;white-space:nowrap}
   .b-down{color:#1e7a38}
   .b-up{color:#d12f2f}
   .b-flat{color:#8e8e93}
@@ -231,6 +306,25 @@
     </div>
   </div>
 
+  
+  <div class="section-head">Best Departure Dates</div>
+  <div class="bdc-card">
+    <div class="bdc-legend">
+      <span class="bdc-key"><span class="bdc-sw" style="background:#1e7a38"></span>Best</span>
+      <span class="bdc-key"><span class="bdc-sw" style="background:#e6a23c"></span>Fair</span>
+      <span class="bdc-key"><span class="bdc-sw" style="background:#d12f2f"></span>Premium</span>
+      <span class="bdc-spacer"></span>
+      <span class="bdc-hint">Scroll &rarr;</span>
+    </div>
+    <div class="bdc-scroll">
+      <div class="bdc-row"><div class="bdc-col" title="Fri May 08, 2026 — avg $1,404 (9 combos)"><div class="bdc-val">$1,404</div><div class="bdc-bar" style="height:82px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl">May 8</div><div class="bdc-sub">Fri</div></div><div class="bdc-col" title="Sat May 09, 2026 — avg $1,434 (10 combos)"><div class="bdc-val">$1,434</div><div class="bdc-bar" style="height:85px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed May 13, 2026 — avg $1,104 (9 combos)"><div class="bdc-val">$1,104</div><div class="bdc-bar" style="height:51px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu May 14, 2026 — avg $1,116 (9 combos)"><div class="bdc-val">$1,116</div><div class="bdc-bar" style="height:52px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri May 15, 2026 — avg $1,304 (9 combos)"><div class="bdc-val">$1,304</div><div class="bdc-bar" style="height:72px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun May 17, 2026 — avg $1,438 (10 combos)"><div class="bdc-val">$1,438</div><div class="bdc-bar" style="height:86px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon May 18, 2026 — avg $1,398 (10 combos)"><div class="bdc-val">$1,398</div><div class="bdc-bar" style="height:82px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl">May 18</div><div class="bdc-sub">Mon</div></div><div class="bdc-col" title="Thu May 21, 2026 — avg $1,354 (9 combos)"><div class="bdc-val">$1,354</div><div class="bdc-bar" style="height:77px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri May 22, 2026 — avg $1,626 (9 combos)"><div class="bdc-val">$1,626</div><div class="bdc-bar" style="height:105px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun May 24, 2026 — avg $1,190 (10 combos)"><div class="bdc-val">$1,190</div><div class="bdc-bar" style="height:60px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon May 25, 2026 — avg $1,312 (10 combos)"><div class="bdc-val">$1,312</div><div class="bdc-bar" style="height:73px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu May 28, 2026 — avg $1,319 (9 combos)"><div class="bdc-val">$1,319</div><div class="bdc-bar" style="height:73px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri May 29, 2026 — avg $1,276 (9 combos)"><div class="bdc-val">$1,276</div><div class="bdc-bar" style="height:69px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl">May 29</div><div class="bdc-sub">Fri</div></div><div class="bdc-col" title="Sun May 31, 2026 — avg $1,389 (10 combos)"><div class="bdc-val">$1,389</div><div class="bdc-bar" style="height:81px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon Jun 01, 2026 — avg $1,147 (10 combos)"><div class="bdc-val">$1,147</div><div class="bdc-bar" style="height:55px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Jun 04, 2026 — avg $1,251 (9 combos)"><div class="bdc-val">$1,251</div><div class="bdc-bar" style="height:66px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jun 05, 2026 — avg $1,348 (9 combos)"><div class="bdc-val">$1,348</div><div class="bdc-bar" style="height:76px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Jun 07, 2026 — avg $1,377 (10 combos)"><div class="bdc-val">$1,377</div><div class="bdc-bar" style="height:79px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon Jun 08, 2026 — avg $1,104 (10 combos)"><div class="bdc-val">$1,104</div><div class="bdc-bar" style="height:51px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl">Jun 8</div><div class="bdc-sub">Mon</div></div><div class="bdc-col" title="Thu Jun 11, 2026 — avg $1,269 (9 combos)"><div class="bdc-val">$1,269</div><div class="bdc-bar" style="height:68px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jun 12, 2026 — avg $1,322 (9 combos)"><div class="bdc-val">$1,322</div><div class="bdc-bar" style="height:74px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Jun 14, 2026 — avg $1,309 (9 combos)"><div class="bdc-val">$1,309</div><div class="bdc-bar" style="height:72px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon Jun 15, 2026 — avg $1,300 (10 combos)"><div class="bdc-val">$1,300</div><div class="bdc-bar" style="height:71px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Jun 18, 2026 — avg $1,313 (9 combos)"><div class="bdc-val">$1,313</div><div class="bdc-bar" style="height:73px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jun 19, 2026 — avg $1,319 (9 combos)"><div class="bdc-val">$1,319</div><div class="bdc-bar" style="height:73px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl">Jun 19</div><div class="bdc-sub">Fri</div></div><div class="bdc-col" title="Sun Jun 21, 2026 — avg $1,319 (9 combos)"><div class="bdc-val">$1,319</div><div class="bdc-bar" style="height:73px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon Jun 22, 2026 — avg $1,290 (10 combos)"><div class="bdc-val">$1,290</div><div class="bdc-bar" style="height:70px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Jun 25, 2026 — avg $1,259 (9 combos)"><div class="bdc-val">$1,259</div><div class="bdc-bar" style="height:67px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jun 26, 2026 — avg $966 (9 combos)"><div class="bdc-val">$966</div><div class="bdc-bar" style="height:37px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Jun 28, 2026 — avg $1,129 (9 combos)"><div class="bdc-val">$1,129</div><div class="bdc-bar" style="height:54px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Mon Jun 29, 2026 — avg $1,089 (10 combos)"><div class="bdc-val">$1,089</div><div class="bdc-bar" style="height:49px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl">Jun 29</div><div class="bdc-sub">Mon</div></div><div class="bdc-col" title="Thu Jul 02, 2026 — avg $847 (10 combos)"><div class="bdc-val">$847</div><div class="bdc-bar" style="height:24px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jul 03, 2026 — avg $829 (9 combos)"><div class="bdc-val">$829</div><div class="bdc-bar" style="height:22px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Jul 05, 2026 — avg $1,107 (9 combos)"><div class="bdc-val">$1,107</div><div class="bdc-bar" style="height:51px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Jul 08, 2026 — avg $1,056 (10 combos)"><div class="bdc-val">$1,056</div><div class="bdc-bar" style="height:46px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Jul 09, 2026 — avg $866 (10 combos)"><div class="bdc-val">$866</div><div class="bdc-bar" style="height:26px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jul 10, 2026 — avg $907 (9 combos)"><div class="bdc-val">$907</div><div class="bdc-bar" style="height:30px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl">Jul 10</div><div class="bdc-sub">Fri</div></div><div class="bdc-col" title="Sun Jul 12, 2026 — avg $1,097 (9 combos)"><div class="bdc-val">$1,097</div><div class="bdc-bar" style="height:50px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Jul 15, 2026 — avg $935 (10 combos)"><div class="bdc-val">$935</div><div class="bdc-bar" style="height:33px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Jul 16, 2026 — avg $1,033 (10 combos)"><div class="bdc-val">$1,033</div><div class="bdc-bar" style="height:44px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jul 17, 2026 — avg $1,258 (9 combos)"><div class="bdc-val">$1,258</div><div class="bdc-bar" style="height:67px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Jul 19, 2026 — avg $1,168 (9 combos)"><div class="bdc-val">$1,168</div><div class="bdc-bar" style="height:58px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Jul 22, 2026 — avg $1,156 (10 combos)"><div class="bdc-val">$1,156</div><div class="bdc-bar" style="height:56px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl">Jul 22</div><div class="bdc-sub">Wed</div></div><div class="bdc-col" title="Thu Jul 23, 2026 — avg $1,302 (10 combos)"><div class="bdc-val">$1,302</div><div class="bdc-bar" style="height:72px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jul 24, 2026 — avg $1,418 (9 combos)"><div class="bdc-val">$1,418</div><div class="bdc-bar" style="height:84px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Jul 26, 2026 — avg $1,760 (9 combos)"><div class="bdc-val">$1,760</div><div class="bdc-bar" style="height:119px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Jul 29, 2026 — avg $1,419 (10 combos)"><div class="bdc-val">$1,419</div><div class="bdc-bar" style="height:84px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Jul 30, 2026 — avg $1,539 (10 combos)"><div class="bdc-val">$1,539</div><div class="bdc-bar" style="height:96px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Jul 31, 2026 — avg $1,360 (9 combos)"><div class="bdc-val">$1,360</div><div class="bdc-bar" style="height:78px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl">Jul 31</div><div class="bdc-sub">Fri</div></div><div class="bdc-col" title="Sun Aug 02, 2026 — avg $1,844 (9 combos)"><div class="bdc-val">$1,844</div><div class="bdc-bar" style="height:128px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Aug 05, 2026 — avg $1,494 (10 combos)"><div class="bdc-val">$1,494</div><div class="bdc-bar" style="height:92px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Aug 06, 2026 — avg $1,582 (10 combos)"><div class="bdc-val">$1,582</div><div class="bdc-bar" style="height:101px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Aug 07, 2026 — avg $1,617 (9 combos)"><div class="bdc-val">$1,617</div><div class="bdc-bar" style="height:105px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Aug 09, 2026 — avg $1,937 (9 combos)"><div class="bdc-val">$1,937</div><div class="bdc-bar" style="height:138px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Aug 12, 2026 — avg $1,456 (10 combos)"><div class="bdc-val">$1,456</div><div class="bdc-bar" style="height:88px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl">Aug 12</div><div class="bdc-sub">Wed</div></div><div class="bdc-col" title="Thu Aug 13, 2026 — avg $1,510 (10 combos)"><div class="bdc-val">$1,510</div><div class="bdc-bar" style="height:93px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Aug 14, 2026 — avg $1,417 (9 combos)"><div class="bdc-val">$1,417</div><div class="bdc-bar" style="height:84px;background:#d12f2f;" data-tier="high"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Aug 16, 2026 — avg $1,142 (9 combos)"><div class="bdc-val">$1,142</div><div class="bdc-bar" style="height:55px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Aug 19, 2026 — avg $1,198 (10 combos)"><div class="bdc-val">$1,198</div><div class="bdc-bar" style="height:61px;background:#e6a23c;" data-tier="fair"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Aug 20, 2026 — avg $992 (10 combos)"><div class="bdc-val">$992</div><div class="bdc-bar" style="height:39px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Aug 21, 2026 — avg $1,010 (9 combos)"><div class="bdc-val">$1,010</div><div class="bdc-bar" style="height:41px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl">Aug 21</div><div class="bdc-sub">Fri</div></div><div class="bdc-col" title="Sun Aug 23, 2026 — avg $1,014 (9 combos)"><div class="bdc-val">$1,014</div><div class="bdc-bar" style="height:42px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Aug 26, 2026 — avg $1,071 (10 combos)"><div class="bdc-val">$1,071</div><div class="bdc-bar" style="height:47px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Thu Aug 27, 2026 — avg $873 (10 combos)"><div class="bdc-val">$873</div><div class="bdc-bar" style="height:27px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Fri Aug 28, 2026 — avg $1,007 (9 combos)"><div class="bdc-val">$1,007</div><div class="bdc-bar" style="height:41px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Sun Aug 30, 2026 — avg $1,007 (9 combos)"><div class="bdc-val">$1,007</div><div class="bdc-bar" style="height:41px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div><div class="bdc-col" title="Wed Sep 02, 2026 — avg $789 (10 combos)"><div class="bdc-val">$789</div><div class="bdc-bar" style="height:18px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl">Sep 2</div><div class="bdc-sub">Wed</div></div><div class="bdc-col" title="Thu Sep 03, 2026 — avg $1,029 (10 combos)"><div class="bdc-val">$1,029</div><div class="bdc-bar" style="height:43px;background:#1e7a38;" data-tier="best"></div><div class="bdc-lbl"></div><div class="bdc-sub"></div></div></div>
+    </div>
+    <div class="bdc-foot">
+      <span>Cheapest avg: <b>Wed Sep 2</b> — $789</span>
+      <span>Priciest avg: <b>Sun Aug 9</b> — $1,937</span>
+    </div>
+  </div>
+
   <div class="section-head">By Month · Swipe &rarr;</div>
   <div class="months-scroll">
     <div class="month-card" data-month="2026-05">
@@ -246,7 +340,7 @@
     <div class="m-stat"><div class="m-stat-v">$1,324</div><div class="m-stat-l">Median</div></div>
     <div class="m-stat"><div class="m-stat-v red">$2,076</div><div class="m-stat-l">Max</div></div>
   </div>
-  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals-head">Top 5 Deals</div>
   <div class="m-deals"><div class="m-deal">
               <div class="m-deal-dates">
                 <span class="m-deal-dep">Wed May 13</span>
@@ -277,6 +371,26 @@
                 <span class="m-deal-nights">14n</span>
                 <span class="m-deal-price">$1,010</span>
               </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu May 14</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed May 27</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">13n</span>
+                <span class="m-deal-price">$1,023</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Sun May 24</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Sun Jun 7</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$1,026</span>
+              </div>
             </div></div>
 </div><div class="month-card" data-month="2026-06">
   <div class="m-head">
@@ -291,7 +405,7 @@
     <div class="m-stat"><div class="m-stat-v">$1,234</div><div class="m-stat-l">Median</div></div>
     <div class="m-stat"><div class="m-stat-v red">$1,836</div><div class="m-stat-l">Max</div></div>
   </div>
-  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals-head">Top 5 Deals</div>
   <div class="m-deals"><div class="m-deal">
               <div class="m-deal-dates">
                 <span class="m-deal-dep">Fri Jun 26</span>
@@ -322,6 +436,26 @@
                 <span class="m-deal-nights">15n</span>
                 <span class="m-deal-price">$874</span>
               </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Sun Jun 28</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Jul 14</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">16n</span>
+                <span class="m-deal-price">$911</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Mon Jun 1</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Jun 17</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">16n</span>
+                <span class="m-deal-price">$916</span>
+              </div>
             </div></div>
 </div><div class="month-card" data-month="2026-07">
   <div class="m-head">
@@ -336,7 +470,7 @@
     <div class="m-stat"><div class="m-stat-v">$1,149</div><div class="m-stat-l">Median</div></div>
     <div class="m-stat"><div class="m-stat-v red">$1,959</div><div class="m-stat-l">Max</div></div>
   </div>
-  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals-head">Top 5 Deals</div>
   <div class="m-deals"><div class="m-deal">
               <div class="m-deal-dates">
                 <span class="m-deal-dep">Fri Jul 3</span>
@@ -367,6 +501,26 @@
                 <span class="m-deal-nights">12n</span>
                 <span class="m-deal-price">$644</span>
               </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Jul 9</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Jul 22</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">13n</span>
+                <span class="m-deal-price">$806</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Fri Jul 10</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Jul 22</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">12n</span>
+                <span class="m-deal-price">$806</span>
+              </div>
             </div></div>
 </div><div class="month-card" data-month="2026-08">
   <div class="m-head">
@@ -381,7 +535,7 @@
     <div class="m-stat"><div class="m-stat-v">$1,281</div><div class="m-stat-l">Median</div></div>
     <div class="m-stat"><div class="m-stat-v red">$2,092</div><div class="m-stat-l">Max</div></div>
   </div>
-  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals-head">Top 5 Deals</div>
   <div class="m-deals"><div class="m-deal">
               <div class="m-deal-dates">
                 <span class="m-deal-dep">Thu Aug 20</span>
@@ -412,6 +566,26 @@
                 <span class="m-deal-nights">14n</span>
                 <span class="m-deal-price">$786</span>
               </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Aug 27</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Sep 15</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">19n</span>
+                <span class="m-deal-price">$786</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Aug 27</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Sep 16</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">20n</span>
+                <span class="m-deal-price">$786</span>
+              </div>
             </div></div>
 </div><div class="month-card" data-month="2026-09">
   <div class="m-head">
@@ -426,7 +600,7 @@
     <div class="m-stat"><div class="m-stat-v">$986</div><div class="m-stat-l">Median</div></div>
     <div class="m-stat"><div class="m-stat-v red">$1,150</div><div class="m-stat-l">Max</div></div>
   </div>
-  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals-head">Top 5 Deals</div>
   <div class="m-deals"><div class="m-deal">
               <div class="m-deal-dates">
                 <span class="m-deal-dep">Wed Sep 2</span>
@@ -457,6 +631,26 @@
                 <span class="m-deal-nights">13n</span>
                 <span class="m-deal-price">$746</span>
               </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Wed Sep 2</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Sep 16</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$746</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Wed Sep 2</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Sep 22</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">20n</span>
+                <span class="m-deal-price">$746</span>
+              </div>
             </div></div>
 </div>
   </div>
@@ -464,8 +658,8 @@
   <div class="section-head">Filter &amp; Sort</div>
   <div class="filters">
     <div class="filter-label">Month</div>
-    <div class="chips" id="month-chips">
-      <button class="chip chip-active" data-month="">All</button><button class="chip" data-month="2026-05">May 26</button><button class="chip" data-month="2026-06">Jun 26</button><button class="chip" data-month="2026-07">Jul 26</button><button class="chip" data-month="2026-08">Aug 26</button><button class="chip" data-month="2026-09">Sep 26</button>
+    <div class="chips-row" id="month-chips" style="--chip-cols:6">
+      <button class="chip chip-active" data-month="">All</button><button class="chip" data-month="2026-05">May</button><button class="chip" data-month="2026-06">Jun</button><button class="chip" data-month="2026-07">Jul</button><button class="chip" data-month="2026-08">Aug</button><button class="chip" data-month="2026-09">Sep</button>
     </div>
 
     <div class="filter-label">Nights</div>
@@ -554,8 +748,10 @@
     out.innerHTML = list.map(c => (
       '<div class="row">' +
         '<div class="row-dates">' +
-          '<div class="row-dep">' + c.dep + '<span class="row-nights">' + c.nights + 'n</span></div>' +
-          '<div class="row-ret">Return <span class="row-ret-arrow">&rarr;</span> ' + c.ret + '</div>' +
+          '<span class="row-dep">' + c.dep + '</span>' +
+          '<span class="row-ret-arrow">&rarr;</span>' +
+          '<span class="row-ret">' + c.ret + '</span>' +
+          '<span class="row-nights">' + c.nights + 'n</span>' +
         '</div>' +
         '<div class="row-right">' +
           '<div class="row-price">$' + c.price.toLocaleString() + '</div>' +
