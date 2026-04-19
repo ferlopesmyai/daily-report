@@ -1,99 +1,615 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>LATAM BOS-GRU Tracker · 2026-04-18</title>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#007aff">
+<title>BOS ↔ GRU · April 18, 2026</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f7;color:#1d1d1f;padding:20px}
-.wrap{max-width:1200px;margin:0 auto;background:white;border-radius:16px;overflow:hidden;box-shadow:0 2px 20px rgba(0,0,0,0.08)}
-.hdr{background:linear-gradient(135deg,#1e3a8a 0%,#7c3aed 100%);color:white;padding:32px 40px}
-.hdr h1{font-size:28px;font-weight:700;margin-bottom:8px}
-.hdr p{opacity:0.85;font-size:14px}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:24px 40px;background:#fafafa;border-bottom:1px solid #e5e5e5}
-.stat{text-align:center}
-.stat .n{font-size:24px;font-weight:700;color:#1e3a8a}
-.stat .l{font-size:12px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-top:4px}
-.ctrl{padding:20px 40px;background:#fff;border-bottom:1px solid #e5e5e5;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-.ctrl label{font-size:13px;font-weight:600;color:#374151}
-.ctrl select,.ctrl input{padding:8px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:14px;background:white}
-.ctrl .grp{display:flex;gap:8px;align-items:center}
-.tbl{padding:0 40px 40px}
-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px}
-th{text-align:left;padding:12px 8px;background:#f9fafb;border-bottom:2px solid #e5e5e5;font-weight:600;color:#374151;font-size:12px;text-transform:uppercase;letter-spacing:0.5px;cursor:pointer;user-select:none}
-th:hover{background:#f3f4f6}
-td{padding:10px 8px;border-bottom:1px solid #f3f4f6;vertical-align:top}
-tr:hover td{background:#fafafa}
-.price{font-weight:700;color:#059669}
-.price.high{color:#dc2626}
-.price.mid{color:#d97706}
-.trend{font-size:11px;color:#6b7280;margin-top:3px}
-.trend .up{color:#dc2626}
-.trend .down{color:#059669}
-.nights-pill{display:inline-block;padding:2px 8px;background:#eff6ff;color:#1e40af;border-radius:12px;font-size:12px;font-weight:600}
-.top3{padding:24px 40px;background:#fff7ed;border-bottom:1px solid #fed7aa}
-.top3 h2{font-size:14px;font-weight:700;color:#9a3412;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.5px}
-.top3-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.top3-card{background:white;padding:16px;border-radius:10px;border:1px solid #fed7aa}
-.top3-card .p{font-size:22px;font-weight:700;color:#059669}
-.top3-card .d{font-size:13px;color:#6b7280;margin-top:4px}
-.top3-card .n{font-size:11px;color:#9a3412;font-weight:600;text-transform:uppercase;margin-top:6px}
-.note{padding:16px 40px;background:#eff6ff;color:#1e40af;font-size:13px;border-bottom:1px solid #dbeafe}
-.ftr{padding:16px 40px;background:#f9fafb;color:#6b7280;font-size:12px;text-align:center}
-</style></head><body><div class="wrap">
-<div class="hdr"><h1>✈️ LATAM BOS ↔ GRU Nonstop Flight Tracker</h1><p>Daily scan of all available round-trip combinations · Data from Google Flights · Report generated 2026-04-18</p></div>
-<div class="stats">
-<div class="stat"><div class="n">264</div><div class="l">Combinations</div></div>
-<div class="stat"><div class="n">$629</div><div class="l">Cheapest</div></div>
-<div class="stat"><div class="n">$1,221</div><div class="l">Median</div></div>
-<div class="stat"><div class="n">$2,103</div><div class="l">Most Expensive</div></div>
-<div class="stat"><div class="n">0</div><div class="l">Days Tracked</div></div>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Helvetica Neue',sans-serif;
+    background:#f2f2f7;color:#1c1c1e;
+    font-size:15px;line-height:1.4;
+    padding-bottom:env(safe-area-inset-bottom);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:#007aff;text-decoration:none}
+  .wrap{max-width:720px;margin:0 auto;padding:0 0 40px}
+
+  /* ---- Hero header ---- */
+  .hero{
+    background:#fff;
+    padding:28px 20px 20px;
+    text-align:center;
+    border-bottom:.5px solid #d1d1d6;
+  }
+  .hero-date{font-size:12px;color:#8e8e93;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;font-weight:600}
+  .hero-route{font-size:30px;font-weight:700;letter-spacing:-.5px;margin-bottom:6px}
+  .hero-sub{font-size:14px;color:#8e8e93}
+  .hero-pills{display:flex;justify-content:center;gap:8px;margin-top:16px;flex-wrap:wrap}
+  .pill{
+    background:#f2f2f7;color:#3a3a3c;
+    padding:6px 12px;border-radius:100px;
+    font-size:13px;font-weight:500;
+  }
+  .pill-blue{background:#e5f1ff;color:#0067e6}
+  .pill-green{background:#e6f8ec;color:#1e7a38}
+
+  /* ---- Section header ---- */
+  .section-head{
+    font-size:12px;font-weight:600;color:#8e8e93;
+    text-transform:uppercase;letter-spacing:.5px;
+    padding:22px 20px 8px;
+  }
+
+  /* ---- Month cards carousel ---- */
+  .months-scroll{
+    display:flex;gap:12px;
+    overflow-x:auto;overflow-y:hidden;
+    padding:0 20px 8px;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .months-scroll::-webkit-scrollbar{display:none}
+  .month-card{
+    flex:0 0 280px;
+    background:#fff;border-radius:16px;
+    padding:16px;
+    scroll-snap-align:start;
+    box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  .m-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+  .m-title{font-size:17px;font-weight:700;letter-spacing:-.3px}
+  .m-sub{font-size:12px;color:#8e8e93;margin-top:2px}
+  .m-badge{
+    background:#007aff;color:#fff;
+    font-size:11px;font-weight:700;
+    padding:4px 9px;border-radius:100px;
+    letter-spacing:.3px;
+  }
+  .m-stats{
+    display:grid;grid-template-columns:repeat(3,1fr);
+    gap:8px;padding:12px;
+    background:#f2f2f7;border-radius:12px;
+    margin-bottom:14px;
+  }
+  .m-stat{text-align:center}
+  .m-stat-v{font-size:16px;font-weight:700;letter-spacing:-.3px}
+  .m-stat-v.green{color:#1e7a38}
+  .m-stat-v.red{color:#d12f2f}
+  .m-stat-l{font-size:10px;color:#8e8e93;margin-top:2px;text-transform:uppercase;letter-spacing:.3px;font-weight:600}
+  .m-deals-head{font-size:11px;font-weight:700;color:#8e8e93;text-transform:uppercase;letter-spacing:.3px;margin-bottom:8px}
+  .m-deals{display:flex;flex-direction:column;gap:8px}
+  .m-deal{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:10px 12px;
+    background:#f9f9fb;border-radius:10px;
+    font-size:13px;
+  }
+  .m-deal-dates{display:flex;align-items:center;gap:6px;font-weight:500}
+  .m-deal-arrow{color:#c7c7cc}
+  .m-deal-right{display:flex;align-items:center;gap:10px}
+  .m-deal-nights{font-size:11px;color:#8e8e93;font-weight:600}
+  .m-deal-price{font-weight:700;color:#1c1c1e}
+
+  /* ---- Filters ---- */
+  .filters{
+    background:#fff;border-radius:16px;
+    margin:0 16px 12px;
+    padding:16px;
+    box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  .filter-label{
+    font-size:12px;font-weight:700;color:#8e8e93;
+    text-transform:uppercase;letter-spacing:.3px;
+    margin-bottom:10px;
+  }
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+  .chip{
+    background:#f2f2f7;color:#3a3a3c;border:none;
+    padding:8px 14px;border-radius:100px;
+    font-size:14px;font-weight:500;
+    cursor:pointer;transition:all .15s;
+    font-family:inherit;
+  }
+  .chip:active{transform:scale(.96)}
+  .chip-active{background:#007aff;color:#fff;font-weight:600}
+
+  /* ---- Dual-thumb range slider ---- */
+  .range-wrap{padding:4px 12px 0}
+  .range-values{
+    display:flex;justify-content:space-between;
+    font-size:17px;font-weight:700;color:#1c1c1e;
+    margin-bottom:12px;letter-spacing:-.2px;
+  }
+  .range-values span{color:#007aff}
+  .range-slider{
+    position:relative;height:28px;
+  }
+  .range-slider .track{
+    position:absolute;top:12px;left:0;right:0;height:4px;
+    background:#e5e5ea;border-radius:2px;
+  }
+  .range-slider .fill{
+    position:absolute;top:12px;height:4px;
+    background:#007aff;border-radius:2px;
+  }
+  .range-slider input[type=range]{
+    position:absolute;top:0;left:0;width:100%;height:28px;
+    background:none;pointer-events:none;
+    -webkit-appearance:none;appearance:none;
+    margin:0;
+  }
+  .range-slider input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;appearance:none;
+    width:28px;height:28px;border-radius:50%;
+    background:#fff;border:.5px solid rgba(0,0,0,.1);
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+    pointer-events:auto;cursor:grab;
+  }
+  .range-slider input[type=range]::-moz-range-thumb{
+    width:28px;height:28px;border-radius:50%;
+    background:#fff;border:.5px solid rgba(0,0,0,.1);
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+    pointer-events:auto;cursor:grab;
+  }
+  .range-slider input[type=range]::-webkit-slider-runnable-track{background:none}
+  .range-ticks{display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#8e8e93;font-weight:500}
+
+  /* ---- Results header ---- */
+  .results-head{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:10px 20px 8px;
+    font-size:12px;color:#8e8e93;font-weight:600;text-transform:uppercase;letter-spacing:.3px;
+  }
+  .sort-btn{
+    background:none;border:none;color:#007aff;font-size:13px;font-weight:600;
+    cursor:pointer;font-family:inherit;text-transform:none;letter-spacing:0;
+  }
+
+  /* ---- Results list ---- */
+  .results{
+    background:#fff;border-radius:16px;
+    margin:0 16px;
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  .row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 16px;
+    border-bottom:.5px solid #f2f2f7;
+  }
+  .row:last-child{border-bottom:none}
+  .row:active{background:#f9f9fb}
+  .row-dates{flex:1;min-width:0}
+  .row-dep{font-size:16px;font-weight:600;color:#1c1c1e;letter-spacing:-.2px}
+  .row-ret{font-size:13px;color:#8e8e93;margin-top:3px}
+  .row-ret-arrow{color:#c7c7cc;margin:0 4px}
+  .row-nights{
+    font-size:11px;font-weight:700;color:#8e8e93;
+    background:#f2f2f7;padding:3px 8px;border-radius:6px;
+    display:inline-block;margin-left:8px;
+  }
+  .row-right{text-align:right;margin-left:12px}
+  .row-price{font-size:18px;font-weight:700;letter-spacing:-.3px}
+  .row-baseline{font-size:11px;margin-top:3px;font-weight:600;display:flex;align-items:center;justify-content:flex-end;gap:4px}
+  .b-down{color:#1e7a38}
+  .b-up{color:#d12f2f}
+  .b-flat{color:#8e8e93}
+  .b-none{color:#c7c7cc;font-weight:500}
+
+  .empty{padding:40px 20px;text-align:center;color:#8e8e93}
+
+  /* ---- Footer ---- */
+  .ftr{
+    text-align:center;
+    padding:24px 20px;
+    font-size:12px;color:#8e8e93;
+  }
+  .ftr a{color:#007aff}
+
+  /* Desktop: keep mobile-first feel but slightly wider cards */
+  @media (min-width:720px){
+    .wrap{padding-top:8px}
+    .hero{border-radius:16px;margin:16px;border:none;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  }
+</style>
+</head><body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-date">April 18, 2026</div>
+    <div class="hero-route">BOS &harr; GRU</div>
+    <div class="hero-sub">LATAM nonstop · Round trip</div>
+    <div class="hero-pills">
+      <span class="pill pill-blue">264 combos</span>
+      <span class="pill">5 months</span>
+      <span class="pill pill-green">1d history</span>
+    </div>
+  </div>
+
+  <div class="section-head">By Month · Swipe &rarr;</div>
+  <div class="months-scroll">
+    <div class="month-card" data-month="2026-05">
+  <div class="m-head">
+    <div>
+      <div class="m-title">May 2026</div>
+      <div class="m-sub">44 combinations</div>
+    </div>
+    <div class="m-badge">May 26</div>
+  </div>
+  <div class="m-stats">
+    <div class="m-stat"><div class="m-stat-v green">$1,010</div><div class="m-stat-l">Cheapest</div></div>
+    <div class="m-stat"><div class="m-stat-v">$1,342</div><div class="m-stat-l">Median</div></div>
+    <div class="m-stat"><div class="m-stat-v red">$2,103</div><div class="m-stat-l">Max</div></div>
+  </div>
+  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals"><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Wed May 13</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed May 27</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$1,010</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu May 14</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed May 27</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">13n</span>
+                <span class="m-deal-price">$1,023</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Sun May 24</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Sun Jun 7</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$1,026</span>
+              </div>
+            </div></div>
+</div><div class="month-card" data-month="2026-06">
+  <div class="m-head">
+    <div>
+      <div class="m-title">June 2026</div>
+      <div class="m-sub">64 combinations</div>
+    </div>
+    <div class="m-badge">Jun 26</div>
+  </div>
+  <div class="m-stats">
+    <div class="m-stat"><div class="m-stat-v green">$874</div><div class="m-stat-l">Cheapest</div></div>
+    <div class="m-stat"><div class="m-stat-v">$1,221</div><div class="m-stat-l">Median</div></div>
+    <div class="m-stat"><div class="m-stat-v red">$1,836</div><div class="m-stat-l">Max</div></div>
+  </div>
+  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals"><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Mon Jun 29</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Jul 14</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">15n</span>
+                <span class="m-deal-price">$874</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Mon Jun 1</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Jun 17</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">16n</span>
+                <span class="m-deal-price">$915</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Fri Jun 26</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Jul 7</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">11n</span>
+                <span class="m-deal-price">$936</span>
+              </div>
+            </div></div>
+</div><div class="month-card" data-month="2026-07">
+  <div class="m-head">
+    <div>
+      <div class="m-title">July 2026</div>
+      <div class="m-sub">72 combinations</div>
+    </div>
+    <div class="m-badge">Jul 26</div>
+  </div>
+  <div class="m-stats">
+    <div class="m-stat"><div class="m-stat-v green">$629</div><div class="m-stat-l">Cheapest</div></div>
+    <div class="m-stat"><div class="m-stat-v">$1,106</div><div class="m-stat-l">Median</div></div>
+    <div class="m-stat"><div class="m-stat-v red">$1,799</div><div class="m-stat-l">Max</div></div>
+  </div>
+  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals"><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Fri Jul 3</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Jul 14</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">11n</span>
+                <span class="m-deal-price">$629</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Jul 2</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Jul 14</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">12n</span>
+                <span class="m-deal-price">$644</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Jul 9</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Jul 22</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">13n</span>
+                <span class="m-deal-price">$806</span>
+              </div>
+            </div></div>
+</div><div class="month-card" data-month="2026-08">
+  <div class="m-head">
+    <div>
+      <div class="m-title">August 2026</div>
+      <div class="m-sub">68 combinations</div>
+    </div>
+    <div class="m-badge">Aug 26</div>
+  </div>
+  <div class="m-stats">
+    <div class="m-stat"><div class="m-stat-v green">$786</div><div class="m-stat-l">Cheapest</div></div>
+    <div class="m-stat"><div class="m-stat-v">$1,281</div><div class="m-stat-l">Median</div></div>
+    <div class="m-stat"><div class="m-stat-v red">$2,055</div><div class="m-stat-l">Max</div></div>
+  </div>
+  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals"><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Aug 27</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Sep 9</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">13n</span>
+                <span class="m-deal-price">$786</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Aug 27</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Thu Sep 10</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$786</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Thu Aug 20</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Thu Sep 3</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$789</span>
+              </div>
+            </div></div>
+</div><div class="month-card" data-month="2026-09">
+  <div class="m-head">
+    <div>
+      <div class="m-title">September 2026</div>
+      <div class="m-sub">16 combinations</div>
+    </div>
+    <div class="m-badge">Sep 26</div>
+  </div>
+  <div class="m-stats">
+    <div class="m-stat"><div class="m-stat-v green">$746</div><div class="m-stat-l">Cheapest</div></div>
+    <div class="m-stat"><div class="m-stat-v">$936</div><div class="m-stat-l">Median</div></div>
+    <div class="m-stat"><div class="m-stat-v red">$1,150</div><div class="m-stat-l">Max</div></div>
+  </div>
+  <div class="m-deals-head">Top 3 Deals</div>
+  <div class="m-deals"><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Wed Sep 2</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Tue Sep 15</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">13n</span>
+                <span class="m-deal-price">$746</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Wed Sep 2</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Wed Sep 16</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">14n</span>
+                <span class="m-deal-price">$746</span>
+              </div>
+            </div><div class="m-deal">
+              <div class="m-deal-dates">
+                <span class="m-deal-dep">Wed Sep 2</span>
+                <span class="m-deal-arrow">&rarr;</span>
+                <span class="m-deal-ret">Sat Sep 19</span>
+              </div>
+              <div class="m-deal-right">
+                <span class="m-deal-nights">17n</span>
+                <span class="m-deal-price">$819</span>
+              </div>
+            </div></div>
 </div>
-<div class="top3"><h2>🔥 Top Deals Today</h2><div class="top3-grid"><div class="top3-card"><div class="p">$629</div><div class="d">Fri Jul 3 → Tue Jul 14</div><div class="n">11 nights</div></div><div class="top3-card"><div class="p">$644</div><div class="d">Thu Jul 2 → Tue Jul 14</div><div class="n">12 nights</div></div><div class="top3-card"><div class="p">$746</div><div class="d">Wed Sep 2 → Tue Sep 15</div><div class="n">13 nights</div></div></div></div>
-<div class="note">📋 LATAM nonstop flights only · 7-20 night stays · Round-trip prices · Historical tracking: 0 days of data collected.</div>
-<div class="ctrl">
-<div class="grp"><label>Month:</label><select id="fm"><option value="">All</option><option value="2026-05">2026-05</option><option value="2026-06">2026-06</option><option value="2026-07">2026-07</option><option value="2026-08">2026-08</option><option value="2026-09">2026-09</option></select></div>
-<div class="grp"><label>Min nights:</label><input type="number" id="nmin" min="7" max="20" value="7" style="width:70px"></div>
-<div class="grp"><label>Max nights:</label><input type="number" id="nmax" min="7" max="20" value="20" style="width:70px"></div>
-<div class="grp"><label>Max price:</label><input type="number" id="pmax" min="500" max="3000" step="50" value="3000" style="width:90px"></div>
-<div class="grp" id="cnt" style="margin-left:auto;color:#6b7280;font-size:13px"></div>
+  </div>
+
+  <div class="section-head">Filter &amp; Sort</div>
+  <div class="filters">
+    <div class="filter-label">Month</div>
+    <div class="chips" id="month-chips">
+      <button class="chip chip-active" data-month="">All</button><button class="chip" data-month="2026-05">May 26</button><button class="chip" data-month="2026-06">Jun 26</button><button class="chip" data-month="2026-07">Jul 26</button><button class="chip" data-month="2026-08">Aug 26</button><button class="chip" data-month="2026-09">Sep 26</button>
+    </div>
+
+    <div class="filter-label">Nights</div>
+    <div class="range-wrap">
+      <div class="range-values"><span id="rv-min">5</span><span id="rv-max">22</span></div>
+      <div class="range-slider" id="slider">
+        <div class="track"></div>
+        <div class="fill" id="fill"></div>
+        <input type="range" id="r-min" min="5" max="22" value="5" step="1">
+        <input type="range" id="r-max" min="5" max="22" value="22" step="1">
+      </div>
+      <div class="range-ticks"><span>5n</span><span>22n</span></div>
+    </div>
+  </div>
+
+  <div class="results-head">
+    <span id="cnt">All 264 combos</span>
+    <button class="sort-btn" id="sort-btn">Sort: Departure &uarr;</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <div class="ftr">
+    Updated April 18, 2026 · Data via Google Flights ·
+    <a href="flight-data-20260418.json">Raw JSON</a>
+  </div>
 </div>
-<div class="tbl"><table id="t"><thead><tr><th data-k="dep_iso">Departure</th><th data-k="ret_iso">Return</th><th data-k="nights">Nights</th><th data-k="price_num">Price</th></tr></thead><tbody id="tb"></tbody></table></div>
-<div class="ftr">Generated 2026-04-18 · Data scraped from Google Flights · <a href="flight-data-20260418.json">Raw JSON</a></div>
-</div>
+
 <script>
-const data = [{"departure": "Fri Jul 3", "return": "Tue Jul 14", "dep_iso": "2026-07-03", "ret_iso": "2026-07-14", "dep_month": "2026-07", "nights": 11, "price": "$629", "price_num": 629, "trend": null}, {"departure": "Thu Jul 2", "return": "Tue Jul 14", "dep_iso": "2026-07-02", "ret_iso": "2026-07-14", "dep_month": "2026-07", "nights": 12, "price": "$644", "price_num": 644, "trend": null}, {"departure": "Wed Sep 2", "return": "Tue Sep 15", "dep_iso": "2026-09-02", "ret_iso": "2026-09-15", "dep_month": "2026-09", "nights": 13, "price": "$746", "price_num": 746, "trend": null}, {"departure": "Wed Sep 2", "return": "Wed Sep 16", "dep_iso": "2026-09-02", "ret_iso": "2026-09-16", "dep_month": "2026-09", "nights": 14, "price": "$746", "price_num": 746, "trend": null}, {"departure": "Thu Aug 27", "return": "Wed Sep 9", "dep_iso": "2026-08-27", "ret_iso": "2026-09-09", "dep_month": "2026-08", "nights": 13, "price": "$786", "price_num": 786, "trend": null}, {"departure": "Thu Aug 27", "return": "Thu Sep 10", "dep_iso": "2026-08-27", "ret_iso": "2026-09-10", "dep_month": "2026-08", "nights": 14, "price": "$786", "price_num": 786, "trend": null}, {"departure": "Thu Aug 20", "return": "Thu Sep 3", "dep_iso": "2026-08-20", "ret_iso": "2026-09-03", "dep_month": "2026-08", "nights": 14, "price": "$789", "price_num": 789, "trend": null}, {"departure": "Thu Jul 9", "return": "Wed Jul 22", "dep_iso": "2026-07-09", "ret_iso": "2026-07-22", "dep_month": "2026-07", "nights": 13, "price": "$806", "price_num": 806, "trend": null}, {"departure": "Fri Jul 10", "return": "Wed Jul 22", "dep_iso": "2026-07-10", "ret_iso": "2026-07-22", "dep_month": "2026-07", "nights": 12, "price": "$806", "price_num": 806, "trend": null}, {"departure": "Fri Jul 3", "return": "Wed Jul 15", "dep_iso": "2026-07-03", "ret_iso": "2026-07-15", "dep_month": "2026-07", "nights": 12, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Fri Jul 3", "return": "Thu Jul 16", "dep_iso": "2026-07-03", "ret_iso": "2026-07-16", "dep_month": "2026-07", "nights": 13, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Thu Jul 9", "return": "Tue Jul 21", "dep_iso": "2026-07-09", "ret_iso": "2026-07-21", "dep_month": "2026-07", "nights": 12, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Fri Jul 10", "return": "Tue Jul 21", "dep_iso": "2026-07-10", "ret_iso": "2026-07-21", "dep_month": "2026-07", "nights": 11, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Thu Jul 9", "return": "Thu Jul 23", "dep_iso": "2026-07-09", "ret_iso": "2026-07-23", "dep_month": "2026-07", "nights": 14, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Fri Jul 10", "return": "Thu Jul 23", "dep_iso": "2026-07-10", "ret_iso": "2026-07-23", "dep_month": "2026-07", "nights": 13, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Wed Sep 2", "return": "Sat Sep 19", "dep_iso": "2026-09-02", "ret_iso": "2026-09-19", "dep_month": "2026-09", "nights": 17, "price": "$819", "price_num": 819, "trend": null}, {"departure": "Thu Aug 27", "return": "Tue Sep 8", "dep_iso": "2026-08-27", "ret_iso": "2026-09-08", "dep_month": "2026-08", "nights": 12, "price": "$829", "price_num": 829, "trend": null}, {"departure": "Thu Jul 2", "return": "Wed Jul 15", "dep_iso": "2026-07-02", "ret_iso": "2026-07-15", "dep_month": "2026-07", "nights": 13, "price": "$832", "price_num": 832, "trend": null}, {"departure": "Thu Jul 2", "return": "Thu Jul 16", "dep_iso": "2026-07-02", "ret_iso": "2026-07-16", "dep_month": "2026-07", "nights": 14, "price": "$832", "price_num": 832, "trend": null}, {"departure": "Thu Aug 27", "return": "Sat Sep 12", "dep_iso": "2026-08-27", "ret_iso": "2026-09-12", "dep_month": "2026-08", "nights": 16, "price": "$859", "price_num": 859, "trend": null}, {"departure": "Fri Sep 4", "return": "Tue Sep 15", "dep_iso": "2026-09-04", "ret_iso": "2026-09-15", "dep_month": "2026-09", "nights": 11, "price": "$863", "price_num": 863, "trend": null}, {"departure": "Sun Sep 6", "return": "Tue Sep 15", "dep_iso": "2026-09-06", "ret_iso": "2026-09-15", "dep_month": "2026-09", "nights": 9, "price": "$863", "price_num": 863, "trend": null}, {"departure": "Fri Sep 4", "return": "Wed Sep 16", "dep_iso": "2026-09-04", "ret_iso": "2026-09-16", "dep_month": "2026-09", "nights": 12, "price": "$863", "price_num": 863, "trend": null}, {"departure": "Sun Sep 6", "return": "Wed Sep 16", "dep_iso": "2026-09-06", "ret_iso": "2026-09-16", "dep_month": "2026-09", "nights": 10, "price": "$863", "price_num": 863, "trend": null}, {"departure": "Wed Jul 15", "return": "Thu Jul 30", "dep_iso": "2026-07-15", "ret_iso": "2026-07-30", "dep_month": "2026-07", "nights": 15, "price": "$872", "price_num": 872, "trend": null}, {"departure": "Mon Jun 29", "return": "Tue Jul 14", "dep_iso": "2026-06-29", "ret_iso": "2026-07-14", "dep_month": "2026-06", "nights": 15, "price": "$874", "price_num": 874, "trend": null}, {"departure": "Thu Aug 20", "return": "Tue Sep 1", "dep_iso": "2026-08-20", "ret_iso": "2026-09-01", "dep_month": "2026-08", "nights": 12, "price": "$877", "price_num": 877, "trend": null}, {"departure": "Fri Aug 21", "return": "Thu Sep 3", "dep_iso": "2026-08-21", "ret_iso": "2026-09-03", "dep_month": "2026-08", "nights": 13, "price": "$906", "price_num": 906, "trend": null}, {"departure": "Sun Aug 23", "return": "Thu Sep 3", "dep_iso": "2026-08-23", "ret_iso": "2026-09-03", "dep_month": "2026-08", "nights": 11, "price": "$906", "price_num": 906, "trend": null}, {"departure": "Wed Sep 2", "return": "Thu Sep 17", "dep_iso": "2026-09-02", "ret_iso": "2026-09-17", "dep_month": "2026-09", "nights": 15, "price": "$910", "price_num": 910, "trend": null}, {"departure": "Sun Jul 5", "return": "Tue Jul 14", "dep_iso": "2026-07-05", "ret_iso": "2026-07-14", "dep_month": "2026-07", "nights": 9, "price": "$911", "price_num": 911, "trend": null}, {"departure": "Wed Jul 15", "return": "Sat Aug 1", "dep_iso": "2026-07-15", "ret_iso": "2026-08-01", "dep_month": "2026-07", "nights": 17, "price": "$912", "price_num": 912, "trend": null}, {"departure": "Mon Jun 1", "return": "Wed Jun 17", "dep_iso": "2026-06-01", "ret_iso": "2026-06-17", "dep_month": "2026-06", "nights": 16, "price": "$915", "price_num": 915, "trend": null}, {"departure": "Fri Jul 3", "return": "Sat Jul 18", "dep_iso": "2026-07-03", "ret_iso": "2026-07-18", "dep_month": "2026-07", "nights": 15, "price": "$919", "price_num": 919, "trend": null}, {"departure": "Thu Jul 2", "return": "Sat Jul 18", "dep_iso": "2026-07-02", "ret_iso": "2026-07-18", "dep_month": "2026-07", "nights": 16, "price": "$922", "price_num": 922, "trend": null}, {"departure": "Fri Jun 26", "return": "Tue Jul 7", "dep_iso": "2026-06-26", "ret_iso": "2026-07-07", "dep_month": "2026-06", "nights": 11, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Fri Jun 26", "return": "Thu Jul 9", "dep_iso": "2026-06-26", "ret_iso": "2026-07-09", "dep_month": "2026-06", "nights": 13, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Fri Jun 26", "return": "Sat Jul 11", "dep_iso": "2026-06-26", "ret_iso": "2026-07-11", "dep_month": "2026-06", "nights": 15, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Fri Aug 28", "return": "Wed Sep 9", "dep_iso": "2026-08-28", "ret_iso": "2026-09-09", "dep_month": "2026-08", "nights": 12, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Sun Aug 30", "return": "Wed Sep 9", "dep_iso": "2026-08-30", "ret_iso": "2026-09-09", "dep_month": "2026-08", "nights": 10, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Fri Aug 28", "return": "Thu Sep 10", "dep_iso": "2026-08-28", "ret_iso": "2026-09-10", "dep_month": "2026-08", "nights": 13, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Sun Aug 30", "return": "Thu Sep 10", "dep_iso": "2026-08-30", "ret_iso": "2026-09-10", "dep_month": "2026-08", "nights": 11, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Fri Sep 4", "return": "Sat Sep 19", "dep_iso": "2026-09-04", "ret_iso": "2026-09-19", "dep_month": "2026-09", "nights": 15, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Sun Sep 6", "return": "Sat Sep 19", "dep_iso": "2026-09-06", "ret_iso": "2026-09-19", "dep_month": "2026-09", "nights": 13, "price": "$936", "price_num": 936, "trend": null}, {"departure": "Thu Jul 16", "return": "Thu Jul 30", "dep_iso": "2026-07-16", "ret_iso": "2026-07-30", "dep_month": "2026-07", "nights": 14, "price": "$970", "price_num": 970, "trend": null}, {"departure": "Fri Aug 28", "return": "Tue Sep 8", "dep_iso": "2026-08-28", "ret_iso": "2026-09-08", "dep_month": "2026-08", "nights": 11, "price": "$979", "price_num": 979, "trend": null}, {"departure": "Sun Aug 30", "return": "Tue Sep 8", "dep_iso": "2026-08-30", "ret_iso": "2026-09-08", "dep_month": "2026-08", "nights": 9, "price": "$979", "price_num": 979, "trend": null}, {"departure": "Fri Aug 21", "return": "Tue Sep 1", "dep_iso": "2026-08-21", "ret_iso": "2026-09-01", "dep_month": "2026-08", "nights": 11, "price": "$986", "price_num": 986, "trend": null}, {"departure": "Sun Aug 23", "return": "Tue Sep 1", "dep_iso": "2026-08-23", "ret_iso": "2026-09-01", "dep_month": "2026-08", "nights": 9, "price": "$986", "price_num": 986, "trend": null}, {"departure": "Wed Aug 26", "return": "Wed Sep 9", "dep_iso": "2026-08-26", "ret_iso": "2026-09-09", "dep_month": "2026-08", "nights": 14, "price": "$986", "price_num": 986, "trend": null}, {"departure": "Wed Aug 26", "return": "Thu Sep 10", "dep_iso": "2026-08-26", "ret_iso": "2026-09-10", "dep_month": "2026-08", "nights": 15, "price": "$986", "price_num": 986, "trend": null}, {"departure": "Thu Sep 3", "return": "Tue Sep 15", "dep_iso": "2026-09-03", "ret_iso": "2026-09-15", "dep_month": "2026-09", "nights": 12, "price": "$986", "price_num": 986, "trend": null}, {"departure": "Thu Sep 3", "return": "Wed Sep 16", "dep_iso": "2026-09-03", "ret_iso": "2026-09-16", "dep_month": "2026-09", "nights": 13, "price": "$986", "price_num": 986, "trend": null}, {"departure": "Wed Jul 8", "return": "Wed Jul 22", "dep_iso": "2026-07-08", "ret_iso": "2026-07-22", "dep_month": "2026-07", "nights": 14, "price": "$996", "price_num": 996, "trend": null}, {"departure": "Sun Jul 12", "return": "Wed Jul 22", "dep_iso": "2026-07-12", "ret_iso": "2026-07-22", "dep_month": "2026-07", "nights": 10, "price": "$996", "price_num": 996, "trend": null}, {"departure": "Thu Jul 9", "return": "Sat Jul 25", "dep_iso": "2026-07-09", "ret_iso": "2026-07-25", "dep_month": "2026-07", "nights": 16, "price": "$999", "price_num": 999, "trend": null}, {"departure": "Fri Jul 10", "return": "Sat Jul 25", "dep_iso": "2026-07-10", "ret_iso": "2026-07-25", "dep_month": "2026-07", "nights": 15, "price": "$999", "price_num": 999, "trend": null}, {"departure": "Wed Jul 15", "return": "Tue Jul 28", "dep_iso": "2026-07-15", "ret_iso": "2026-07-28", "dep_month": "2026-07", "nights": 13, "price": "$1,007", "price_num": 1007, "trend": null}, {"departure": "Wed Jul 8", "return": "Tue Jul 21", "dep_iso": "2026-07-08", "ret_iso": "2026-07-21", "dep_month": "2026-07", "nights": 13, "price": "$1,009", "price_num": 1009, "trend": null}, {"departure": "Sun Jul 12", "return": "Tue Jul 21", "dep_iso": "2026-07-12", "ret_iso": "2026-07-21", "dep_month": "2026-07", "nights": 9, "price": "$1,009", "price_num": 1009, "trend": null}, {"departure": "Wed Jul 8", "return": "Thu Jul 23", "dep_iso": "2026-07-08", "ret_iso": "2026-07-23", "dep_month": "2026-07", "nights": 15, "price": "$1,009", "price_num": 1009, "trend": null}, {"departure": "Sun Jul 12", "return": "Thu Jul 23", "dep_iso": "2026-07-12", "ret_iso": "2026-07-23", "dep_month": "2026-07", "nights": 11, "price": "$1,009", "price_num": 1009, "trend": null}, {"departure": "Fri Aug 28", "return": "Sat Sep 12", "dep_iso": "2026-08-28", "ret_iso": "2026-09-12", "dep_month": "2026-08", "nights": 15, "price": "$1,009", "price_num": 1009, "trend": null}, {"departure": "Sun Aug 30", "return": "Sat Sep 12", "dep_iso": "2026-08-30", "ret_iso": "2026-09-12", "dep_month": "2026-08", "nights": 13, "price": "$1,009", "price_num": 1009, "trend": null}, {"departure": "Wed May 13", "return": "Wed May 27", "dep_iso": "2026-05-13", "ret_iso": "2026-05-27", "dep_month": "2026-05", "nights": 14, "price": "$1,010", "price_num": 1010, "trend": null}, {"departure": "Thu Jul 16", "return": "Sat Aug 1", "dep_iso": "2026-07-16", "ret_iso": "2026-08-01", "dep_month": "2026-07", "nights": 16, "price": "$1,010", "price_num": 1010, "trend": null}, {"departure": "Sun Aug 16", "return": "Thu Aug 27", "dep_iso": "2026-08-16", "ret_iso": "2026-08-27", "dep_month": "2026-08", "nights": 11, "price": "$1,013", "price_num": 1013, "trend": null}, {"departure": "Thu May 14", "return": "Wed May 27", "dep_iso": "2026-05-14", "ret_iso": "2026-05-27", "dep_month": "2026-05", "nights": 13, "price": "$1,023", "price_num": 1023, "trend": null}, {"departure": "Sun May 24", "return": "Sun Jun 7", "dep_iso": "2026-05-24", "ret_iso": "2026-06-07", "dep_month": "2026-05", "nights": 14, "price": "$1,026", "price_num": 1026, "trend": null}, {"departure": "Fri Sep 4", "return": "Thu Sep 17", "dep_iso": "2026-09-04", "ret_iso": "2026-09-17", "dep_month": "2026-09", "nights": 13, "price": "$1,027", "price_num": 1027, "trend": null}, {"departure": "Sun Sep 6", "return": "Thu Sep 17", "dep_iso": "2026-09-06", "ret_iso": "2026-09-17", "dep_month": "2026-09", "nights": 11, "price": "$1,027", "price_num": 1027, "trend": null}, {"departure": "Wed Aug 26", "return": "Tue Sep 8", "dep_iso": "2026-08-26", "ret_iso": "2026-09-08", "dep_month": "2026-08", "nights": 13, "price": "$1,029", "price_num": 1029, "trend": null}, {"departure": "Mon Jun 1", "return": "Thu Jun 18", "dep_iso": "2026-06-01", "ret_iso": "2026-06-18", "dep_month": "2026-06", "nights": 17, "price": "$1,030", "price_num": 1030, "trend": null}, {"departure": "Thu Jun 4", "return": "Wed Jun 17", "dep_iso": "2026-06-04", "ret_iso": "2026-06-17", "dep_month": "2026-06", "nights": 13, "price": "$1,033", "price_num": 1033, "trend": null}, {"departure": "Wed Jul 15", "return": "Wed Jul 29", "dep_iso": "2026-07-15", "ret_iso": "2026-07-29", "dep_month": "2026-07", "nights": 14, "price": "$1,034", "price_num": 1034, "trend": null}, {"departure": "Thu Aug 20", "return": "Wed Sep 2", "dep_iso": "2026-08-20", "ret_iso": "2026-09-02", "dep_month": "2026-08", "nights": 13, "price": "$1,039", "price_num": 1039, "trend": null}, {"departure": "Wed Aug 19", "return": "Thu Sep 3", "dep_iso": "2026-08-19", "ret_iso": "2026-09-03", "dep_month": "2026-08", "nights": 15, "price": "$1,039", "price_num": 1039, "trend": null}, {"departure": "Thu Aug 20", "return": "Sat Sep 5", "dep_iso": "2026-08-20", "ret_iso": "2026-09-05", "dep_month": "2026-08", "nights": 16, "price": "$1,039", "price_num": 1039, "trend": null}, {"departure": "Wed Jul 22", "return": "Thu Aug 6", "dep_iso": "2026-07-22", "ret_iso": "2026-08-06", "dep_month": "2026-07", "nights": 15, "price": "$1,052", "price_num": 1052, "trend": null}, {"departure": "Fri Jul 17", "return": "Thu Jul 30", "dep_iso": "2026-07-17", "ret_iso": "2026-07-30", "dep_month": "2026-07", "nights": 13, "price": "$1,059", "price_num": 1059, "trend": null}, {"departure": "Sun Jul 19", "return": "Thu Jul 30", "dep_iso": "2026-07-19", "ret_iso": "2026-07-30", "dep_month": "2026-07", "nights": 11, "price": "$1,059", "price_num": 1059, "trend": null}, {"departure": "Wed Aug 26", "return": "Sat Sep 12", "dep_iso": "2026-08-26", "ret_iso": "2026-09-12", "dep_month": "2026-08", "nights": 17, "price": "$1,059", "price_num": 1059, "trend": null}, {"departure": "Thu Sep 3", "return": "Sat Sep 19", "dep_iso": "2026-09-03", "ret_iso": "2026-09-19", "dep_month": "2026-09", "nights": 16, "price": "$1,059", "price_num": 1059, "trend": null}, {"departure": "Mon Jun 29", "return": "Wed Jul 15", "dep_iso": "2026-06-29", "ret_iso": "2026-07-15", "dep_month": "2026-06", "nights": 16, "price": "$1,062", "price_num": 1062, "trend": null}, {"departure": "Mon Jun 29", "return": "Thu Jul 16", "dep_iso": "2026-06-29", "ret_iso": "2026-07-16", "dep_month": "2026-06", "nights": 17, "price": "$1,062", "price_num": 1062, "trend": null}, {"departure": "Sun Jun 14", "return": "Wed Jun 24", "dep_iso": "2026-06-14", "ret_iso": "2026-06-24", "dep_month": "2026-06", "nights": 10, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jun 14", "return": "Thu Jun 25", "dep_iso": "2026-06-14", "ret_iso": "2026-06-25", "dep_month": "2026-06", "nights": 11, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jun 28", "return": "Tue Jul 7", "dep_iso": "2026-06-28", "ret_iso": "2026-07-07", "dep_month": "2026-06", "nights": 9, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jun 28", "return": "Thu Jul 9", "dep_iso": "2026-06-28", "ret_iso": "2026-07-09", "dep_month": "2026-06", "nights": 11, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jun 28", "return": "Sat Jul 11", "dep_iso": "2026-06-28", "ret_iso": "2026-07-11", "dep_month": "2026-06", "nights": 13, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jul 5", "return": "Wed Jul 15", "dep_iso": "2026-07-05", "ret_iso": "2026-07-15", "dep_month": "2026-07", "nights": 10, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jul 5", "return": "Thu Jul 16", "dep_iso": "2026-07-05", "ret_iso": "2026-07-16", "dep_month": "2026-07", "nights": 11, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Fri Jul 17", "return": "Sat Aug 1", "dep_iso": "2026-07-17", "ret_iso": "2026-08-01", "dep_month": "2026-07", "nights": 15, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Sun Jul 19", "return": "Sat Aug 1", "dep_iso": "2026-07-19", "ret_iso": "2026-08-01", "dep_month": "2026-07", "nights": 13, "price": "$1,099", "price_num": 1099, "trend": null}, {"departure": "Thu Jul 16", "return": "Tue Jul 28", "dep_iso": "2026-07-16", "ret_iso": "2026-07-28", "dep_month": "2026-07", "nights": 12, "price": "$1,106", "price_num": 1106, "trend": null}, {"departure": "Wed May 13", "return": "Sun May 24", "dep_iso": "2026-05-13", "ret_iso": "2026-05-24", "dep_month": "2026-05", "nights": 11, "price": "$1,119", "price_num": 1119, "trend": null}, {"departure": "Wed Aug 19", "return": "Tue Sep 1", "dep_iso": "2026-08-19", "ret_iso": "2026-09-01", "dep_month": "2026-08", "nights": 13, "price": "$1,119", "price_num": 1119, "trend": null}, {"departure": "Thu May 14", "return": "Sun May 24", "dep_iso": "2026-05-14", "ret_iso": "2026-05-24", "dep_month": "2026-05", "nights": 10, "price": "$1,131", "price_num": 1131, "trend": null}, {"departure": "Thu Jul 16", "return": "Wed Jul 29", "dep_iso": "2026-07-16", "ret_iso": "2026-07-29", "dep_month": "2026-07", "nights": 13, "price": "$1,132", "price_num": 1132, "trend": null}, {"departure": "Mon May 25", "return": "Sun Jun 14", "dep_iso": "2026-05-25", "ret_iso": "2026-06-14", "dep_month": "2026-05", "nights": 20, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Thu Jun 4", "return": "Thu Jun 18", "dep_iso": "2026-06-04", "ret_iso": "2026-06-18", "dep_month": "2026-06", "nights": 14, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Fri Jun 26", "return": "Wed Jul 8", "dep_iso": "2026-06-26", "ret_iso": "2026-07-08", "dep_month": "2026-06", "nights": 12, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Sun Aug 16", "return": "Wed Aug 26", "dep_iso": "2026-08-16", "ret_iso": "2026-08-26", "dep_month": "2026-08", "nights": 10, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Fri Aug 21", "return": "Wed Sep 2", "dep_iso": "2026-08-21", "ret_iso": "2026-09-02", "dep_month": "2026-08", "nights": 12, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Sun Aug 23", "return": "Wed Sep 2", "dep_iso": "2026-08-23", "ret_iso": "2026-09-02", "dep_month": "2026-08", "nights": 10, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Fri Aug 21", "return": "Sat Sep 5", "dep_iso": "2026-08-21", "ret_iso": "2026-09-05", "dep_month": "2026-08", "nights": 15, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Sun Aug 23", "return": "Sat Sep 5", "dep_iso": "2026-08-23", "ret_iso": "2026-09-05", "dep_month": "2026-08", "nights": 13, "price": "$1,148", "price_num": 1148, "trend": null}, {"departure": "Thu Sep 3", "return": "Thu Sep 17", "dep_iso": "2026-09-03", "ret_iso": "2026-09-17", "dep_month": "2026-09", "nights": 14, "price": "$1,150", "price_num": 1150, "trend": null}, {"departure": "Mon Jun 29", "return": "Sat Jul 18", "dep_iso": "2026-06-29", "ret_iso": "2026-07-18", "dep_month": "2026-06", "nights": 19, "price": "$1,152", "price_num": 1152, "trend": null}, {"departure": "Fri Jun 5", "return": "Wed Jun 17", "dep_iso": "2026-06-05", "ret_iso": "2026-06-17", "dep_month": "2026-06", "nights": 12, "price": "$1,154", "price_num": 1154, "trend": null}, {"departure": "Fri Jul 31", "return": "Tue Aug 11", "dep_iso": "2026-07-31", "ret_iso": "2026-08-11", "dep_month": "2026-07", "nights": 11, "price": "$1,159", "price_num": 1159, "trend": null}, {"departure": "Sun Jun 7", "return": "Wed Jun 17", "dep_iso": "2026-06-07", "ret_iso": "2026-06-17", "dep_month": "2026-06", "nights": 10, "price": "$1,170", "price_num": 1170, "trend": null}, {"departure": "Sun May 24", "return": "Wed Jun 3", "dep_iso": "2026-05-24", "ret_iso": "2026-06-03", "dep_month": "2026-05", "nights": 10, "price": "$1,172", "price_num": 1172, "trend": null}, {"departure": "Sun May 24", "return": "Thu Jun 4", "dep_iso": "2026-05-24", "ret_iso": "2026-06-04", "dep_month": "2026-05", "nights": 11, "price": "$1,172", "price_num": 1172, "trend": null}, {"departure": "Thu May 21", "return": "Sun Jun 7", "dep_iso": "2026-05-21", "ret_iso": "2026-06-07", "dep_month": "2026-05", "nights": 17, "price": "$1,175", "price_num": 1175, "trend": null}, {"departure": "Fri May 29", "return": "Sun Jun 14", "dep_iso": "2026-05-29", "ret_iso": "2026-06-14", "dep_month": "2026-05", "nights": 16, "price": "$1,175", "price_num": 1175, "trend": null}, {"departure": "Sun Jun 14", "return": "Sun Jun 28", "dep_iso": "2026-06-14", "ret_iso": "2026-06-28", "dep_month": "2026-06", "nights": 14, "price": "$1,189", "price_num": 1189, "trend": null}, {"departure": "Sun Jul 5", "return": "Sat Jul 18", "dep_iso": "2026-07-05", "ret_iso": "2026-07-18", "dep_month": "2026-07", "nights": 13, "price": "$1,189", "price_num": 1189, "trend": null}, {"departure": "Wed Jul 8", "return": "Sat Jul 25", "dep_iso": "2026-07-08", "ret_iso": "2026-07-25", "dep_month": "2026-07", "nights": 17, "price": "$1,189", "price_num": 1189, "trend": null}, {"departure": "Sun Jul 12", "return": "Sat Jul 25", "dep_iso": "2026-07-12", "ret_iso": "2026-07-25", "dep_month": "2026-07", "nights": 13, "price": "$1,189", "price_num": 1189, "trend": null}, {"departure": "Mon Jun 1", "return": "Sat Jun 20", "dep_iso": "2026-06-01", "ret_iso": "2026-06-20", "dep_month": "2026-06", "nights": 19, "price": "$1,193", "price_num": 1193, "trend": null}, {"departure": "Mon Jun 1", "return": "Sun Jun 21", "dep_iso": "2026-06-01", "ret_iso": "2026-06-21", "dep_month": "2026-06", "nights": 20, "price": "$1,193", "price_num": 1193, "trend": null}, {"departure": "Fri Jul 17", "return": "Tue Jul 28", "dep_iso": "2026-07-17", "ret_iso": "2026-07-28", "dep_month": "2026-07", "nights": 11, "price": "$1,195", "price_num": 1195, "trend": null}, {"departure": "Sun Jul 19", "return": "Tue Jul 28", "dep_iso": "2026-07-19", "ret_iso": "2026-07-28", "dep_month": "2026-07", "nights": 9, "price": "$1,195", "price_num": 1195, "trend": null}, {"departure": "Thu Jul 23", "return": "Thu Aug 6", "dep_iso": "2026-07-23", "ret_iso": "2026-08-06", "dep_month": "2026-07", "nights": 14, "price": "$1,198", "price_num": 1198, "trend": null}, {"departure": "Sun Aug 16", "return": "Tue Aug 25", "dep_iso": "2026-08-16", "ret_iso": "2026-08-25", "dep_month": "2026-08", "nights": 9, "price": "$1,202", "price_num": 1202, "trend": null}, {"departure": "Wed Jul 22", "return": "Tue Aug 4", "dep_iso": "2026-07-22", "ret_iso": "2026-08-04", "dep_month": "2026-07", "nights": 13, "price": "$1,214", "price_num": 1214, "trend": null}, {"departure": "Wed Jul 22", "return": "Wed Aug 5", "dep_iso": "2026-07-22", "ret_iso": "2026-08-05", "dep_month": "2026-07", "nights": 14, "price": "$1,214", "price_num": 1214, "trend": null}, {"departure": "Mon May 25", "return": "Sat Jun 13", "dep_iso": "2026-05-25", "ret_iso": "2026-06-13", "dep_month": "2026-05", "nights": 19, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Thu Jun 11", "return": "Wed Jun 24", "dep_iso": "2026-06-11", "ret_iso": "2026-06-24", "dep_month": "2026-06", "nights": 13, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Thu Jun 11", "return": "Thu Jun 25", "dep_iso": "2026-06-11", "ret_iso": "2026-06-25", "dep_month": "2026-06", "nights": 14, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Mon Jun 15", "return": "Thu Jul 2", "dep_iso": "2026-06-15", "ret_iso": "2026-07-02", "dep_month": "2026-06", "nights": 17, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Thu Jun 18", "return": "Thu Jul 2", "dep_iso": "2026-06-18", "ret_iso": "2026-07-02", "dep_month": "2026-06", "nights": 14, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Fri Jun 19", "return": "Thu Jul 2", "dep_iso": "2026-06-19", "ret_iso": "2026-07-02", "dep_month": "2026-06", "nights": 13, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Sun Jun 21", "return": "Thu Jul 2", "dep_iso": "2026-06-21", "ret_iso": "2026-07-02", "dep_month": "2026-06", "nights": 11, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Mon Jun 22", "return": "Tue Jul 7", "dep_iso": "2026-06-22", "ret_iso": "2026-07-07", "dep_month": "2026-06", "nights": 15, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Thu Jun 25", "return": "Tue Jul 7", "dep_iso": "2026-06-25", "ret_iso": "2026-07-07", "dep_month": "2026-06", "nights": 12, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Mon Jun 22", "return": "Thu Jul 9", "dep_iso": "2026-06-22", "ret_iso": "2026-07-09", "dep_month": "2026-06", "nights": 17, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Thu Jun 25", "return": "Thu Jul 9", "dep_iso": "2026-06-25", "ret_iso": "2026-07-09", "dep_month": "2026-06", "nights": 14, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Mon Jun 22", "return": "Sat Jul 11", "dep_iso": "2026-06-22", "ret_iso": "2026-07-11", "dep_month": "2026-06", "nights": 19, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Thu Jun 25", "return": "Sat Jul 11", "dep_iso": "2026-06-25", "ret_iso": "2026-07-11", "dep_month": "2026-06", "nights": 16, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Fri Jul 17", "return": "Wed Jul 29", "dep_iso": "2026-07-17", "ret_iso": "2026-07-29", "dep_month": "2026-07", "nights": 12, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Sun Jul 19", "return": "Wed Jul 29", "dep_iso": "2026-07-19", "ret_iso": "2026-07-29", "dep_month": "2026-07", "nights": 10, "price": "$1,221", "price_num": 1221, "trend": null}, {"departure": "Mon May 18", "return": "Sun Jun 7", "dep_iso": "2026-05-18", "ret_iso": "2026-06-07", "dep_month": "2026-05", "nights": 20, "price": "$1,229", "price_num": 1229, "trend": null}, {"departure": "Fri Jun 12", "return": "Wed Jun 24", "dep_iso": "2026-06-12", "ret_iso": "2026-06-24", "dep_month": "2026-06", "nights": 12, "price": "$1,234", "price_num": 1234, "trend": null}, {"departure": "Fri Jun 12", "return": "Thu Jun 25", "dep_iso": "2026-06-12", "ret_iso": "2026-06-25", "dep_month": "2026-06", "nights": 13, "price": "$1,234", "price_num": 1234, "trend": null}, {"departure": "Wed Jul 22", "return": "Sat Aug 8", "dep_iso": "2026-07-22", "ret_iso": "2026-08-08", "dep_month": "2026-07", "nights": 17, "price": "$1,238", "price_num": 1238, "trend": null}, {"departure": "Wed May 13", "return": "Sat May 30", "dep_iso": "2026-05-13", "ret_iso": "2026-05-30", "dep_month": "2026-05", "nights": 17, "price": "$1,241", "price_num": 1241, "trend": null}, {"departure": "Fri May 29", "return": "Sat Jun 13", "dep_iso": "2026-05-29", "ret_iso": "2026-06-13", "dep_month": "2026-05", "nights": 15, "price": "$1,248", "price_num": 1248, "trend": null}, {"departure": "Thu May 14", "return": "Sat May 30", "dep_iso": "2026-05-14", "ret_iso": "2026-05-30", "dep_month": "2026-05", "nights": 16, "price": "$1,253", "price_num": 1253, "trend": null}, {"departure": "Wed Jul 29", "return": "Tue Aug 11", "dep_iso": "2026-07-29", "ret_iso": "2026-08-11", "dep_month": "2026-07", "nights": 13, "price": "$1,262", "price_num": 1262, "trend": null}, {"departure": "Fri May 15", "return": "Wed May 27", "dep_iso": "2026-05-15", "ret_iso": "2026-05-27", "dep_month": "2026-05", "nights": 12, "price": "$1,268", "price_num": 1268, "trend": null}, {"departure": "Wed May 13", "return": "Thu May 28", "dep_iso": "2026-05-13", "ret_iso": "2026-05-28", "dep_month": "2026-05", "nights": 15, "price": "$1,268", "price_num": 1268, "trend": null}, {"departure": "Sun May 31", "return": "Sun Jun 14", "dep_iso": "2026-05-31", "ret_iso": "2026-06-14", "dep_month": "2026-05", "nights": 14, "price": "$1,269", "price_num": 1269, "trend": null}, {"departure": "Fri Jun 5", "return": "Thu Jun 18", "dep_iso": "2026-06-05", "ret_iso": "2026-06-18", "dep_month": "2026-06", "nights": 13, "price": "$1,269", "price_num": 1269, "trend": null}, {"departure": "Fri Jul 24", "return": "Thu Aug 6", "dep_iso": "2026-07-24", "ret_iso": "2026-08-06", "dep_month": "2026-07", "nights": 13, "price": "$1,271", "price_num": 1271, "trend": null}, {"departure": "Thu May 14", "return": "Thu May 28", "dep_iso": "2026-05-14", "ret_iso": "2026-05-28", "dep_month": "2026-05", "nights": 14, "price": "$1,280", "price_num": 1280, "trend": null}, {"departure": "Wed Aug 19", "return": "Wed Sep 2", "dep_iso": "2026-08-19", "ret_iso": "2026-09-02", "dep_month": "2026-08", "nights": 14, "price": "$1,281", "price_num": 1281, "trend": null}, {"departure": "Wed Aug 19", "return": "Sat Sep 5", "dep_iso": "2026-08-19", "ret_iso": "2026-09-05", "dep_month": "2026-08", "nights": 17, "price": "$1,281", "price_num": 1281, "trend": null}, {"departure": "Wed Aug 5", "return": "Tue Aug 18", "dep_iso": "2026-08-05", "ret_iso": "2026-08-18", "dep_month": "2026-08", "nights": 13, "price": "$1,284", "price_num": 1284, "trend": null}, {"departure": "Sun Jun 7", "return": "Thu Jun 18", "dep_iso": "2026-06-07", "ret_iso": "2026-06-18", "dep_month": "2026-06", "nights": 11, "price": "$1,285", "price_num": 1285, "trend": null}, {"departure": "Wed Aug 12", "return": "Thu Aug 27", "dep_iso": "2026-08-12", "ret_iso": "2026-08-27", "dep_month": "2026-08", "nights": 15, "price": "$1,298", "price_num": 1298, "trend": null}, {"departure": "Fri Aug 14", "return": "Thu Aug 27", "dep_iso": "2026-08-14", "ret_iso": "2026-08-27", "dep_month": "2026-08", "nights": 13, "price": "$1,298", "price_num": 1298, "trend": null}, {"departure": "Thu Jun 4", "return": "Sat Jun 20", "dep_iso": "2026-06-04", "ret_iso": "2026-06-20", "dep_month": "2026-06", "nights": 16, "price": "$1,311", "price_num": 1311, "trend": null}, {"departure": "Thu Jun 4", "return": "Sun Jun 21", "dep_iso": "2026-06-04", "ret_iso": "2026-06-21", "dep_month": "2026-06", "nights": 17, "price": "$1,311", "price_num": 1311, "trend": null}, {"departure": "Sun Jun 14", "return": "Sat Jun 27", "dep_iso": "2026-06-14", "ret_iso": "2026-06-27", "dep_month": "2026-06", "nights": 13, "price": "$1,311", "price_num": 1311, "trend": null}, {"departure": "Thu Jun 11", "return": "Sun Jun 28", "dep_iso": "2026-06-11", "ret_iso": "2026-06-28", "dep_month": "2026-06", "nights": 17, "price": "$1,311", "price_num": 1311, "trend": null}, {"departure": "Sun Jun 28", "return": "Wed Jul 8", "dep_iso": "2026-06-28", "ret_iso": "2026-07-08", "dep_month": "2026-06", "nights": 10, "price": "$1,311", "price_num": 1311, "trend": null}, {"departure": "Thu May 21", "return": "Wed Jun 3", "dep_iso": "2026-05-21", "ret_iso": "2026-06-03", "dep_month": "2026-05", "nights": 13, "price": "$1,321", "price_num": 1321, "trend": null}, {"departure": "Thu May 21", "return": "Thu Jun 4", "dep_iso": "2026-05-21", "ret_iso": "2026-06-04", "dep_month": "2026-05", "nights": 14, "price": "$1,321", "price_num": 1321, "trend": null}, {"departure": "Mon Jun 15", "return": "Sat Jul 4", "dep_iso": "2026-06-15", "ret_iso": "2026-07-04", "dep_month": "2026-06", "nights": 19, "price": "$1,322", "price_num": 1322, "trend": null}, {"departure": "Thu Jun 18", "return": "Sat Jul 4", "dep_iso": "2026-06-18", "ret_iso": "2026-07-04", "dep_month": "2026-06", "nights": 16, "price": "$1,322", "price_num": 1322, "trend": null}, {"departure": "Fri Jun 19", "return": "Sat Jul 4", "dep_iso": "2026-06-19", "ret_iso": "2026-07-04", "dep_month": "2026-06", "nights": 15, "price": "$1,322", "price_num": 1322, "trend": null}, {"departure": "Sun Jun 21", "return": "Sat Jul 4", "dep_iso": "2026-06-21", "ret_iso": "2026-07-04", "dep_month": "2026-06", "nights": 13, "price": "$1,322", "price_num": 1322, "trend": null}, {"departure": "Fri Jun 12", "return": "Sun Jun 28", "dep_iso": "2026-06-12", "ret_iso": "2026-06-28", "dep_month": "2026-06", "nights": 16, "price": "$1,324", "price_num": 1324, "trend": null}, {"departure": "Fri Jul 31", "return": "Wed Aug 12", "dep_iso": "2026-07-31", "ret_iso": "2026-08-12", "dep_month": "2026-07", "nights": 12, "price": "$1,327", "price_num": 1327, "trend": null}, {"departure": "Sun Aug 16", "return": "Sat Aug 29", "dep_iso": "2026-08-16", "ret_iso": "2026-08-29", "dep_month": "2026-08", "nights": 13, "price": "$1,332", "price_num": 1332, "trend": null}, {"departure": "Sun May 24", "return": "Sat Jun 6", "dep_iso": "2026-05-24", "ret_iso": "2026-06-06", "dep_month": "2026-05", "nights": 13, "price": "$1,338", "price_num": 1338, "trend": null}, {"departure": "Sun May 31", "return": "Sat Jun 13", "dep_iso": "2026-05-31", "ret_iso": "2026-06-13", "dep_month": "2026-05", "nights": 13, "price": "$1,342", "price_num": 1342, "trend": null}, {"departure": "Thu Aug 13", "return": "Thu Aug 27", "dep_iso": "2026-08-13", "ret_iso": "2026-08-27", "dep_month": "2026-08", "nights": 14, "price": "$1,352", "price_num": 1352, "trend": null}, {"departure": "Thu Jul 23", "return": "Tue Aug 4", "dep_iso": "2026-07-23", "ret_iso": "2026-08-04", "dep_month": "2026-07", "nights": 12, "price": "$1,360", "price_num": 1360, "trend": null}, {"departure": "Thu Jul 23", "return": "Wed Aug 5", "dep_iso": "2026-07-23", "ret_iso": "2026-08-05", "dep_month": "2026-07", "nights": 13, "price": "$1,360", "price_num": 1360, "trend": null}, {"departure": "Thu Aug 6", "return": "Tue Aug 18", "dep_iso": "2026-08-06", "ret_iso": "2026-08-18", "dep_month": "2026-08", "nights": 12, "price": "$1,367", "price_num": 1367, "trend": null}, {"departure": "Mon May 18", "return": "Wed Jun 3", "dep_iso": "2026-05-18", "ret_iso": "2026-06-03", "dep_month": "2026-05", "nights": 16, "price": "$1,375", "price_num": 1375, "trend": null}, {"departure": "Mon May 18", "return": "Thu Jun 4", "dep_iso": "2026-05-18", "ret_iso": "2026-06-04", "dep_month": "2026-05", "nights": 17, "price": "$1,375", "price_num": 1375, "trend": null}, {"departure": "Fri May 15", "return": "Sun May 24", "dep_iso": "2026-05-15", "ret_iso": "2026-05-24", "dep_month": "2026-05", "nights": 9, "price": "$1,377", "price_num": 1377, "trend": null}, {"departure": "Thu Jul 30", "return": "Tue Aug 11", "dep_iso": "2026-07-30", "ret_iso": "2026-08-11", "dep_month": "2026-07", "nights": 12, "price": "$1,377", "price_num": 1377, "trend": null}, {"departure": "Thu Jul 23", "return": "Sat Aug 8", "dep_iso": "2026-07-23", "ret_iso": "2026-08-08", "dep_month": "2026-07", "nights": 16, "price": "$1,384", "price_num": 1384, "trend": null}, {"departure": "Fri Aug 14", "return": "Wed Aug 26", "dep_iso": "2026-08-14", "ret_iso": "2026-08-26", "dep_month": "2026-08", "nights": 12, "price": "$1,387", "price_num": 1387, "trend": null}, {"departure": "Fri Jul 31", "return": "Thu Aug 13", "dep_iso": "2026-07-31", "ret_iso": "2026-08-13", "dep_month": "2026-07", "nights": 13, "price": "$1,392", "price_num": 1392, "trend": null}, {"departure": "Fri Aug 7", "return": "Tue Aug 18", "dep_iso": "2026-08-07", "ret_iso": "2026-08-18", "dep_month": "2026-08", "nights": 11, "price": "$1,392", "price_num": 1392, "trend": null}, {"departure": "Wed Jul 29", "return": "Wed Aug 12", "dep_iso": "2026-07-29", "ret_iso": "2026-08-12", "dep_month": "2026-07", "nights": 14, "price": "$1,430", "price_num": 1430, "trend": null}, {"departure": "Fri Jun 5", "return": "Sat Jun 20", "dep_iso": "2026-06-05", "ret_iso": "2026-06-20", "dep_month": "2026-06", "nights": 15, "price": "$1,432", "price_num": 1432, "trend": null}, {"departure": "Fri Jun 5", "return": "Sun Jun 21", "dep_iso": "2026-06-05", "ret_iso": "2026-06-21", "dep_month": "2026-06", "nights": 16, "price": "$1,432", "price_num": 1432, "trend": null}, {"departure": "Mon May 25", "return": "Wed Jun 10", "dep_iso": "2026-05-25", "ret_iso": "2026-06-10", "dep_month": "2026-05", "nights": 16, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Mon May 25", "return": "Thu Jun 11", "dep_iso": "2026-05-25", "ret_iso": "2026-06-11", "dep_month": "2026-05", "nights": 17, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Thu Jun 11", "return": "Sat Jun 27", "dep_iso": "2026-06-11", "ret_iso": "2026-06-27", "dep_month": "2026-06", "nights": 16, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Mon Jun 15", "return": "Wed Jul 1", "dep_iso": "2026-06-15", "ret_iso": "2026-07-01", "dep_month": "2026-06", "nights": 16, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Thu Jun 18", "return": "Wed Jul 1", "dep_iso": "2026-06-18", "ret_iso": "2026-07-01", "dep_month": "2026-06", "nights": 13, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Fri Jun 19", "return": "Wed Jul 1", "dep_iso": "2026-06-19", "ret_iso": "2026-07-01", "dep_month": "2026-06", "nights": 12, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Sun Jun 21", "return": "Wed Jul 1", "dep_iso": "2026-06-21", "ret_iso": "2026-07-01", "dep_month": "2026-06", "nights": 10, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Mon Jun 22", "return": "Wed Jul 8", "dep_iso": "2026-06-22", "ret_iso": "2026-07-08", "dep_month": "2026-06", "nights": 16, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Thu Jun 25", "return": "Wed Jul 8", "dep_iso": "2026-06-25", "ret_iso": "2026-07-08", "dep_month": "2026-06", "nights": 13, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Fri Jul 24", "return": "Tue Aug 4", "dep_iso": "2026-07-24", "ret_iso": "2026-08-04", "dep_month": "2026-07", "nights": 11, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Fri Jul 24", "return": "Wed Aug 5", "dep_iso": "2026-07-24", "ret_iso": "2026-08-05", "dep_month": "2026-07", "nights": 12, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Wed Aug 12", "return": "Wed Aug 26", "dep_iso": "2026-08-12", "ret_iso": "2026-08-26", "dep_month": "2026-08", "nights": 14, "price": "$1,433", "price_num": 1433, "trend": null}, {"departure": "Fri Jun 12", "return": "Sat Jun 27", "dep_iso": "2026-06-12", "ret_iso": "2026-06-27", "dep_month": "2026-06", "nights": 15, "price": "$1,446", "price_num": 1446, "trend": null}, {"departure": "Sun Jun 7", "return": "Sat Jun 20", "dep_iso": "2026-06-07", "ret_iso": "2026-06-20", "dep_month": "2026-06", "nights": 13, "price": "$1,448", "price_num": 1448, "trend": null}, {"departure": "Sun Jun 7", "return": "Sun Jun 21", "dep_iso": "2026-06-07", "ret_iso": "2026-06-21", "dep_month": "2026-06", "nights": 14, "price": "$1,448", "price_num": 1448, "trend": null}, {"departure": "Fri Jul 24", "return": "Sat Aug 8", "dep_iso": "2026-07-24", "ret_iso": "2026-08-08", "dep_month": "2026-07", "nights": 15, "price": "$1,457", "price_num": 1457, "trend": null}, {"departure": "Fri May 29", "return": "Wed Jun 10", "dep_iso": "2026-05-29", "ret_iso": "2026-06-10", "dep_month": "2026-05", "nights": 12, "price": "$1,460", "price_num": 1460, "trend": null}, {"departure": "Fri May 29", "return": "Thu Jun 11", "dep_iso": "2026-05-29", "ret_iso": "2026-06-11", "dep_month": "2026-05", "nights": 13, "price": "$1,460", "price_num": 1460, "trend": null}, {"departure": "Thu May 21", "return": "Sat Jun 6", "dep_iso": "2026-05-21", "ret_iso": "2026-06-06", "dep_month": "2026-05", "nights": 16, "price": "$1,487", "price_num": 1487, "trend": null}, {"departure": "Wed Aug 12", "return": "Tue Aug 25", "dep_iso": "2026-08-12", "ret_iso": "2026-08-25", "dep_month": "2026-08", "nights": 13, "price": "$1,487", "price_num": 1487, "trend": null}, {"departure": "Fri Aug 14", "return": "Tue Aug 25", "dep_iso": "2026-08-14", "ret_iso": "2026-08-25", "dep_month": "2026-08", "nights": 11, "price": "$1,487", "price_num": 1487, "trend": null}, {"departure": "Thu Aug 13", "return": "Wed Aug 26", "dep_iso": "2026-08-13", "ret_iso": "2026-08-26", "dep_month": "2026-08", "nights": 13, "price": "$1,487", "price_num": 1487, "trend": null}, {"departure": "Wed Jul 29", "return": "Thu Aug 13", "dep_iso": "2026-07-29", "ret_iso": "2026-08-13", "dep_month": "2026-07", "nights": 15, "price": "$1,495", "price_num": 1495, "trend": null}, {"departure": "Fri Jul 31", "return": "Sat Aug 15", "dep_iso": "2026-07-31", "ret_iso": "2026-08-15", "dep_month": "2026-07", "nights": 15, "price": "$1,495", "price_num": 1495, "trend": null}, {"departure": "Fri May 15", "return": "Sat May 30", "dep_iso": "2026-05-15", "ret_iso": "2026-05-30", "dep_month": "2026-05", "nights": 15, "price": "$1,499", "price_num": 1499, "trend": null}, {"departure": "Wed Aug 5", "return": "Wed Aug 19", "dep_iso": "2026-08-05", "ret_iso": "2026-08-19", "dep_month": "2026-08", "nights": 14, "price": "$1,500", "price_num": 1500, "trend": null}, {"departure": "Wed Aug 5", "return": "Thu Aug 20", "dep_iso": "2026-08-05", "ret_iso": "2026-08-20", "dep_month": "2026-08", "nights": 15, "price": "$1,500", "price_num": 1500, "trend": null}, {"departure": "Fri May 15", "return": "Thu May 28", "dep_iso": "2026-05-15", "ret_iso": "2026-05-28", "dep_month": "2026-05", "nights": 13, "price": "$1,526", "price_num": 1526, "trend": null}, {"departure": "Mon May 18", "return": "Sat Jun 6", "dep_iso": "2026-05-18", "ret_iso": "2026-06-06", "dep_month": "2026-05", "nights": 19, "price": "$1,541", "price_num": 1541, "trend": null}, {"departure": "Thu Aug 13", "return": "Tue Aug 25", "dep_iso": "2026-08-13", "ret_iso": "2026-08-25", "dep_month": "2026-08", "nights": 12, "price": "$1,541", "price_num": 1541, "trend": null}, {"departure": "Thu Jul 30", "return": "Wed Aug 12", "dep_iso": "2026-07-30", "ret_iso": "2026-08-12", "dep_month": "2026-07", "nights": 13, "price": "$1,545", "price_num": 1545, "trend": null}, {"departure": "Thu May 28", "return": "Sun Jun 14", "dep_iso": "2026-05-28", "ret_iso": "2026-06-14", "dep_month": "2026-05", "nights": 17, "price": "$1,551", "price_num": 1551, "trend": null}, {"departure": "Sun May 31", "return": "Wed Jun 10", "dep_iso": "2026-05-31", "ret_iso": "2026-06-10", "dep_month": "2026-05", "nights": 10, "price": "$1,554", "price_num": 1554, "trend": null}, {"departure": "Sun May 31", "return": "Thu Jun 11", "dep_iso": "2026-05-31", "ret_iso": "2026-06-11", "dep_month": "2026-05", "nights": 11, "price": "$1,554", "price_num": 1554, "trend": null}, {"departure": "Thu Aug 6", "return": "Wed Aug 19", "dep_iso": "2026-08-06", "ret_iso": "2026-08-19", "dep_month": "2026-08", "nights": 13, "price": "$1,583", "price_num": 1583, "trend": null}, {"departure": "Thu Aug 6", "return": "Thu Aug 20", "dep_iso": "2026-08-06", "ret_iso": "2026-08-20", "dep_month": "2026-08", "nights": 14, "price": "$1,583", "price_num": 1583, "trend": null}, {"departure": "Wed Jul 29", "return": "Sat Aug 15", "dep_iso": "2026-07-29", "ret_iso": "2026-08-15", "dep_month": "2026-07", "nights": 17, "price": "$1,599", "price_num": 1599, "trend": null}, {"departure": "Fri Aug 7", "return": "Wed Aug 19", "dep_iso": "2026-08-07", "ret_iso": "2026-08-19", "dep_month": "2026-08", "nights": 12, "price": "$1,608", "price_num": 1608, "trend": null}, {"departure": "Fri Aug 7", "return": "Thu Aug 20", "dep_iso": "2026-08-07", "ret_iso": "2026-08-20", "dep_month": "2026-08", "nights": 13, "price": "$1,608", "price_num": 1608, "trend": null}, {"departure": "Thu Jul 30", "return": "Thu Aug 13", "dep_iso": "2026-07-30", "ret_iso": "2026-08-13", "dep_month": "2026-07", "nights": 14, "price": "$1,610", "price_num": 1610, "trend": null}, {"departure": "Sun Jul 26", "return": "Thu Aug 6", "dep_iso": "2026-07-26", "ret_iso": "2026-08-06", "dep_month": "2026-07", "nights": 11, "price": "$1,613", "price_num": 1613, "trend": null}, {"departure": "Wed Aug 12", "return": "Sat Aug 29", "dep_iso": "2026-08-12", "ret_iso": "2026-08-29", "dep_month": "2026-08", "nights": 17, "price": "$1,617", "price_num": 1617, "trend": null}, {"departure": "Fri Aug 14", "return": "Sat Aug 29", "dep_iso": "2026-08-14", "ret_iso": "2026-08-29", "dep_month": "2026-08", "nights": 15, "price": "$1,617", "price_num": 1617, "trend": null}, {"departure": "Thu May 28", "return": "Sat Jun 13", "dep_iso": "2026-05-28", "ret_iso": "2026-06-13", "dep_month": "2026-05", "nights": 16, "price": "$1,624", "price_num": 1624, "trend": null}, {"departure": "Mon Jun 8", "return": "Wed Jun 24", "dep_iso": "2026-06-08", "ret_iso": "2026-06-24", "dep_month": "2026-06", "nights": 16, "price": "$1,624", "price_num": 1624, "trend": null}, {"departure": "Mon Jun 8", "return": "Thu Jun 25", "dep_iso": "2026-06-08", "ret_iso": "2026-06-25", "dep_month": "2026-06", "nights": 17, "price": "$1,624", "price_num": 1624, "trend": null}, {"departure": "Wed Aug 5", "return": "Sat Aug 22", "dep_iso": "2026-08-05", "ret_iso": "2026-08-22", "dep_month": "2026-08", "nights": 17, "price": "$1,633", "price_num": 1633, "trend": null}, {"departure": "Thu Aug 13", "return": "Sat Aug 29", "dep_iso": "2026-08-13", "ret_iso": "2026-08-29", "dep_month": "2026-08", "nights": 16, "price": "$1,671", "price_num": 1671, "trend": null}, {"departure": "Sun Aug 2", "return": "Tue Aug 11", "dep_iso": "2026-08-02", "ret_iso": "2026-08-11", "dep_month": "2026-08", "nights": 9, "price": "$1,690", "price_num": 1690, "trend": null}, {"departure": "Sun Aug 9", "return": "Tue Aug 18", "dep_iso": "2026-08-09", "ret_iso": "2026-08-18", "dep_month": "2026-08", "nights": 9, "price": "$1,706", "price_num": 1706, "trend": null}, {"departure": "Mon Jun 8", "return": "Sun Jun 28", "dep_iso": "2026-06-08", "ret_iso": "2026-06-28", "dep_month": "2026-06", "nights": 20, "price": "$1,714", "price_num": 1714, "trend": null}, {"departure": "Thu Jul 30", "return": "Sat Aug 15", "dep_iso": "2026-07-30", "ret_iso": "2026-08-15", "dep_month": "2026-07", "nights": 16, "price": "$1,714", "price_num": 1714, "trend": null}, {"departure": "Thu Aug 6", "return": "Sat Aug 22", "dep_iso": "2026-08-06", "ret_iso": "2026-08-22", "dep_month": "2026-08", "nights": 16, "price": "$1,716", "price_num": 1716, "trend": null}, {"departure": "Sun Jul 26", "return": "Wed Aug 5", "dep_iso": "2026-07-26", "ret_iso": "2026-08-05", "dep_month": "2026-07", "nights": 10, "price": "$1,729", "price_num": 1729, "trend": null}, {"departure": "Fri Aug 7", "return": "Sat Aug 22", "dep_iso": "2026-08-07", "ret_iso": "2026-08-22", "dep_month": "2026-08", "nights": 15, "price": "$1,741", "price_num": 1741, "trend": null}, {"departure": "Sun Jul 26", "return": "Tue Aug 4", "dep_iso": "2026-07-26", "ret_iso": "2026-08-04", "dep_month": "2026-07", "nights": 9, "price": "$1,775", "price_num": 1775, "trend": null}, {"departure": "Fri May 22", "return": "Sun Jun 7", "dep_iso": "2026-05-22", "ret_iso": "2026-06-07", "dep_month": "2026-05", "nights": 16, "price": "$1,791", "price_num": 1791, "trend": null}, {"departure": "Sun Jul 26", "return": "Sat Aug 8", "dep_iso": "2026-07-26", "ret_iso": "2026-08-08", "dep_month": "2026-07", "nights": 13, "price": "$1,799", "price_num": 1799, "trend": null}, {"departure": "Thu May 28", "return": "Wed Jun 10", "dep_iso": "2026-05-28", "ret_iso": "2026-06-10", "dep_month": "2026-05", "nights": 13, "price": "$1,836", "price_num": 1836, "trend": null}, {"departure": "Thu May 28", "return": "Thu Jun 11", "dep_iso": "2026-05-28", "ret_iso": "2026-06-11", "dep_month": "2026-05", "nights": 14, "price": "$1,836", "price_num": 1836, "trend": null}, {"departure": "Mon Jun 8", "return": "Sat Jun 27", "dep_iso": "2026-06-08", "ret_iso": "2026-06-27", "dep_month": "2026-06", "nights": 19, "price": "$1,836", "price_num": 1836, "trend": null}, {"departure": "Sun Aug 2", "return": "Wed Aug 12", "dep_iso": "2026-08-02", "ret_iso": "2026-08-12", "dep_month": "2026-08", "nights": 10, "price": "$1,858", "price_num": 1858, "trend": null}, {"departure": "Sun Aug 2", "return": "Thu Aug 13", "dep_iso": "2026-08-02", "ret_iso": "2026-08-13", "dep_month": "2026-08", "nights": 11, "price": "$1,922", "price_num": 1922, "trend": null}, {"departure": "Sun Aug 9", "return": "Wed Aug 19", "dep_iso": "2026-08-09", "ret_iso": "2026-08-19", "dep_month": "2026-08", "nights": 10, "price": "$1,922", "price_num": 1922, "trend": null}, {"departure": "Sun Aug 9", "return": "Thu Aug 20", "dep_iso": "2026-08-09", "ret_iso": "2026-08-20", "dep_month": "2026-08", "nights": 11, "price": "$1,922", "price_num": 1922, "trend": null}, {"departure": "Fri May 22", "return": "Wed Jun 3", "dep_iso": "2026-05-22", "ret_iso": "2026-06-03", "dep_month": "2026-05", "nights": 12, "price": "$1,937", "price_num": 1937, "trend": null}, {"departure": "Fri May 22", "return": "Thu Jun 4", "dep_iso": "2026-05-22", "ret_iso": "2026-06-04", "dep_month": "2026-05", "nights": 13, "price": "$1,937", "price_num": 1937, "trend": null}, {"departure": "Sun Aug 2", "return": "Sat Aug 15", "dep_iso": "2026-08-02", "ret_iso": "2026-08-15", "dep_month": "2026-08", "nights": 13, "price": "$2,026", "price_num": 2026, "trend": null}, {"departure": "Sun Aug 9", "return": "Sat Aug 22", "dep_iso": "2026-08-09", "ret_iso": "2026-08-22", "dep_month": "2026-08", "nights": 13, "price": "$2,055", "price_num": 2055, "trend": null}, {"departure": "Fri May 22", "return": "Sat Jun 6", "dep_iso": "2026-05-22", "ret_iso": "2026-06-06", "dep_month": "2026-05", "nights": 15, "price": "$2,103", "price_num": 2103, "trend": null}];
-const stats = {min:629, max:2103};
-let sk='price_num', sd=1;
-function cp(p) {
-  const r=(p-stats.min)/(stats.max-stats.min||1);
-  if(r<0.33) return '';
-  if(r<0.66) return 'mid';
-  return 'high';
-}
-function trendHtml(c) {
-  if (!c.trend) return '';
-  const t = c.trend;
-  const arrow = t.change > 0 ? '↑' : (t.change < 0 ? '↓' : '→');
-  const cls = t.change > 0 ? 'up' : (t.change < 0 ? 'down' : '');
-  const sign = t.change > 0 ? '+' : '';
-  return `<div class="trend">min $${t.min} · avg $${t.avg} · <span class="${cls}">${arrow} ${sign}${t.change}</span> (${t.days_tracked}d)</div>`;
-}
-function render() {
-  const fm=document.getElementById('fm').value;
-  const nmin=parseInt(document.getElementById('nmin').value)||7;
-  const nmax=parseInt(document.getElementById('nmax').value)||20;
-  const pmax=parseInt(document.getElementById('pmax').value)||9999;
-  let f=data.filter(c=>(!fm||c.dep_month===fm)&&c.nights>=nmin&&c.nights<=nmax&&c.price_num<=pmax);
-  f.sort((a,b)=>(a[sk]>b[sk]?1:-1)*sd);
-  document.getElementById('cnt').textContent=f.length+' of '+data.length+' combinations';
-  document.getElementById('tb').innerHTML=f.map(c=>'<tr><td><strong>'+c.departure+'</strong><br><span style="color:#9ca3af;font-size:11px">'+c.dep_iso+'</span></td><td><strong>'+c['return']+'</strong><br><span style="color:#9ca3af;font-size:11px">'+c.ret_iso+'</span></td><td><span class="nights-pill">'+c.nights+' nights</span></td><td class="price '+cp(c.price_num)+'">$'+c.price_num.toLocaleString()+trendHtml(c)+'</td></tr>').join('');
-}
-document.querySelectorAll('th').forEach(th=>{
-  th.addEventListener('click',()=>{
-    const k=th.dataset.k;
-    if(sk===k) sd*=-1; else{sk=k;sd=1;}
+(function(){
+  const data = [{"dep": "Wed May 13", "ret": "Wed May 27", "depIso": "2026-05-13", "retIso": "2026-05-27", "month": "2026-05", "nights": 14, "price": 1010, "baseline": null}, {"dep": "Wed May 13", "ret": "Sun May 24", "depIso": "2026-05-13", "retIso": "2026-05-24", "month": "2026-05", "nights": 11, "price": 1119, "baseline": null}, {"dep": "Wed May 13", "ret": "Sat May 30", "depIso": "2026-05-13", "retIso": "2026-05-30", "month": "2026-05", "nights": 17, "price": 1241, "baseline": null}, {"dep": "Wed May 13", "ret": "Thu May 28", "depIso": "2026-05-13", "retIso": "2026-05-28", "month": "2026-05", "nights": 15, "price": 1268, "baseline": null}, {"dep": "Thu May 14", "ret": "Wed May 27", "depIso": "2026-05-14", "retIso": "2026-05-27", "month": "2026-05", "nights": 13, "price": 1023, "baseline": null}, {"dep": "Thu May 14", "ret": "Sun May 24", "depIso": "2026-05-14", "retIso": "2026-05-24", "month": "2026-05", "nights": 10, "price": 1131, "baseline": null}, {"dep": "Thu May 14", "ret": "Sat May 30", "depIso": "2026-05-14", "retIso": "2026-05-30", "month": "2026-05", "nights": 16, "price": 1253, "baseline": null}, {"dep": "Thu May 14", "ret": "Thu May 28", "depIso": "2026-05-14", "retIso": "2026-05-28", "month": "2026-05", "nights": 14, "price": 1280, "baseline": null}, {"dep": "Fri May 15", "ret": "Wed May 27", "depIso": "2026-05-15", "retIso": "2026-05-27", "month": "2026-05", "nights": 12, "price": 1268, "baseline": null}, {"dep": "Fri May 15", "ret": "Sun May 24", "depIso": "2026-05-15", "retIso": "2026-05-24", "month": "2026-05", "nights": 9, "price": 1377, "baseline": null}, {"dep": "Fri May 15", "ret": "Sat May 30", "depIso": "2026-05-15", "retIso": "2026-05-30", "month": "2026-05", "nights": 15, "price": 1499, "baseline": null}, {"dep": "Fri May 15", "ret": "Thu May 28", "depIso": "2026-05-15", "retIso": "2026-05-28", "month": "2026-05", "nights": 13, "price": 1526, "baseline": null}, {"dep": "Mon May 18", "ret": "Sun Jun 7", "depIso": "2026-05-18", "retIso": "2026-06-07", "month": "2026-05", "nights": 20, "price": 1229, "baseline": null}, {"dep": "Mon May 18", "ret": "Wed Jun 3", "depIso": "2026-05-18", "retIso": "2026-06-03", "month": "2026-05", "nights": 16, "price": 1375, "baseline": null}, {"dep": "Mon May 18", "ret": "Thu Jun 4", "depIso": "2026-05-18", "retIso": "2026-06-04", "month": "2026-05", "nights": 17, "price": 1375, "baseline": null}, {"dep": "Mon May 18", "ret": "Sat Jun 6", "depIso": "2026-05-18", "retIso": "2026-06-06", "month": "2026-05", "nights": 19, "price": 1541, "baseline": null}, {"dep": "Thu May 21", "ret": "Sun Jun 7", "depIso": "2026-05-21", "retIso": "2026-06-07", "month": "2026-05", "nights": 17, "price": 1175, "baseline": null}, {"dep": "Thu May 21", "ret": "Wed Jun 3", "depIso": "2026-05-21", "retIso": "2026-06-03", "month": "2026-05", "nights": 13, "price": 1321, "baseline": null}, {"dep": "Thu May 21", "ret": "Thu Jun 4", "depIso": "2026-05-21", "retIso": "2026-06-04", "month": "2026-05", "nights": 14, "price": 1321, "baseline": null}, {"dep": "Thu May 21", "ret": "Sat Jun 6", "depIso": "2026-05-21", "retIso": "2026-06-06", "month": "2026-05", "nights": 16, "price": 1487, "baseline": null}, {"dep": "Fri May 22", "ret": "Sun Jun 7", "depIso": "2026-05-22", "retIso": "2026-06-07", "month": "2026-05", "nights": 16, "price": 1791, "baseline": null}, {"dep": "Fri May 22", "ret": "Wed Jun 3", "depIso": "2026-05-22", "retIso": "2026-06-03", "month": "2026-05", "nights": 12, "price": 1937, "baseline": null}, {"dep": "Fri May 22", "ret": "Thu Jun 4", "depIso": "2026-05-22", "retIso": "2026-06-04", "month": "2026-05", "nights": 13, "price": 1937, "baseline": null}, {"dep": "Fri May 22", "ret": "Sat Jun 6", "depIso": "2026-05-22", "retIso": "2026-06-06", "month": "2026-05", "nights": 15, "price": 2103, "baseline": null}, {"dep": "Sun May 24", "ret": "Sun Jun 7", "depIso": "2026-05-24", "retIso": "2026-06-07", "month": "2026-05", "nights": 14, "price": 1026, "baseline": null}, {"dep": "Sun May 24", "ret": "Wed Jun 3", "depIso": "2026-05-24", "retIso": "2026-06-03", "month": "2026-05", "nights": 10, "price": 1172, "baseline": null}, {"dep": "Sun May 24", "ret": "Thu Jun 4", "depIso": "2026-05-24", "retIso": "2026-06-04", "month": "2026-05", "nights": 11, "price": 1172, "baseline": null}, {"dep": "Sun May 24", "ret": "Sat Jun 6", "depIso": "2026-05-24", "retIso": "2026-06-06", "month": "2026-05", "nights": 13, "price": 1338, "baseline": null}, {"dep": "Mon May 25", "ret": "Sun Jun 14", "depIso": "2026-05-25", "retIso": "2026-06-14", "month": "2026-05", "nights": 20, "price": 1148, "baseline": null}, {"dep": "Mon May 25", "ret": "Sat Jun 13", "depIso": "2026-05-25", "retIso": "2026-06-13", "month": "2026-05", "nights": 19, "price": 1221, "baseline": null}, {"dep": "Mon May 25", "ret": "Wed Jun 10", "depIso": "2026-05-25", "retIso": "2026-06-10", "month": "2026-05", "nights": 16, "price": 1433, "baseline": null}, {"dep": "Mon May 25", "ret": "Thu Jun 11", "depIso": "2026-05-25", "retIso": "2026-06-11", "month": "2026-05", "nights": 17, "price": 1433, "baseline": null}, {"dep": "Thu May 28", "ret": "Sun Jun 14", "depIso": "2026-05-28", "retIso": "2026-06-14", "month": "2026-05", "nights": 17, "price": 1551, "baseline": null}, {"dep": "Thu May 28", "ret": "Sat Jun 13", "depIso": "2026-05-28", "retIso": "2026-06-13", "month": "2026-05", "nights": 16, "price": 1624, "baseline": null}, {"dep": "Thu May 28", "ret": "Wed Jun 10", "depIso": "2026-05-28", "retIso": "2026-06-10", "month": "2026-05", "nights": 13, "price": 1836, "baseline": null}, {"dep": "Thu May 28", "ret": "Thu Jun 11", "depIso": "2026-05-28", "retIso": "2026-06-11", "month": "2026-05", "nights": 14, "price": 1836, "baseline": null}, {"dep": "Fri May 29", "ret": "Sun Jun 14", "depIso": "2026-05-29", "retIso": "2026-06-14", "month": "2026-05", "nights": 16, "price": 1175, "baseline": null}, {"dep": "Fri May 29", "ret": "Sat Jun 13", "depIso": "2026-05-29", "retIso": "2026-06-13", "month": "2026-05", "nights": 15, "price": 1248, "baseline": null}, {"dep": "Fri May 29", "ret": "Wed Jun 10", "depIso": "2026-05-29", "retIso": "2026-06-10", "month": "2026-05", "nights": 12, "price": 1460, "baseline": null}, {"dep": "Fri May 29", "ret": "Thu Jun 11", "depIso": "2026-05-29", "retIso": "2026-06-11", "month": "2026-05", "nights": 13, "price": 1460, "baseline": null}, {"dep": "Sun May 31", "ret": "Sun Jun 14", "depIso": "2026-05-31", "retIso": "2026-06-14", "month": "2026-05", "nights": 14, "price": 1269, "baseline": null}, {"dep": "Sun May 31", "ret": "Sat Jun 13", "depIso": "2026-05-31", "retIso": "2026-06-13", "month": "2026-05", "nights": 13, "price": 1342, "baseline": null}, {"dep": "Sun May 31", "ret": "Wed Jun 10", "depIso": "2026-05-31", "retIso": "2026-06-10", "month": "2026-05", "nights": 10, "price": 1554, "baseline": null}, {"dep": "Sun May 31", "ret": "Thu Jun 11", "depIso": "2026-05-31", "retIso": "2026-06-11", "month": "2026-05", "nights": 11, "price": 1554, "baseline": null}, {"dep": "Mon Jun 1", "ret": "Wed Jun 17", "depIso": "2026-06-01", "retIso": "2026-06-17", "month": "2026-06", "nights": 16, "price": 915, "baseline": null}, {"dep": "Mon Jun 1", "ret": "Thu Jun 18", "depIso": "2026-06-01", "retIso": "2026-06-18", "month": "2026-06", "nights": 17, "price": 1030, "baseline": null}, {"dep": "Mon Jun 1", "ret": "Sat Jun 20", "depIso": "2026-06-01", "retIso": "2026-06-20", "month": "2026-06", "nights": 19, "price": 1193, "baseline": null}, {"dep": "Mon Jun 1", "ret": "Sun Jun 21", "depIso": "2026-06-01", "retIso": "2026-06-21", "month": "2026-06", "nights": 20, "price": 1193, "baseline": null}, {"dep": "Thu Jun 4", "ret": "Wed Jun 17", "depIso": "2026-06-04", "retIso": "2026-06-17", "month": "2026-06", "nights": 13, "price": 1033, "baseline": null}, {"dep": "Thu Jun 4", "ret": "Thu Jun 18", "depIso": "2026-06-04", "retIso": "2026-06-18", "month": "2026-06", "nights": 14, "price": 1148, "baseline": null}, {"dep": "Thu Jun 4", "ret": "Sat Jun 20", "depIso": "2026-06-04", "retIso": "2026-06-20", "month": "2026-06", "nights": 16, "price": 1311, "baseline": null}, {"dep": "Thu Jun 4", "ret": "Sun Jun 21", "depIso": "2026-06-04", "retIso": "2026-06-21", "month": "2026-06", "nights": 17, "price": 1311, "baseline": null}, {"dep": "Fri Jun 5", "ret": "Wed Jun 17", "depIso": "2026-06-05", "retIso": "2026-06-17", "month": "2026-06", "nights": 12, "price": 1154, "baseline": null}, {"dep": "Fri Jun 5", "ret": "Thu Jun 18", "depIso": "2026-06-05", "retIso": "2026-06-18", "month": "2026-06", "nights": 13, "price": 1269, "baseline": null}, {"dep": "Fri Jun 5", "ret": "Sat Jun 20", "depIso": "2026-06-05", "retIso": "2026-06-20", "month": "2026-06", "nights": 15, "price": 1432, "baseline": null}, {"dep": "Fri Jun 5", "ret": "Sun Jun 21", "depIso": "2026-06-05", "retIso": "2026-06-21", "month": "2026-06", "nights": 16, "price": 1432, "baseline": null}, {"dep": "Sun Jun 7", "ret": "Wed Jun 17", "depIso": "2026-06-07", "retIso": "2026-06-17", "month": "2026-06", "nights": 10, "price": 1170, "baseline": null}, {"dep": "Sun Jun 7", "ret": "Thu Jun 18", "depIso": "2026-06-07", "retIso": "2026-06-18", "month": "2026-06", "nights": 11, "price": 1285, "baseline": null}, {"dep": "Sun Jun 7", "ret": "Sat Jun 20", "depIso": "2026-06-07", "retIso": "2026-06-20", "month": "2026-06", "nights": 13, "price": 1448, "baseline": null}, {"dep": "Sun Jun 7", "ret": "Sun Jun 21", "depIso": "2026-06-07", "retIso": "2026-06-21", "month": "2026-06", "nights": 14, "price": 1448, "baseline": null}, {"dep": "Mon Jun 8", "ret": "Wed Jun 24", "depIso": "2026-06-08", "retIso": "2026-06-24", "month": "2026-06", "nights": 16, "price": 1624, "baseline": null}, {"dep": "Mon Jun 8", "ret": "Thu Jun 25", "depIso": "2026-06-08", "retIso": "2026-06-25", "month": "2026-06", "nights": 17, "price": 1624, "baseline": null}, {"dep": "Mon Jun 8", "ret": "Sun Jun 28", "depIso": "2026-06-08", "retIso": "2026-06-28", "month": "2026-06", "nights": 20, "price": 1714, "baseline": null}, {"dep": "Mon Jun 8", "ret": "Sat Jun 27", "depIso": "2026-06-08", "retIso": "2026-06-27", "month": "2026-06", "nights": 19, "price": 1836, "baseline": null}, {"dep": "Thu Jun 11", "ret": "Wed Jun 24", "depIso": "2026-06-11", "retIso": "2026-06-24", "month": "2026-06", "nights": 13, "price": 1221, "baseline": null}, {"dep": "Thu Jun 11", "ret": "Thu Jun 25", "depIso": "2026-06-11", "retIso": "2026-06-25", "month": "2026-06", "nights": 14, "price": 1221, "baseline": null}, {"dep": "Thu Jun 11", "ret": "Sun Jun 28", "depIso": "2026-06-11", "retIso": "2026-06-28", "month": "2026-06", "nights": 17, "price": 1311, "baseline": null}, {"dep": "Thu Jun 11", "ret": "Sat Jun 27", "depIso": "2026-06-11", "retIso": "2026-06-27", "month": "2026-06", "nights": 16, "price": 1433, "baseline": null}, {"dep": "Fri Jun 12", "ret": "Wed Jun 24", "depIso": "2026-06-12", "retIso": "2026-06-24", "month": "2026-06", "nights": 12, "price": 1234, "baseline": null}, {"dep": "Fri Jun 12", "ret": "Thu Jun 25", "depIso": "2026-06-12", "retIso": "2026-06-25", "month": "2026-06", "nights": 13, "price": 1234, "baseline": null}, {"dep": "Fri Jun 12", "ret": "Sun Jun 28", "depIso": "2026-06-12", "retIso": "2026-06-28", "month": "2026-06", "nights": 16, "price": 1324, "baseline": null}, {"dep": "Fri Jun 12", "ret": "Sat Jun 27", "depIso": "2026-06-12", "retIso": "2026-06-27", "month": "2026-06", "nights": 15, "price": 1446, "baseline": null}, {"dep": "Sun Jun 14", "ret": "Wed Jun 24", "depIso": "2026-06-14", "retIso": "2026-06-24", "month": "2026-06", "nights": 10, "price": 1099, "baseline": null}, {"dep": "Sun Jun 14", "ret": "Thu Jun 25", "depIso": "2026-06-14", "retIso": "2026-06-25", "month": "2026-06", "nights": 11, "price": 1099, "baseline": null}, {"dep": "Sun Jun 14", "ret": "Sun Jun 28", "depIso": "2026-06-14", "retIso": "2026-06-28", "month": "2026-06", "nights": 14, "price": 1189, "baseline": null}, {"dep": "Sun Jun 14", "ret": "Sat Jun 27", "depIso": "2026-06-14", "retIso": "2026-06-27", "month": "2026-06", "nights": 13, "price": 1311, "baseline": null}, {"dep": "Mon Jun 15", "ret": "Thu Jul 2", "depIso": "2026-06-15", "retIso": "2026-07-02", "month": "2026-06", "nights": 17, "price": 1221, "baseline": null}, {"dep": "Mon Jun 15", "ret": "Sat Jul 4", "depIso": "2026-06-15", "retIso": "2026-07-04", "month": "2026-06", "nights": 19, "price": 1322, "baseline": null}, {"dep": "Mon Jun 15", "ret": "Wed Jul 1", "depIso": "2026-06-15", "retIso": "2026-07-01", "month": "2026-06", "nights": 16, "price": 1433, "baseline": null}, {"dep": "Thu Jun 18", "ret": "Thu Jul 2", "depIso": "2026-06-18", "retIso": "2026-07-02", "month": "2026-06", "nights": 14, "price": 1221, "baseline": null}, {"dep": "Thu Jun 18", "ret": "Sat Jul 4", "depIso": "2026-06-18", "retIso": "2026-07-04", "month": "2026-06", "nights": 16, "price": 1322, "baseline": null}, {"dep": "Thu Jun 18", "ret": "Wed Jul 1", "depIso": "2026-06-18", "retIso": "2026-07-01", "month": "2026-06", "nights": 13, "price": 1433, "baseline": null}, {"dep": "Fri Jun 19", "ret": "Thu Jul 2", "depIso": "2026-06-19", "retIso": "2026-07-02", "month": "2026-06", "nights": 13, "price": 1221, "baseline": null}, {"dep": "Fri Jun 19", "ret": "Sat Jul 4", "depIso": "2026-06-19", "retIso": "2026-07-04", "month": "2026-06", "nights": 15, "price": 1322, "baseline": null}, {"dep": "Fri Jun 19", "ret": "Wed Jul 1", "depIso": "2026-06-19", "retIso": "2026-07-01", "month": "2026-06", "nights": 12, "price": 1433, "baseline": null}, {"dep": "Sun Jun 21", "ret": "Thu Jul 2", "depIso": "2026-06-21", "retIso": "2026-07-02", "month": "2026-06", "nights": 11, "price": 1221, "baseline": null}, {"dep": "Sun Jun 21", "ret": "Sat Jul 4", "depIso": "2026-06-21", "retIso": "2026-07-04", "month": "2026-06", "nights": 13, "price": 1322, "baseline": null}, {"dep": "Sun Jun 21", "ret": "Wed Jul 1", "depIso": "2026-06-21", "retIso": "2026-07-01", "month": "2026-06", "nights": 10, "price": 1433, "baseline": null}, {"dep": "Mon Jun 22", "ret": "Tue Jul 7", "depIso": "2026-06-22", "retIso": "2026-07-07", "month": "2026-06", "nights": 15, "price": 1221, "baseline": null}, {"dep": "Mon Jun 22", "ret": "Thu Jul 9", "depIso": "2026-06-22", "retIso": "2026-07-09", "month": "2026-06", "nights": 17, "price": 1221, "baseline": null}, {"dep": "Mon Jun 22", "ret": "Sat Jul 11", "depIso": "2026-06-22", "retIso": "2026-07-11", "month": "2026-06", "nights": 19, "price": 1221, "baseline": null}, {"dep": "Mon Jun 22", "ret": "Wed Jul 8", "depIso": "2026-06-22", "retIso": "2026-07-08", "month": "2026-06", "nights": 16, "price": 1433, "baseline": null}, {"dep": "Thu Jun 25", "ret": "Tue Jul 7", "depIso": "2026-06-25", "retIso": "2026-07-07", "month": "2026-06", "nights": 12, "price": 1221, "baseline": null}, {"dep": "Thu Jun 25", "ret": "Thu Jul 9", "depIso": "2026-06-25", "retIso": "2026-07-09", "month": "2026-06", "nights": 14, "price": 1221, "baseline": null}, {"dep": "Thu Jun 25", "ret": "Sat Jul 11", "depIso": "2026-06-25", "retIso": "2026-07-11", "month": "2026-06", "nights": 16, "price": 1221, "baseline": null}, {"dep": "Thu Jun 25", "ret": "Wed Jul 8", "depIso": "2026-06-25", "retIso": "2026-07-08", "month": "2026-06", "nights": 13, "price": 1433, "baseline": null}, {"dep": "Fri Jun 26", "ret": "Tue Jul 7", "depIso": "2026-06-26", "retIso": "2026-07-07", "month": "2026-06", "nights": 11, "price": 936, "baseline": null}, {"dep": "Fri Jun 26", "ret": "Thu Jul 9", "depIso": "2026-06-26", "retIso": "2026-07-09", "month": "2026-06", "nights": 13, "price": 936, "baseline": null}, {"dep": "Fri Jun 26", "ret": "Sat Jul 11", "depIso": "2026-06-26", "retIso": "2026-07-11", "month": "2026-06", "nights": 15, "price": 936, "baseline": null}, {"dep": "Fri Jun 26", "ret": "Wed Jul 8", "depIso": "2026-06-26", "retIso": "2026-07-08", "month": "2026-06", "nights": 12, "price": 1148, "baseline": null}, {"dep": "Sun Jun 28", "ret": "Tue Jul 7", "depIso": "2026-06-28", "retIso": "2026-07-07", "month": "2026-06", "nights": 9, "price": 1099, "baseline": null}, {"dep": "Sun Jun 28", "ret": "Thu Jul 9", "depIso": "2026-06-28", "retIso": "2026-07-09", "month": "2026-06", "nights": 11, "price": 1099, "baseline": null}, {"dep": "Sun Jun 28", "ret": "Sat Jul 11", "depIso": "2026-06-28", "retIso": "2026-07-11", "month": "2026-06", "nights": 13, "price": 1099, "baseline": null}, {"dep": "Sun Jun 28", "ret": "Wed Jul 8", "depIso": "2026-06-28", "retIso": "2026-07-08", "month": "2026-06", "nights": 10, "price": 1311, "baseline": null}, {"dep": "Mon Jun 29", "ret": "Tue Jul 14", "depIso": "2026-06-29", "retIso": "2026-07-14", "month": "2026-06", "nights": 15, "price": 874, "baseline": null}, {"dep": "Mon Jun 29", "ret": "Wed Jul 15", "depIso": "2026-06-29", "retIso": "2026-07-15", "month": "2026-06", "nights": 16, "price": 1062, "baseline": null}, {"dep": "Mon Jun 29", "ret": "Thu Jul 16", "depIso": "2026-06-29", "retIso": "2026-07-16", "month": "2026-06", "nights": 17, "price": 1062, "baseline": null}, {"dep": "Mon Jun 29", "ret": "Sat Jul 18", "depIso": "2026-06-29", "retIso": "2026-07-18", "month": "2026-06", "nights": 19, "price": 1152, "baseline": null}, {"dep": "Thu Jul 2", "ret": "Tue Jul 14", "depIso": "2026-07-02", "retIso": "2026-07-14", "month": "2026-07", "nights": 12, "price": 644, "baseline": null}, {"dep": "Thu Jul 2", "ret": "Wed Jul 15", "depIso": "2026-07-02", "retIso": "2026-07-15", "month": "2026-07", "nights": 13, "price": 832, "baseline": null}, {"dep": "Thu Jul 2", "ret": "Thu Jul 16", "depIso": "2026-07-02", "retIso": "2026-07-16", "month": "2026-07", "nights": 14, "price": 832, "baseline": null}, {"dep": "Thu Jul 2", "ret": "Sat Jul 18", "depIso": "2026-07-02", "retIso": "2026-07-18", "month": "2026-07", "nights": 16, "price": 922, "baseline": null}, {"dep": "Fri Jul 3", "ret": "Tue Jul 14", "depIso": "2026-07-03", "retIso": "2026-07-14", "month": "2026-07", "nights": 11, "price": 629, "baseline": null}, {"dep": "Fri Jul 3", "ret": "Wed Jul 15", "depIso": "2026-07-03", "retIso": "2026-07-15", "month": "2026-07", "nights": 12, "price": 819, "baseline": null}, {"dep": "Fri Jul 3", "ret": "Thu Jul 16", "depIso": "2026-07-03", "retIso": "2026-07-16", "month": "2026-07", "nights": 13, "price": 819, "baseline": null}, {"dep": "Fri Jul 3", "ret": "Sat Jul 18", "depIso": "2026-07-03", "retIso": "2026-07-18", "month": "2026-07", "nights": 15, "price": 919, "baseline": null}, {"dep": "Sun Jul 5", "ret": "Tue Jul 14", "depIso": "2026-07-05", "retIso": "2026-07-14", "month": "2026-07", "nights": 9, "price": 911, "baseline": null}, {"dep": "Sun Jul 5", "ret": "Wed Jul 15", "depIso": "2026-07-05", "retIso": "2026-07-15", "month": "2026-07", "nights": 10, "price": 1099, "baseline": null}, {"dep": "Sun Jul 5", "ret": "Thu Jul 16", "depIso": "2026-07-05", "retIso": "2026-07-16", "month": "2026-07", "nights": 11, "price": 1099, "baseline": null}, {"dep": "Sun Jul 5", "ret": "Sat Jul 18", "depIso": "2026-07-05", "retIso": "2026-07-18", "month": "2026-07", "nights": 13, "price": 1189, "baseline": null}, {"dep": "Wed Jul 8", "ret": "Wed Jul 22", "depIso": "2026-07-08", "retIso": "2026-07-22", "month": "2026-07", "nights": 14, "price": 996, "baseline": null}, {"dep": "Wed Jul 8", "ret": "Tue Jul 21", "depIso": "2026-07-08", "retIso": "2026-07-21", "month": "2026-07", "nights": 13, "price": 1009, "baseline": null}, {"dep": "Wed Jul 8", "ret": "Thu Jul 23", "depIso": "2026-07-08", "retIso": "2026-07-23", "month": "2026-07", "nights": 15, "price": 1009, "baseline": null}, {"dep": "Wed Jul 8", "ret": "Sat Jul 25", "depIso": "2026-07-08", "retIso": "2026-07-25", "month": "2026-07", "nights": 17, "price": 1189, "baseline": null}, {"dep": "Thu Jul 9", "ret": "Wed Jul 22", "depIso": "2026-07-09", "retIso": "2026-07-22", "month": "2026-07", "nights": 13, "price": 806, "baseline": null}, {"dep": "Thu Jul 9", "ret": "Tue Jul 21", "depIso": "2026-07-09", "retIso": "2026-07-21", "month": "2026-07", "nights": 12, "price": 819, "baseline": null}, {"dep": "Thu Jul 9", "ret": "Thu Jul 23", "depIso": "2026-07-09", "retIso": "2026-07-23", "month": "2026-07", "nights": 14, "price": 819, "baseline": null}, {"dep": "Thu Jul 9", "ret": "Sat Jul 25", "depIso": "2026-07-09", "retIso": "2026-07-25", "month": "2026-07", "nights": 16, "price": 999, "baseline": null}, {"dep": "Fri Jul 10", "ret": "Wed Jul 22", "depIso": "2026-07-10", "retIso": "2026-07-22", "month": "2026-07", "nights": 12, "price": 806, "baseline": null}, {"dep": "Fri Jul 10", "ret": "Tue Jul 21", "depIso": "2026-07-10", "retIso": "2026-07-21", "month": "2026-07", "nights": 11, "price": 819, "baseline": null}, {"dep": "Fri Jul 10", "ret": "Thu Jul 23", "depIso": "2026-07-10", "retIso": "2026-07-23", "month": "2026-07", "nights": 13, "price": 819, "baseline": null}, {"dep": "Fri Jul 10", "ret": "Sat Jul 25", "depIso": "2026-07-10", "retIso": "2026-07-25", "month": "2026-07", "nights": 15, "price": 999, "baseline": null}, {"dep": "Sun Jul 12", "ret": "Wed Jul 22", "depIso": "2026-07-12", "retIso": "2026-07-22", "month": "2026-07", "nights": 10, "price": 996, "baseline": null}, {"dep": "Sun Jul 12", "ret": "Tue Jul 21", "depIso": "2026-07-12", "retIso": "2026-07-21", "month": "2026-07", "nights": 9, "price": 1009, "baseline": null}, {"dep": "Sun Jul 12", "ret": "Thu Jul 23", "depIso": "2026-07-12", "retIso": "2026-07-23", "month": "2026-07", "nights": 11, "price": 1009, "baseline": null}, {"dep": "Sun Jul 12", "ret": "Sat Jul 25", "depIso": "2026-07-12", "retIso": "2026-07-25", "month": "2026-07", "nights": 13, "price": 1189, "baseline": null}, {"dep": "Wed Jul 15", "ret": "Thu Jul 30", "depIso": "2026-07-15", "retIso": "2026-07-30", "month": "2026-07", "nights": 15, "price": 872, "baseline": null}, {"dep": "Wed Jul 15", "ret": "Sat Aug 1", "depIso": "2026-07-15", "retIso": "2026-08-01", "month": "2026-07", "nights": 17, "price": 912, "baseline": null}, {"dep": "Wed Jul 15", "ret": "Tue Jul 28", "depIso": "2026-07-15", "retIso": "2026-07-28", "month": "2026-07", "nights": 13, "price": 1007, "baseline": null}, {"dep": "Wed Jul 15", "ret": "Wed Jul 29", "depIso": "2026-07-15", "retIso": "2026-07-29", "month": "2026-07", "nights": 14, "price": 1034, "baseline": null}, {"dep": "Thu Jul 16", "ret": "Thu Jul 30", "depIso": "2026-07-16", "retIso": "2026-07-30", "month": "2026-07", "nights": 14, "price": 970, "baseline": null}, {"dep": "Thu Jul 16", "ret": "Sat Aug 1", "depIso": "2026-07-16", "retIso": "2026-08-01", "month": "2026-07", "nights": 16, "price": 1010, "baseline": null}, {"dep": "Thu Jul 16", "ret": "Tue Jul 28", "depIso": "2026-07-16", "retIso": "2026-07-28", "month": "2026-07", "nights": 12, "price": 1106, "baseline": null}, {"dep": "Thu Jul 16", "ret": "Wed Jul 29", "depIso": "2026-07-16", "retIso": "2026-07-29", "month": "2026-07", "nights": 13, "price": 1132, "baseline": null}, {"dep": "Fri Jul 17", "ret": "Thu Jul 30", "depIso": "2026-07-17", "retIso": "2026-07-30", "month": "2026-07", "nights": 13, "price": 1059, "baseline": null}, {"dep": "Fri Jul 17", "ret": "Sat Aug 1", "depIso": "2026-07-17", "retIso": "2026-08-01", "month": "2026-07", "nights": 15, "price": 1099, "baseline": null}, {"dep": "Fri Jul 17", "ret": "Tue Jul 28", "depIso": "2026-07-17", "retIso": "2026-07-28", "month": "2026-07", "nights": 11, "price": 1195, "baseline": null}, {"dep": "Fri Jul 17", "ret": "Wed Jul 29", "depIso": "2026-07-17", "retIso": "2026-07-29", "month": "2026-07", "nights": 12, "price": 1221, "baseline": null}, {"dep": "Sun Jul 19", "ret": "Thu Jul 30", "depIso": "2026-07-19", "retIso": "2026-07-30", "month": "2026-07", "nights": 11, "price": 1059, "baseline": null}, {"dep": "Sun Jul 19", "ret": "Sat Aug 1", "depIso": "2026-07-19", "retIso": "2026-08-01", "month": "2026-07", "nights": 13, "price": 1099, "baseline": null}, {"dep": "Sun Jul 19", "ret": "Tue Jul 28", "depIso": "2026-07-19", "retIso": "2026-07-28", "month": "2026-07", "nights": 9, "price": 1195, "baseline": null}, {"dep": "Sun Jul 19", "ret": "Wed Jul 29", "depIso": "2026-07-19", "retIso": "2026-07-29", "month": "2026-07", "nights": 10, "price": 1221, "baseline": null}, {"dep": "Wed Jul 22", "ret": "Thu Aug 6", "depIso": "2026-07-22", "retIso": "2026-08-06", "month": "2026-07", "nights": 15, "price": 1052, "baseline": null}, {"dep": "Wed Jul 22", "ret": "Tue Aug 4", "depIso": "2026-07-22", "retIso": "2026-08-04", "month": "2026-07", "nights": 13, "price": 1214, "baseline": null}, {"dep": "Wed Jul 22", "ret": "Wed Aug 5", "depIso": "2026-07-22", "retIso": "2026-08-05", "month": "2026-07", "nights": 14, "price": 1214, "baseline": null}, {"dep": "Wed Jul 22", "ret": "Sat Aug 8", "depIso": "2026-07-22", "retIso": "2026-08-08", "month": "2026-07", "nights": 17, "price": 1238, "baseline": null}, {"dep": "Thu Jul 23", "ret": "Thu Aug 6", "depIso": "2026-07-23", "retIso": "2026-08-06", "month": "2026-07", "nights": 14, "price": 1198, "baseline": null}, {"dep": "Thu Jul 23", "ret": "Tue Aug 4", "depIso": "2026-07-23", "retIso": "2026-08-04", "month": "2026-07", "nights": 12, "price": 1360, "baseline": null}, {"dep": "Thu Jul 23", "ret": "Wed Aug 5", "depIso": "2026-07-23", "retIso": "2026-08-05", "month": "2026-07", "nights": 13, "price": 1360, "baseline": null}, {"dep": "Thu Jul 23", "ret": "Sat Aug 8", "depIso": "2026-07-23", "retIso": "2026-08-08", "month": "2026-07", "nights": 16, "price": 1384, "baseline": null}, {"dep": "Fri Jul 24", "ret": "Thu Aug 6", "depIso": "2026-07-24", "retIso": "2026-08-06", "month": "2026-07", "nights": 13, "price": 1271, "baseline": null}, {"dep": "Fri Jul 24", "ret": "Tue Aug 4", "depIso": "2026-07-24", "retIso": "2026-08-04", "month": "2026-07", "nights": 11, "price": 1433, "baseline": null}, {"dep": "Fri Jul 24", "ret": "Wed Aug 5", "depIso": "2026-07-24", "retIso": "2026-08-05", "month": "2026-07", "nights": 12, "price": 1433, "baseline": null}, {"dep": "Fri Jul 24", "ret": "Sat Aug 8", "depIso": "2026-07-24", "retIso": "2026-08-08", "month": "2026-07", "nights": 15, "price": 1457, "baseline": null}, {"dep": "Sun Jul 26", "ret": "Thu Aug 6", "depIso": "2026-07-26", "retIso": "2026-08-06", "month": "2026-07", "nights": 11, "price": 1613, "baseline": null}, {"dep": "Sun Jul 26", "ret": "Wed Aug 5", "depIso": "2026-07-26", "retIso": "2026-08-05", "month": "2026-07", "nights": 10, "price": 1729, "baseline": null}, {"dep": "Sun Jul 26", "ret": "Tue Aug 4", "depIso": "2026-07-26", "retIso": "2026-08-04", "month": "2026-07", "nights": 9, "price": 1775, "baseline": null}, {"dep": "Sun Jul 26", "ret": "Sat Aug 8", "depIso": "2026-07-26", "retIso": "2026-08-08", "month": "2026-07", "nights": 13, "price": 1799, "baseline": null}, {"dep": "Wed Jul 29", "ret": "Tue Aug 11", "depIso": "2026-07-29", "retIso": "2026-08-11", "month": "2026-07", "nights": 13, "price": 1262, "baseline": null}, {"dep": "Wed Jul 29", "ret": "Wed Aug 12", "depIso": "2026-07-29", "retIso": "2026-08-12", "month": "2026-07", "nights": 14, "price": 1430, "baseline": null}, {"dep": "Wed Jul 29", "ret": "Thu Aug 13", "depIso": "2026-07-29", "retIso": "2026-08-13", "month": "2026-07", "nights": 15, "price": 1495, "baseline": null}, {"dep": "Wed Jul 29", "ret": "Sat Aug 15", "depIso": "2026-07-29", "retIso": "2026-08-15", "month": "2026-07", "nights": 17, "price": 1599, "baseline": null}, {"dep": "Thu Jul 30", "ret": "Tue Aug 11", "depIso": "2026-07-30", "retIso": "2026-08-11", "month": "2026-07", "nights": 12, "price": 1377, "baseline": null}, {"dep": "Thu Jul 30", "ret": "Wed Aug 12", "depIso": "2026-07-30", "retIso": "2026-08-12", "month": "2026-07", "nights": 13, "price": 1545, "baseline": null}, {"dep": "Thu Jul 30", "ret": "Thu Aug 13", "depIso": "2026-07-30", "retIso": "2026-08-13", "month": "2026-07", "nights": 14, "price": 1610, "baseline": null}, {"dep": "Thu Jul 30", "ret": "Sat Aug 15", "depIso": "2026-07-30", "retIso": "2026-08-15", "month": "2026-07", "nights": 16, "price": 1714, "baseline": null}, {"dep": "Fri Jul 31", "ret": "Tue Aug 11", "depIso": "2026-07-31", "retIso": "2026-08-11", "month": "2026-07", "nights": 11, "price": 1159, "baseline": null}, {"dep": "Fri Jul 31", "ret": "Wed Aug 12", "depIso": "2026-07-31", "retIso": "2026-08-12", "month": "2026-07", "nights": 12, "price": 1327, "baseline": null}, {"dep": "Fri Jul 31", "ret": "Thu Aug 13", "depIso": "2026-07-31", "retIso": "2026-08-13", "month": "2026-07", "nights": 13, "price": 1392, "baseline": null}, {"dep": "Fri Jul 31", "ret": "Sat Aug 15", "depIso": "2026-07-31", "retIso": "2026-08-15", "month": "2026-07", "nights": 15, "price": 1495, "baseline": null}, {"dep": "Sun Aug 2", "ret": "Tue Aug 11", "depIso": "2026-08-02", "retIso": "2026-08-11", "month": "2026-08", "nights": 9, "price": 1690, "baseline": null}, {"dep": "Sun Aug 2", "ret": "Wed Aug 12", "depIso": "2026-08-02", "retIso": "2026-08-12", "month": "2026-08", "nights": 10, "price": 1858, "baseline": null}, {"dep": "Sun Aug 2", "ret": "Thu Aug 13", "depIso": "2026-08-02", "retIso": "2026-08-13", "month": "2026-08", "nights": 11, "price": 1922, "baseline": null}, {"dep": "Sun Aug 2", "ret": "Sat Aug 15", "depIso": "2026-08-02", "retIso": "2026-08-15", "month": "2026-08", "nights": 13, "price": 2026, "baseline": null}, {"dep": "Wed Aug 5", "ret": "Tue Aug 18", "depIso": "2026-08-05", "retIso": "2026-08-18", "month": "2026-08", "nights": 13, "price": 1284, "baseline": null}, {"dep": "Wed Aug 5", "ret": "Wed Aug 19", "depIso": "2026-08-05", "retIso": "2026-08-19", "month": "2026-08", "nights": 14, "price": 1500, "baseline": null}, {"dep": "Wed Aug 5", "ret": "Thu Aug 20", "depIso": "2026-08-05", "retIso": "2026-08-20", "month": "2026-08", "nights": 15, "price": 1500, "baseline": null}, {"dep": "Wed Aug 5", "ret": "Sat Aug 22", "depIso": "2026-08-05", "retIso": "2026-08-22", "month": "2026-08", "nights": 17, "price": 1633, "baseline": null}, {"dep": "Thu Aug 6", "ret": "Tue Aug 18", "depIso": "2026-08-06", "retIso": "2026-08-18", "month": "2026-08", "nights": 12, "price": 1367, "baseline": null}, {"dep": "Thu Aug 6", "ret": "Wed Aug 19", "depIso": "2026-08-06", "retIso": "2026-08-19", "month": "2026-08", "nights": 13, "price": 1583, "baseline": null}, {"dep": "Thu Aug 6", "ret": "Thu Aug 20", "depIso": "2026-08-06", "retIso": "2026-08-20", "month": "2026-08", "nights": 14, "price": 1583, "baseline": null}, {"dep": "Thu Aug 6", "ret": "Sat Aug 22", "depIso": "2026-08-06", "retIso": "2026-08-22", "month": "2026-08", "nights": 16, "price": 1716, "baseline": null}, {"dep": "Fri Aug 7", "ret": "Tue Aug 18", "depIso": "2026-08-07", "retIso": "2026-08-18", "month": "2026-08", "nights": 11, "price": 1392, "baseline": null}, {"dep": "Fri Aug 7", "ret": "Wed Aug 19", "depIso": "2026-08-07", "retIso": "2026-08-19", "month": "2026-08", "nights": 12, "price": 1608, "baseline": null}, {"dep": "Fri Aug 7", "ret": "Thu Aug 20", "depIso": "2026-08-07", "retIso": "2026-08-20", "month": "2026-08", "nights": 13, "price": 1608, "baseline": null}, {"dep": "Fri Aug 7", "ret": "Sat Aug 22", "depIso": "2026-08-07", "retIso": "2026-08-22", "month": "2026-08", "nights": 15, "price": 1741, "baseline": null}, {"dep": "Sun Aug 9", "ret": "Tue Aug 18", "depIso": "2026-08-09", "retIso": "2026-08-18", "month": "2026-08", "nights": 9, "price": 1706, "baseline": null}, {"dep": "Sun Aug 9", "ret": "Wed Aug 19", "depIso": "2026-08-09", "retIso": "2026-08-19", "month": "2026-08", "nights": 10, "price": 1922, "baseline": null}, {"dep": "Sun Aug 9", "ret": "Thu Aug 20", "depIso": "2026-08-09", "retIso": "2026-08-20", "month": "2026-08", "nights": 11, "price": 1922, "baseline": null}, {"dep": "Sun Aug 9", "ret": "Sat Aug 22", "depIso": "2026-08-09", "retIso": "2026-08-22", "month": "2026-08", "nights": 13, "price": 2055, "baseline": null}, {"dep": "Wed Aug 12", "ret": "Thu Aug 27", "depIso": "2026-08-12", "retIso": "2026-08-27", "month": "2026-08", "nights": 15, "price": 1298, "baseline": null}, {"dep": "Wed Aug 12", "ret": "Wed Aug 26", "depIso": "2026-08-12", "retIso": "2026-08-26", "month": "2026-08", "nights": 14, "price": 1433, "baseline": null}, {"dep": "Wed Aug 12", "ret": "Tue Aug 25", "depIso": "2026-08-12", "retIso": "2026-08-25", "month": "2026-08", "nights": 13, "price": 1487, "baseline": null}, {"dep": "Wed Aug 12", "ret": "Sat Aug 29", "depIso": "2026-08-12", "retIso": "2026-08-29", "month": "2026-08", "nights": 17, "price": 1617, "baseline": null}, {"dep": "Thu Aug 13", "ret": "Thu Aug 27", "depIso": "2026-08-13", "retIso": "2026-08-27", "month": "2026-08", "nights": 14, "price": 1352, "baseline": null}, {"dep": "Thu Aug 13", "ret": "Wed Aug 26", "depIso": "2026-08-13", "retIso": "2026-08-26", "month": "2026-08", "nights": 13, "price": 1487, "baseline": null}, {"dep": "Thu Aug 13", "ret": "Tue Aug 25", "depIso": "2026-08-13", "retIso": "2026-08-25", "month": "2026-08", "nights": 12, "price": 1541, "baseline": null}, {"dep": "Thu Aug 13", "ret": "Sat Aug 29", "depIso": "2026-08-13", "retIso": "2026-08-29", "month": "2026-08", "nights": 16, "price": 1671, "baseline": null}, {"dep": "Fri Aug 14", "ret": "Thu Aug 27", "depIso": "2026-08-14", "retIso": "2026-08-27", "month": "2026-08", "nights": 13, "price": 1298, "baseline": null}, {"dep": "Fri Aug 14", "ret": "Wed Aug 26", "depIso": "2026-08-14", "retIso": "2026-08-26", "month": "2026-08", "nights": 12, "price": 1387, "baseline": null}, {"dep": "Fri Aug 14", "ret": "Tue Aug 25", "depIso": "2026-08-14", "retIso": "2026-08-25", "month": "2026-08", "nights": 11, "price": 1487, "baseline": null}, {"dep": "Fri Aug 14", "ret": "Sat Aug 29", "depIso": "2026-08-14", "retIso": "2026-08-29", "month": "2026-08", "nights": 15, "price": 1617, "baseline": null}, {"dep": "Sun Aug 16", "ret": "Thu Aug 27", "depIso": "2026-08-16", "retIso": "2026-08-27", "month": "2026-08", "nights": 11, "price": 1013, "baseline": null}, {"dep": "Sun Aug 16", "ret": "Wed Aug 26", "depIso": "2026-08-16", "retIso": "2026-08-26", "month": "2026-08", "nights": 10, "price": 1148, "baseline": null}, {"dep": "Sun Aug 16", "ret": "Tue Aug 25", "depIso": "2026-08-16", "retIso": "2026-08-25", "month": "2026-08", "nights": 9, "price": 1202, "baseline": null}, {"dep": "Sun Aug 16", "ret": "Sat Aug 29", "depIso": "2026-08-16", "retIso": "2026-08-29", "month": "2026-08", "nights": 13, "price": 1332, "baseline": null}, {"dep": "Wed Aug 19", "ret": "Thu Sep 3", "depIso": "2026-08-19", "retIso": "2026-09-03", "month": "2026-08", "nights": 15, "price": 1039, "baseline": null}, {"dep": "Wed Aug 19", "ret": "Tue Sep 1", "depIso": "2026-08-19", "retIso": "2026-09-01", "month": "2026-08", "nights": 13, "price": 1119, "baseline": null}, {"dep": "Wed Aug 19", "ret": "Wed Sep 2", "depIso": "2026-08-19", "retIso": "2026-09-02", "month": "2026-08", "nights": 14, "price": 1281, "baseline": null}, {"dep": "Wed Aug 19", "ret": "Sat Sep 5", "depIso": "2026-08-19", "retIso": "2026-09-05", "month": "2026-08", "nights": 17, "price": 1281, "baseline": null}, {"dep": "Thu Aug 20", "ret": "Thu Sep 3", "depIso": "2026-08-20", "retIso": "2026-09-03", "month": "2026-08", "nights": 14, "price": 789, "baseline": null}, {"dep": "Thu Aug 20", "ret": "Tue Sep 1", "depIso": "2026-08-20", "retIso": "2026-09-01", "month": "2026-08", "nights": 12, "price": 877, "baseline": null}, {"dep": "Thu Aug 20", "ret": "Wed Sep 2", "depIso": "2026-08-20", "retIso": "2026-09-02", "month": "2026-08", "nights": 13, "price": 1039, "baseline": null}, {"dep": "Thu Aug 20", "ret": "Sat Sep 5", "depIso": "2026-08-20", "retIso": "2026-09-05", "month": "2026-08", "nights": 16, "price": 1039, "baseline": null}, {"dep": "Fri Aug 21", "ret": "Thu Sep 3", "depIso": "2026-08-21", "retIso": "2026-09-03", "month": "2026-08", "nights": 13, "price": 906, "baseline": null}, {"dep": "Fri Aug 21", "ret": "Tue Sep 1", "depIso": "2026-08-21", "retIso": "2026-09-01", "month": "2026-08", "nights": 11, "price": 986, "baseline": null}, {"dep": "Fri Aug 21", "ret": "Wed Sep 2", "depIso": "2026-08-21", "retIso": "2026-09-02", "month": "2026-08", "nights": 12, "price": 1148, "baseline": null}, {"dep": "Fri Aug 21", "ret": "Sat Sep 5", "depIso": "2026-08-21", "retIso": "2026-09-05", "month": "2026-08", "nights": 15, "price": 1148, "baseline": null}, {"dep": "Sun Aug 23", "ret": "Thu Sep 3", "depIso": "2026-08-23", "retIso": "2026-09-03", "month": "2026-08", "nights": 11, "price": 906, "baseline": null}, {"dep": "Sun Aug 23", "ret": "Tue Sep 1", "depIso": "2026-08-23", "retIso": "2026-09-01", "month": "2026-08", "nights": 9, "price": 986, "baseline": null}, {"dep": "Sun Aug 23", "ret": "Wed Sep 2", "depIso": "2026-08-23", "retIso": "2026-09-02", "month": "2026-08", "nights": 10, "price": 1148, "baseline": null}, {"dep": "Sun Aug 23", "ret": "Sat Sep 5", "depIso": "2026-08-23", "retIso": "2026-09-05", "month": "2026-08", "nights": 13, "price": 1148, "baseline": null}, {"dep": "Wed Aug 26", "ret": "Wed Sep 9", "depIso": "2026-08-26", "retIso": "2026-09-09", "month": "2026-08", "nights": 14, "price": 986, "baseline": null}, {"dep": "Wed Aug 26", "ret": "Thu Sep 10", "depIso": "2026-08-26", "retIso": "2026-09-10", "month": "2026-08", "nights": 15, "price": 986, "baseline": null}, {"dep": "Wed Aug 26", "ret": "Tue Sep 8", "depIso": "2026-08-26", "retIso": "2026-09-08", "month": "2026-08", "nights": 13, "price": 1029, "baseline": null}, {"dep": "Wed Aug 26", "ret": "Sat Sep 12", "depIso": "2026-08-26", "retIso": "2026-09-12", "month": "2026-08", "nights": 17, "price": 1059, "baseline": null}, {"dep": "Thu Aug 27", "ret": "Wed Sep 9", "depIso": "2026-08-27", "retIso": "2026-09-09", "month": "2026-08", "nights": 13, "price": 786, "baseline": null}, {"dep": "Thu Aug 27", "ret": "Thu Sep 10", "depIso": "2026-08-27", "retIso": "2026-09-10", "month": "2026-08", "nights": 14, "price": 786, "baseline": null}, {"dep": "Thu Aug 27", "ret": "Tue Sep 8", "depIso": "2026-08-27", "retIso": "2026-09-08", "month": "2026-08", "nights": 12, "price": 829, "baseline": null}, {"dep": "Thu Aug 27", "ret": "Sat Sep 12", "depIso": "2026-08-27", "retIso": "2026-09-12", "month": "2026-08", "nights": 16, "price": 859, "baseline": null}, {"dep": "Fri Aug 28", "ret": "Wed Sep 9", "depIso": "2026-08-28", "retIso": "2026-09-09", "month": "2026-08", "nights": 12, "price": 936, "baseline": null}, {"dep": "Fri Aug 28", "ret": "Thu Sep 10", "depIso": "2026-08-28", "retIso": "2026-09-10", "month": "2026-08", "nights": 13, "price": 936, "baseline": null}, {"dep": "Fri Aug 28", "ret": "Tue Sep 8", "depIso": "2026-08-28", "retIso": "2026-09-08", "month": "2026-08", "nights": 11, "price": 979, "baseline": null}, {"dep": "Fri Aug 28", "ret": "Sat Sep 12", "depIso": "2026-08-28", "retIso": "2026-09-12", "month": "2026-08", "nights": 15, "price": 1009, "baseline": null}, {"dep": "Sun Aug 30", "ret": "Wed Sep 9", "depIso": "2026-08-30", "retIso": "2026-09-09", "month": "2026-08", "nights": 10, "price": 936, "baseline": null}, {"dep": "Sun Aug 30", "ret": "Thu Sep 10", "depIso": "2026-08-30", "retIso": "2026-09-10", "month": "2026-08", "nights": 11, "price": 936, "baseline": null}, {"dep": "Sun Aug 30", "ret": "Tue Sep 8", "depIso": "2026-08-30", "retIso": "2026-09-08", "month": "2026-08", "nights": 9, "price": 979, "baseline": null}, {"dep": "Sun Aug 30", "ret": "Sat Sep 12", "depIso": "2026-08-30", "retIso": "2026-09-12", "month": "2026-08", "nights": 13, "price": 1009, "baseline": null}, {"dep": "Wed Sep 2", "ret": "Tue Sep 15", "depIso": "2026-09-02", "retIso": "2026-09-15", "month": "2026-09", "nights": 13, "price": 746, "baseline": null}, {"dep": "Wed Sep 2", "ret": "Wed Sep 16", "depIso": "2026-09-02", "retIso": "2026-09-16", "month": "2026-09", "nights": 14, "price": 746, "baseline": null}, {"dep": "Wed Sep 2", "ret": "Sat Sep 19", "depIso": "2026-09-02", "retIso": "2026-09-19", "month": "2026-09", "nights": 17, "price": 819, "baseline": null}, {"dep": "Wed Sep 2", "ret": "Thu Sep 17", "depIso": "2026-09-02", "retIso": "2026-09-17", "month": "2026-09", "nights": 15, "price": 910, "baseline": null}, {"dep": "Thu Sep 3", "ret": "Tue Sep 15", "depIso": "2026-09-03", "retIso": "2026-09-15", "month": "2026-09", "nights": 12, "price": 986, "baseline": null}, {"dep": "Thu Sep 3", "ret": "Wed Sep 16", "depIso": "2026-09-03", "retIso": "2026-09-16", "month": "2026-09", "nights": 13, "price": 986, "baseline": null}, {"dep": "Thu Sep 3", "ret": "Sat Sep 19", "depIso": "2026-09-03", "retIso": "2026-09-19", "month": "2026-09", "nights": 16, "price": 1059, "baseline": null}, {"dep": "Thu Sep 3", "ret": "Thu Sep 17", "depIso": "2026-09-03", "retIso": "2026-09-17", "month": "2026-09", "nights": 14, "price": 1150, "baseline": null}, {"dep": "Fri Sep 4", "ret": "Tue Sep 15", "depIso": "2026-09-04", "retIso": "2026-09-15", "month": "2026-09", "nights": 11, "price": 863, "baseline": null}, {"dep": "Fri Sep 4", "ret": "Wed Sep 16", "depIso": "2026-09-04", "retIso": "2026-09-16", "month": "2026-09", "nights": 12, "price": 863, "baseline": null}, {"dep": "Fri Sep 4", "ret": "Sat Sep 19", "depIso": "2026-09-04", "retIso": "2026-09-19", "month": "2026-09", "nights": 15, "price": 936, "baseline": null}, {"dep": "Fri Sep 4", "ret": "Thu Sep 17", "depIso": "2026-09-04", "retIso": "2026-09-17", "month": "2026-09", "nights": 13, "price": 1027, "baseline": null}, {"dep": "Sun Sep 6", "ret": "Tue Sep 15", "depIso": "2026-09-06", "retIso": "2026-09-15", "month": "2026-09", "nights": 9, "price": 863, "baseline": null}, {"dep": "Sun Sep 6", "ret": "Wed Sep 16", "depIso": "2026-09-06", "retIso": "2026-09-16", "month": "2026-09", "nights": 10, "price": 863, "baseline": null}, {"dep": "Sun Sep 6", "ret": "Sat Sep 19", "depIso": "2026-09-06", "retIso": "2026-09-19", "month": "2026-09", "nights": 13, "price": 936, "baseline": null}, {"dep": "Sun Sep 6", "ret": "Thu Sep 17", "depIso": "2026-09-06", "retIso": "2026-09-17", "month": "2026-09", "nights": 11, "price": 1027, "baseline": null}];
+  const MIN_N = 5, MAX_N = 22;
+  let filterMonth = "";
+  let minN = MIN_N, maxN = MAX_N;
+  const sorts = [
+    {key:'depIso', dir: 1, label:'Departure &uarr;'},
+    {key:'depIso', dir:-1, label:'Departure &darr;'},
+    {key:'price',  dir: 1, label:'Price &uarr;'},
+    {key:'price',  dir:-1, label:'Price &darr;'},
+    {key:'nights', dir: 1, label:'Nights &uarr;'},
+    {key:'nights', dir:-1, label:'Nights &darr;'},
+  ];
+  let sortIdx = 0;
+
+  function fmtDate(iso){
+    const d = new Date(iso+'T12:00:00');
+    return d.toLocaleDateString('en-US',{month:'short',day:'numeric',weekday:'short'});
+  }
+
+  function baselineHtml(b){
+    if (!b) return '<div class="row-baseline b-none">— no history</div>';
+    const d = b.delta;
+    if (Math.abs(d) <= 5) {
+      return '<div class="row-baseline b-flat">= avg '+b.n+'d</div>';
+    }
+    if (d < 0) {
+      return '<div class="row-baseline b-down">&darr; $'+Math.abs(d)+' vs '+b.n+'d avg</div>';
+    }
+    return '<div class="row-baseline b-up">&uarr; $'+d+' vs '+b.n+'d avg</div>';
+  }
+
+  function applyFilters(){
+    return data.filter(c =>
+      (!filterMonth || c.month === filterMonth) &&
+      c.nights >= minN && c.nights <= maxN
+    );
+  }
+
+  function render(){
+    let list = applyFilters();
+    const s = sorts[sortIdx];
+    list.sort((a,b) => {
+      const va = a[s.key], vb = b[s.key];
+      if (va === vb) return 0;
+      return (va < vb ? -1 : 1) * s.dir;
+    });
+
+    document.getElementById('cnt').textContent = list.length + ' of ' + data.length + ' combos';
+    document.getElementById('sort-btn').innerHTML = 'Sort: ' + s.label;
+
+    const out = document.getElementById('results');
+    if (list.length === 0) {
+      out.innerHTML = '<div class="empty">No combos match your filters.</div>';
+      return;
+    }
+    out.innerHTML = list.map(c => (
+      '<div class="row">' +
+        '<div class="row-dates">' +
+          '<div class="row-dep">' + c.dep + '<span class="row-nights">' + c.nights + 'n</span></div>' +
+          '<div class="row-ret">Return <span class="row-ret-arrow">&rarr;</span> ' + c.ret + '</div>' +
+        '</div>' +
+        '<div class="row-right">' +
+          '<div class="row-price">$' + c.price.toLocaleString() + '</div>' +
+          baselineHtml(c.baseline) +
+        '</div>' +
+      '</div>'
+    )).join('');
+  }
+
+  // Month chips
+  document.querySelectorAll('#month-chips .chip').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('#month-chips .chip').forEach(c => c.classList.remove('chip-active'));
+      el.classList.add('chip-active');
+      filterMonth = el.getAttribute('data-month');
+      render();
+    });
+  });
+
+  // Dual-thumb range slider
+  const rMin = document.getElementById('r-min');
+  const rMax = document.getElementById('r-max');
+  const fill = document.getElementById('fill');
+  const rvMin = document.getElementById('rv-min');
+  const rvMax = document.getElementById('rv-max');
+
+  function updateSlider(){
+    let a = parseInt(rMin.value), b = parseInt(rMax.value);
+    if (a > b) {
+      // swap if thumbs crossed
+      [a,b] = [b,a];
+      rMin.value = a; rMax.value = b;
+    }
+    minN = a; maxN = b;
+    rvMin.textContent = a;
+    rvMax.textContent = b;
+    const span = MAX_N - MIN_N;
+    const leftPct = (a - MIN_N) / span * 100;
+    const rightPct = (b - MIN_N) / span * 100;
+    fill.style.left = leftPct + '%';
+    fill.style.width = (rightPct - leftPct) + '%';
+    render();
+  }
+  rMin.addEventListener('input', updateSlider);
+  rMax.addEventListener('input', updateSlider);
+  updateSlider();
+
+  // Sort cycle
+  document.getElementById('sort-btn').addEventListener('click', () => {
+    sortIdx = (sortIdx + 1) % sorts.length;
     render();
   });
-});
-['fm','nmin','nmax','pmax'].forEach(id=>document.getElementById(id).addEventListener('input',render));
-render();
+
+  render();
+})();
 </script>
 </body></html>
