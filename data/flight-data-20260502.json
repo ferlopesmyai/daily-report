@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-02T04:30:43.420365",
+  "scraped_at": "2026-05-02T11:55:31.024004",
   "origin": "BOS",
   "destination": "GRU",
   "source": "google-flights-via-chrome-mcp",
@@ -197,8 +197,8 @@
       "ret_iso": "2026-06-11",
       "dep_month": "2026-05",
       "nights": 20,
-      "price": "$1,937",
-      "price_num": 1937
+      "price": "$1,954",
+      "price_num": 1954
     },
     {
       "departure": "Sun May 24",
@@ -787,8 +787,8 @@
       "ret_iso": "2026-06-25",
       "dep_month": "2026-06",
       "nights": 18,
-      "price": "$936",
-      "price_num": 936
+      "price": "$881",
+      "price_num": 881
     },
     {
       "departure": "Mon Jun 8",
@@ -1107,8 +1107,8 @@
       "ret_iso": "2026-07-04",
       "dep_month": "2026-06",
       "nights": 22,
-      "price": "$1,691",
-      "price_num": 1691
+      "price": "$1,675",
+      "price_num": 1675
     },
     {
       "departure": "Sun Jun 14",
@@ -1117,8 +1117,8 @@
       "ret_iso": "2026-07-04",
       "dep_month": "2026-06",
       "nights": 20,
-      "price": "$1,545",
-      "price_num": 1545
+      "price": "$1,529",
+      "price_num": 1529
     },
     {
       "departure": "Mon Jun 15",
@@ -1127,8 +1127,8 @@
       "ret_iso": "2026-07-04",
       "dep_month": "2026-06",
       "nights": 19,
-      "price": "$1,500",
-      "price_num": 1500
+      "price": "$1,635",
+      "price_num": 1635
     },
     {
       "departure": "Thu Jun 18",
@@ -1137,8 +1137,8 @@
       "ret_iso": "2026-07-04",
       "dep_month": "2026-06",
       "nights": 16,
-      "price": "$1,973",
-      "price_num": 1973
+      "price": "$1,957",
+      "price_num": 1957
     },
     {
       "departure": "Fri Jun 19",
@@ -1287,8 +1287,8 @@
       "ret_iso": "2026-07-07",
       "dep_month": "2026-06",
       "nights": 18,
-      "price": "$1,115",
-      "price_num": 1115
+      "price": "$1,157",
+      "price_num": 1157
     },
     {
       "departure": "Sun Jun 21",
@@ -1377,8 +1377,8 @@
       "ret_iso": "2026-07-09",
       "dep_month": "2026-06",
       "nights": 18,
-      "price": "$969",
-      "price_num": 969
+      "price": "$1,115",
+      "price_num": 1115
     },
     {
       "departure": "Mon Jun 22",
@@ -1417,8 +1417,8 @@
       "ret_iso": "2026-07-11",
       "dep_month": "2026-06",
       "nights": 20,
-      "price": "$1,196",
-      "price_num": 1196
+      "price": "$1,342",
+      "price_num": 1342
     },
     {
       "departure": "Mon Jun 22",
@@ -1447,8 +1447,8 @@
       "ret_iso": "2026-07-04",
       "dep_month": "2026-06",
       "nights": 8,
-      "price": "$1,545",
-      "price_num": 1545
+      "price": "$1,529",
+      "price_num": 1529
     },
     {
       "departure": "Sun Jun 28",
@@ -1507,8 +1507,8 @@
       "ret_iso": "2026-07-07",
       "dep_month": "2026-07",
       "nights": 5,
-      "price": "$751",
-      "price_num": 751
+      "price": "$696",
+      "price_num": 696
     },
     {
       "departure": "Fri Jun 26",
@@ -1547,8 +1547,8 @@
       "ret_iso": "2026-07-08",
       "dep_month": "2026-07",
       "nights": 6,
-      "price": "$936",
-      "price_num": 936
+      "price": "$881",
+      "price_num": 881
     },
     {
       "departure": "Fri Jun 26",
@@ -1587,8 +1587,8 @@
       "ret_iso": "2026-07-09",
       "dep_month": "2026-07",
       "nights": 7,
-      "price": "$709",
-      "price_num": 709
+      "price": "$654",
+      "price_num": 654
     },
     {
       "departure": "Fri Jun 26",
@@ -1627,8 +1627,8 @@
       "ret_iso": "2026-07-14",
       "dep_month": "2026-07",
       "nights": 12,
-      "price": "$808",
-      "price_num": 808
+      "price": "$753",
+      "price_num": 753
     },
     {
       "departure": "Fri Jun 26",
@@ -1667,8 +1667,8 @@
       "ret_iso": "2026-07-15",
       "dep_month": "2026-07",
       "nights": 13,
-      "price": "$709",
-      "price_num": 709
+      "price": "$654",
+      "price_num": 654
     },
     {
       "departure": "Fri Jun 26",
@@ -1707,8 +1707,8 @@
       "ret_iso": "2026-07-16",
       "dep_month": "2026-07",
       "nights": 14,
-      "price": "$709",
-      "price_num": 709
+      "price": "$654",
+      "price_num": 654
     },
     {
       "departure": "Fri Jun 26",
@@ -1737,8 +1737,8 @@
       "ret_iso": "2026-07-18",
       "dep_month": "2026-06",
       "nights": 19,
-      "price": "$1,229",
-      "price_num": 1229
+      "price": "$1,146",
+      "price_num": 1146
     },
     {
       "departure": "Thu Jul 2",
@@ -1747,8 +1747,8 @@
       "ret_iso": "2026-07-18",
       "dep_month": "2026-07",
       "nights": 16,
-      "price": "$780",
-      "price_num": 780
+      "price": "$725",
+      "price_num": 725
     },
     {
       "departure": "Fri Jul 3",
@@ -1897,8 +1897,8 @@
       "ret_iso": "2026-07-21",
       "dep_month": "2026-07",
       "nights": 18,
-      "price": "$808",
-      "price_num": 808
+      "price": "$753",
+      "price_num": 753
     },
     {
       "departure": "Sun Jul 5",
@@ -2027,8 +2027,8 @@
       "ret_iso": "2026-07-25",
       "dep_month": "2026-07",
       "nights": 20,
-      "price": "$1,093",
-      "price_num": 1093
+      "price": "$1,038",
+      "price_num": 1038
     },
     {
       "departure": "Wed Jul 8",
@@ -2357,8 +2357,8 @@
       "ret_iso": "2026-07-25",
       "dep_month": "2026-07",
       "nights": 8,
-      "price": "$1,499",
-      "price_num": 1499
+      "price": "$1,389",
+      "price_num": 1389
     },
     {
       "departure": "Sun Jul 19",
@@ -2377,8 +2377,8 @@
       "ret_iso": "2026-07-28",
       "dep_month": "2026-07",
       "nights": 11,
-      "price": "$1,115",
-      "price_num": 1115
+      "price": "$1,006",
+      "price_num": 1006
     },
     {
       "departure": "Sun Jul 19",
@@ -2417,8 +2417,8 @@
       "ret_iso": "2026-07-29",
       "dep_month": "2026-07",
       "nights": 12,
-      "price": "$1,115",
-      "price_num": 1115
+      "price": "$1,006",
+      "price_num": 1006
     },
     {
       "departure": "Sun Jul 19",
@@ -2457,8 +2457,8 @@
       "ret_iso": "2026-07-30",
       "dep_month": "2026-07",
       "nights": 13,
-      "price": "$1,115",
-      "price_num": 1115
+      "price": "$1,006",
+      "price_num": 1006
     },
     {
       "departure": "Sun Jul 19",
@@ -2497,8 +2497,8 @@
       "ret_iso": "2026-08-04",
       "dep_month": "2026-07",
       "nights": 18,
-      "price": "$1,170",
-      "price_num": 1170
+      "price": "$1,206",
+      "price_num": 1206
     },
     {
       "departure": "Sun Jul 19",
@@ -2537,8 +2537,8 @@
       "ret_iso": "2026-08-05",
       "dep_month": "2026-07",
       "nights": 19,
-      "price": "$1,170",
-      "price_num": 1170
+      "price": "$1,206",
+      "price_num": 1206
     },
     {
       "departure": "Sun Jul 19",
@@ -2577,8 +2577,8 @@
       "ret_iso": "2026-08-06",
       "dep_month": "2026-07",
       "nights": 20,
-      "price": "$1,170",
-      "price_num": 1170
+      "price": "$1,206",
+      "price_num": 1206
     },
     {
       "departure": "Sun Jul 19",
@@ -2617,8 +2617,8 @@
       "ret_iso": "2026-08-08",
       "dep_month": "2026-07",
       "nights": 22,
-      "price": "$1,383",
-      "price_num": 1383
+      "price": "$1,566",
+      "price_num": 1566
     },
     {
       "departure": "Sun Jul 19",
@@ -2627,8 +2627,8 @@
       "ret_iso": "2026-08-08",
       "dep_month": "2026-07",
       "nights": 20,
-      "price": "$1,383",
-      "price_num": 1383
+      "price": "$1,529",
+      "price_num": 1529
     },
     {
       "departure": "Wed Jul 22",
@@ -2697,8 +2697,8 @@
       "ret_iso": "2026-08-04",
       "dep_month": "2026-07",
       "nights": 6,
-      "price": "$1,103",
-      "price_num": 1103
+      "price": "$1,140",
+      "price_num": 1140
     },
     {
       "departure": "Thu Jul 30",
@@ -2737,8 +2737,8 @@
       "ret_iso": "2026-08-05",
       "dep_month": "2026-07",
       "nights": 7,
-      "price": "$1,087",
-      "price_num": 1087
+      "price": "$1,125",
+      "price_num": 1125
     },
     {
       "departure": "Thu Jul 30",
@@ -2777,8 +2777,8 @@
       "ret_iso": "2026-08-06",
       "dep_month": "2026-07",
       "nights": 8,
-      "price": "$1,087",
-      "price_num": 1087
+      "price": "$1,125",
+      "price_num": 1125
     },
     {
       "departure": "Thu Jul 30",
@@ -2817,8 +2817,8 @@
       "ret_iso": "2026-08-11",
       "dep_month": "2026-07",
       "nights": 13,
-      "price": "$1,256",
-      "price_num": 1256
+      "price": "$1,293",
+      "price_num": 1293
     },
     {
       "departure": "Thu Jul 30",
@@ -2847,8 +2847,8 @@
       "ret_iso": "2026-08-12",
       "dep_month": "2026-07",
       "nights": 17,
-      "price": "$1,253",
-      "price_num": 1253
+      "price": "$1,241",
+      "price_num": 1241
     },
     {
       "departure": "Wed Jul 29",
@@ -2857,8 +2857,8 @@
       "ret_iso": "2026-08-12",
       "dep_month": "2026-07",
       "nights": 14,
-      "price": "$1,268",
-      "price_num": 1268
+      "price": "$1,293",
+      "price_num": 1293
     },
     {
       "departure": "Thu Jul 30",
@@ -2867,8 +2867,8 @@
       "ret_iso": "2026-08-12",
       "dep_month": "2026-07",
       "nights": 13,
-      "price": "$1,471",
-      "price_num": 1471
+      "price": "$1,459",
+      "price_num": 1459
     },
     {
       "departure": "Fri Jul 24",
@@ -2897,8 +2897,8 @@
       "ret_iso": "2026-08-13",
       "dep_month": "2026-07",
       "nights": 15,
-      "price": "$1,256",
-      "price_num": 1256
+      "price": "$1,305",
+      "price_num": 1305
     },
     {
       "departure": "Thu Jul 30",
@@ -2907,8 +2907,8 @@
       "ret_iso": "2026-08-13",
       "dep_month": "2026-07",
       "nights": 14,
-      "price": "$1,459",
-      "price_num": 1459
+      "price": "$1,471",
+      "price_num": 1471
     },
     {
       "departure": "Fri Jul 24",
@@ -2937,8 +2937,8 @@
       "ret_iso": "2026-08-15",
       "dep_month": "2026-07",
       "nights": 17,
-      "price": "$1,741",
-      "price_num": 1741
+      "price": "$1,698",
+      "price_num": 1698
     },
     {
       "departure": "Thu Jul 30",
@@ -2947,8 +2947,8 @@
       "ret_iso": "2026-08-15",
       "dep_month": "2026-07",
       "nights": 16,
-      "price": "$1,945",
-      "price_num": 1945
+      "price": "$1,864",
+      "price_num": 1864
     },
     {
       "departure": "Fri Jul 31",
@@ -2957,8 +2957,8 @@
       "ret_iso": "2026-08-08",
       "dep_month": "2026-07",
       "nights": 8,
-      "price": "$1,525",
-      "price_num": 1525
+      "price": "$1,529",
+      "price_num": 1529
     },
     {
       "departure": "Sun Aug 2",
@@ -2977,8 +2977,8 @@
       "ret_iso": "2026-08-11",
       "dep_month": "2026-07",
       "nights": 11,
-      "price": "$1,334",
-      "price_num": 1334
+      "price": "$1,338",
+      "price_num": 1338
     },
     {
       "departure": "Sun Aug 2",
@@ -3017,8 +3017,8 @@
       "ret_iso": "2026-08-12",
       "dep_month": "2026-07",
       "nights": 12,
-      "price": "$1,346",
-      "price_num": 1346
+      "price": "$1,338",
+      "price_num": 1338
     },
     {
       "departure": "Sun Aug 2",
@@ -3027,8 +3027,8 @@
       "ret_iso": "2026-08-12",
       "dep_month": "2026-08",
       "nights": 10,
-      "price": "$1,253",
-      "price_num": 1253
+      "price": "$1,241",
+      "price_num": 1241
     },
     {
       "departure": "Wed Aug 5",
@@ -3057,8 +3057,8 @@
       "ret_iso": "2026-08-13",
       "dep_month": "2026-07",
       "nights": 13,
-      "price": "$1,334",
-      "price_num": 1334
+      "price": "$1,350",
+      "price_num": 1350
     },
     {
       "departure": "Sun Aug 2",
@@ -3067,8 +3067,8 @@
       "ret_iso": "2026-08-13",
       "dep_month": "2026-08",
       "nights": 11,
-      "price": "$1,241",
-      "price_num": 1241
+      "price": "$1,253",
+      "price_num": 1253
     },
     {
       "departure": "Wed Aug 5",
@@ -3187,8 +3187,8 @@
       "ret_iso": "2026-08-20",
       "dep_month": "2026-08",
       "nights": 18,
-      "price": "$1,315",
-      "price_num": 1315
+      "price": "$1,397",
+      "price_num": 1397
     },
     {
       "departure": "Wed Aug 5",
@@ -3267,8 +3267,8 @@
       "ret_iso": "2026-08-15",
       "dep_month": "2026-08",
       "nights": 6,
-      "price": "$2,268",
-      "price_num": 2268
+      "price": "$2,105",
+      "price_num": 2105
     },
     {
       "departure": "Fri Aug 7",
@@ -3287,8 +3287,8 @@
       "ret_iso": "2026-08-18",
       "dep_month": "2026-08",
       "nights": 9,
-      "price": "$1,934",
-      "price_num": 1934
+      "price": "$1,852",
+      "price_num": 1852
     },
     {
       "departure": "Wed Aug 12",
@@ -3307,8 +3307,8 @@
       "ret_iso": "2026-08-18",
       "dep_month": "2026-08",
       "nights": 5,
-      "price": "$1,947",
-      "price_num": 1947
+      "price": "$1,968",
+      "price_num": 1968
     },
     {
       "departure": "Fri Aug 7",
@@ -3327,8 +3327,8 @@
       "ret_iso": "2026-08-19",
       "dep_month": "2026-08",
       "nights": 10,
-      "price": "$1,795",
-      "price_num": 1795
+      "price": "$1,712",
+      "price_num": 1712
     },
     {
       "departure": "Wed Aug 12",
@@ -3347,8 +3347,8 @@
       "ret_iso": "2026-08-19",
       "dep_month": "2026-08",
       "nights": 6,
-      "price": "$1,778",
-      "price_num": 1778
+      "price": "$1,800",
+      "price_num": 1800
     },
     {
       "departure": "Fri Aug 7",
@@ -3367,8 +3367,8 @@
       "ret_iso": "2026-08-20",
       "dep_month": "2026-08",
       "nights": 11,
-      "price": "$1,938",
-      "price_num": 1938
+      "price": "$1,856",
+      "price_num": 1856
     },
     {
       "departure": "Wed Aug 12",
@@ -3387,8 +3387,8 @@
       "ret_iso": "2026-08-20",
       "dep_month": "2026-08",
       "nights": 7,
-      "price": "$1,922",
-      "price_num": 1922
+      "price": "$1,943",
+      "price_num": 1943
     },
     {
       "departure": "Fri Aug 7",
@@ -3397,8 +3397,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 18,
-      "price": "$1,242",
-      "price_num": 1242
+      "price": "$1,452",
+      "price_num": 1452
     },
     {
       "departure": "Sun Aug 9",
@@ -3407,8 +3407,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 16,
-      "price": "$1,934",
-      "price_num": 1934
+      "price": "$1,911",
+      "price_num": 1911
     },
     {
       "departure": "Wed Aug 12",
@@ -3427,8 +3427,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 12,
-      "price": "$1,917",
-      "price_num": 1917
+      "price": "$1,999",
+      "price_num": 1999
     },
     {
       "departure": "Fri Aug 7",
@@ -3447,8 +3447,8 @@
       "ret_iso": "2026-08-26",
       "dep_month": "2026-08",
       "nights": 17,
-      "price": "$1,809",
-      "price_num": 1809
+      "price": "$1,727",
+      "price_num": 1727
     },
     {
       "departure": "Wed Aug 12",
@@ -3467,8 +3467,8 @@
       "ret_iso": "2026-08-26",
       "dep_month": "2026-08",
       "nights": 13,
-      "price": "$1,792",
-      "price_num": 1792
+      "price": "$1,814",
+      "price_num": 1814
     },
     {
       "departure": "Fri Aug 7",
@@ -3487,8 +3487,8 @@
       "ret_iso": "2026-08-27",
       "dep_month": "2026-08",
       "nights": 18,
-      "price": "$1,870",
-      "price_num": 1870
+      "price": "$1,700",
+      "price_num": 1700
     },
     {
       "departure": "Wed Aug 12",
@@ -3507,8 +3507,8 @@
       "ret_iso": "2026-08-27",
       "dep_month": "2026-08",
       "nights": 14,
-      "price": "$1,766",
-      "price_num": 1766
+      "price": "$1,788",
+      "price_num": 1788
     },
     {
       "departure": "Fri Aug 7",
@@ -3527,8 +3527,8 @@
       "ret_iso": "2026-08-29",
       "dep_month": "2026-08",
       "nights": 20,
-      "price": "$1,991",
-      "price_num": 1991
+      "price": "$1,891",
+      "price_num": 1891
     },
     {
       "departure": "Wed Aug 12",
@@ -3547,8 +3547,8 @@
       "ret_iso": "2026-08-29",
       "dep_month": "2026-08",
       "nights": 16,
-      "price": "$1,957",
-      "price_num": 1957
+      "price": "$1,979",
+      "price_num": 1979
     },
     {
       "departure": "Fri Aug 14",
@@ -3557,8 +3557,8 @@
       "ret_iso": "2026-08-22",
       "dep_month": "2026-08",
       "nights": 8,
-      "price": "$1,595",
-      "price_num": 1595
+      "price": "$1,558",
+      "price_num": 1558
     },
     {
       "departure": "Sun Aug 16",
@@ -3567,8 +3567,8 @@
       "ret_iso": "2026-08-22",
       "dep_month": "2026-08",
       "nights": 6,
-      "price": "$1,812",
-      "price_num": 1812
+      "price": "$1,745",
+      "price_num": 1745
     },
     {
       "departure": "Fri Aug 14",
@@ -3577,8 +3577,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 11,
-      "price": "$1,489",
-      "price_num": 1489
+      "price": "$1,576",
+      "price_num": 1576
     },
     {
       "departure": "Sun Aug 16",
@@ -3587,8 +3587,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 9,
-      "price": "$1,635",
-      "price_num": 1635
+      "price": "$1,695",
+      "price_num": 1695
     },
     {
       "departure": "Wed Aug 19",
@@ -3597,8 +3597,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 6,
-      "price": "$1,381",
-      "price_num": 1381
+      "price": "$1,444",
+      "price_num": 1444
     },
     {
       "departure": "Thu Aug 20",
@@ -3607,8 +3607,8 @@
       "ret_iso": "2026-08-25",
       "dep_month": "2026-08",
       "nights": 5,
-      "price": "$1,258",
-      "price_num": 1258
+      "price": "$1,321",
+      "price_num": 1321
     },
     {
       "departure": "Fri Aug 14",
@@ -3617,8 +3617,8 @@
       "ret_iso": "2026-08-26",
       "dep_month": "2026-08",
       "nights": 12,
-      "price": "$1,364",
-      "price_num": 1364
+      "price": "$1,391",
+      "price_num": 1391
     },
     {
       "departure": "Sun Aug 16",
@@ -3657,8 +3657,8 @@
       "ret_iso": "2026-08-27",
       "dep_month": "2026-08",
       "nights": 13,
-      "price": "$1,338",
-      "price_num": 1338
+      "price": "$1,365",
+      "price_num": 1365
     },
     {
       "departure": "Sun Aug 16",
@@ -4387,8 +4387,8 @@
       "ret_iso": "2026-09-17",
       "dep_month": "2026-08",
       "nights": 18,
-      "price": "$1,281",
-      "price_num": 1281
+      "price": "$1,256",
+      "price_num": 1256
     },
     {
       "departure": "Wed Sep 2",
@@ -4427,8 +4427,8 @@
       "ret_iso": "2026-09-19",
       "dep_month": "2026-08",
       "nights": 20,
-      "price": "$1,311",
-      "price_num": 1311
+      "price": "$1,286",
+      "price_num": 1286
     },
     {
       "departure": "Wed Sep 2",
@@ -4597,8 +4597,8 @@
       "ret_iso": "2026-09-22",
       "dep_month": "2026-09",
       "nights": 18,
-      "price": "$863",
-      "price_num": 863
+      "price": "$808",
+      "price_num": 808
     },
     {
       "departure": "Sun Sep 6",
