@@ -1,0 +1,5074 @@
+{
+  "scraped_at": "2026-05-14T11:54:57.667810",
+  "origin": "BOS",
+  "destination": "GRU",
+  "source": "google-flights-via-chrome-mcp",
+  "airline_filter": "nonstop",
+  "min_nights": 5,
+  "max_nights": 22,
+  "probe_count": 34,
+  "probes_dropped": 0,
+  "total_combos": 506,
+  "combos": [
+    {
+      "departure": "Fri Jun 5",
+      "return": "Sat Jun 13",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-13",
+      "dep_month": "2026-06",
+      "nights": 8,
+      "price": "$1,369",
+      "price_num": 1369
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Sat Jun 13",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-13",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,584",
+      "price_num": 1584
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Sat Jun 13",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-13",
+      "dep_month": "2026-06",
+      "nights": 5,
+      "price": "$1,419",
+      "price_num": 1419
+    },
+    {
+      "departure": "Fri Jun 5",
+      "return": "Sun Jun 14",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-14",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$1,205",
+      "price_num": 1205
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Sun Jun 14",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-14",
+      "dep_month": "2026-06",
+      "nights": 7,
+      "price": "$1,383",
+      "price_num": 1383
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Sun Jun 14",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-14",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,255",
+      "price_num": 1255
+    },
+    {
+      "departure": "Fri Jun 5",
+      "return": "Wed Jun 17",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-17",
+      "dep_month": "2026-06",
+      "nights": 12,
+      "price": "$1,019",
+      "price_num": 1019
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Wed Jun 17",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-17",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,197",
+      "price_num": 1197
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Wed Jun 17",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-17",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$1,069",
+      "price_num": 1069
+    },
+    {
+      "departure": "Thu Jun 11",
+      "return": "Wed Jun 17",
+      "dep_iso": "2026-06-11",
+      "ret_iso": "2026-06-17",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Fri Jun 5",
+      "return": "Thu Jun 18",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-18",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,226",
+      "price_num": 1226
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Thu Jun 18",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-18",
+      "dep_month": "2026-06",
+      "nights": 11,
+      "price": "$1,404",
+      "price_num": 1404
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Thu Jun 18",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-18",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,276",
+      "price_num": 1276
+    },
+    {
+      "departure": "Thu Jun 11",
+      "return": "Thu Jun 18",
+      "dep_iso": "2026-06-11",
+      "ret_iso": "2026-06-18",
+      "dep_month": "2026-06",
+      "nights": 7,
+      "price": "$1,364",
+      "price_num": 1364
+    },
+    {
+      "departure": "Fri Jun 5",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,367",
+      "price_num": 1367
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Thu Jun 11",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-11",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Fri Jun 5",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,279",
+      "price_num": 1279
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 18,
+      "price": "$1,457",
+      "price_num": 1457
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Thu Jun 11",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-11",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 14,
+      "price": "$1,417",
+      "price_num": 1417
+    },
+    {
+      "departure": "Fri Jun 5",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-05",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 22,
+      "price": "$1,369",
+      "price_num": 1369
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,547",
+      "price_num": 1547
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,419",
+      "price_num": 1419
+    },
+    {
+      "departure": "Thu Jun 11",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-11",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Sun Jun 7",
+      "return": "Sun Jun 28",
+      "dep_iso": "2026-06-07",
+      "ret_iso": "2026-06-28",
+      "dep_month": "2026-06",
+      "nights": 21,
+      "price": "$1,547",
+      "price_num": 1547
+    },
+    {
+      "departure": "Mon Jun 8",
+      "return": "Sun Jun 28",
+      "dep_iso": "2026-06-08",
+      "ret_iso": "2026-06-28",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,419",
+      "price_num": 1419
+    },
+    {
+      "departure": "Thu Jun 11",
+      "return": "Sun Jun 28",
+      "dep_iso": "2026-06-11",
+      "ret_iso": "2026-06-28",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Sat Jun 20",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-06-20",
+      "dep_month": "2026-06",
+      "nights": 8,
+      "price": "$1,233",
+      "price_num": 1233
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Sat Jun 20",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-06-20",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,369",
+      "price_num": 1369
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Sat Jun 20",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-06-20",
+      "dep_month": "2026-06",
+      "nights": 5,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Sun Jun 21",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-06-21",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$980",
+      "price_num": 980
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Sun Jun 21",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-06-21",
+      "dep_month": "2026-06",
+      "nights": 7,
+      "price": "$1,116",
+      "price_num": 1116
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Sun Jun 21",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-06-21",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 12,
+      "price": "$1,053",
+      "price_num": 1053
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Thu Jun 18",
+      "return": "Wed Jun 24",
+      "dep_iso": "2026-06-18",
+      "ret_iso": "2026-06-24",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,143",
+      "price_num": 1143
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 11,
+      "price": "$1,279",
+      "price_num": 1279
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Thu Jun 18",
+      "return": "Thu Jun 25",
+      "dep_iso": "2026-06-18",
+      "ret_iso": "2026-06-25",
+      "dep_month": "2026-06",
+      "nights": 7,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,143",
+      "price_num": 1143
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,279",
+      "price_num": 1279
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Thu Jun 18",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-18",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,193",
+      "price_num": 1193
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 18,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,289",
+      "price_num": 1289
+    },
+    {
+      "departure": "Thu Jun 18",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-18",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 14,
+      "price": "$1,289",
+      "price_num": 1289
+    },
+    {
+      "departure": "Fri Jun 12",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-12",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 22,
+      "price": "$1,273",
+      "price_num": 1273
+    },
+    {
+      "departure": "Sun Jun 14",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-14",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,408",
+      "price_num": 1408
+    },
+    {
+      "departure": "Mon Jun 15",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-15",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,368",
+      "price_num": 1368
+    },
+    {
+      "departure": "Thu Jun 18",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-18",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,368",
+      "price_num": 1368
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 8,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Sat Jun 27",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-06-27",
+      "dep_month": "2026-06",
+      "nights": 5,
+      "price": "$1,279",
+      "price_num": 1279
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Sun Jun 28",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-06-28",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Sun Jun 28",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-06-28",
+      "dep_month": "2026-06",
+      "nights": 7,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Sun Jun 28",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-06-28",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,279",
+      "price_num": 1279
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 12,
+      "price": "$1,399",
+      "price_num": 1399
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,399",
+      "price_num": 1399
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Thu Jun 25",
+      "return": "Wed Jul 1",
+      "dep_iso": "2026-06-25",
+      "ret_iso": "2026-07-01",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,449",
+      "price_num": 1449
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,449",
+      "price_num": 1449
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 11,
+      "price": "$1,449",
+      "price_num": 1449
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Thu Jun 25",
+      "return": "Thu Jul 2",
+      "dep_iso": "2026-06-25",
+      "ret_iso": "2026-07-02",
+      "dep_month": "2026-06",
+      "nights": 7,
+      "price": "$1,467",
+      "price_num": 1467
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 18,
+      "price": "$1,627",
+      "price_num": 1627
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,627",
+      "price_num": 1627
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 15,
+      "price": "$1,417",
+      "price_num": 1417
+    },
+    {
+      "departure": "Thu Jun 25",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-25",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 12,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,026",
+      "price_num": 1026
+    },
+    {
+      "departure": "Thu Jun 25",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-25",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,254",
+      "price_num": 1254
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 18,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,099",
+      "price_num": 1099
+    },
+    {
+      "departure": "Thu Jun 25",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-25",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 14,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Fri Jun 19",
+      "return": "Sat Jul 11",
+      "dep_iso": "2026-06-19",
+      "ret_iso": "2026-07-11",
+      "dep_month": "2026-06",
+      "nights": 22,
+      "price": "$1,989",
+      "price_num": 1989
+    },
+    {
+      "departure": "Sun Jun 21",
+      "return": "Sat Jul 11",
+      "dep_iso": "2026-06-21",
+      "ret_iso": "2026-07-11",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,989",
+      "price_num": 1989
+    },
+    {
+      "departure": "Mon Jun 22",
+      "return": "Sat Jul 11",
+      "dep_iso": "2026-06-22",
+      "ret_iso": "2026-07-11",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,779",
+      "price_num": 1779
+    },
+    {
+      "departure": "Thu Jun 25",
+      "return": "Sat Jul 11",
+      "dep_iso": "2026-06-25",
+      "ret_iso": "2026-07-11",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$2,007",
+      "price_num": 2007
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 8,
+      "price": "$2,000",
+      "price_num": 2000
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 6,
+      "price": "$1,976",
+      "price_num": 1976
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Sat Jul 4",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-04",
+      "dep_month": "2026-06",
+      "nights": 5,
+      "price": "$1,578",
+      "price_num": 1578
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 11,
+      "price": "$2,098",
+      "price_num": 2098
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$2,074",
+      "price_num": 2074
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-06",
+      "nights": 8,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Tue Jul 7",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-07",
+      "dep_month": "2026-07",
+      "nights": 5,
+      "price": "$1,511",
+      "price_num": 1511
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 12,
+      "price": "$1,707",
+      "price_num": 1707
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,683",
+      "price_num": 1683
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-06",
+      "nights": 9,
+      "price": "$1,254",
+      "price_num": 1254
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Wed Jul 8",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-08",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,088",
+      "price_num": 1088
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 13,
+      "price": "$1,780",
+      "price_num": 1780
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 11,
+      "price": "$1,756",
+      "price_num": 1756
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-06",
+      "nights": 10,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Thu Jul 9",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-09",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$1,161",
+      "price_num": 1161
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-06",
+      "nights": 18,
+      "price": "$1,639",
+      "price_num": 1639
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,615",
+      "price_num": 1615
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-06",
+      "nights": 15,
+      "price": "$1,186",
+      "price_num": 1186
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,020",
+      "price_num": 1020
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,520",
+      "price_num": 1520
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,496",
+      "price_num": 1496
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-06",
+      "nights": 16,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$901",
+      "price_num": 901
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,620",
+      "price_num": 1620
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-06",
+      "nights": 18,
+      "price": "$1,596",
+      "price_num": 1596
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-06",
+      "nights": 17,
+      "price": "$1,167",
+      "price_num": 1167
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,001",
+      "price_num": 1001
+    },
+    {
+      "departure": "Fri Jun 26",
+      "return": "Sat Jul 18",
+      "dep_iso": "2026-06-26",
+      "ret_iso": "2026-07-18",
+      "dep_month": "2026-06",
+      "nights": 22,
+      "price": "$1,780",
+      "price_num": 1780
+    },
+    {
+      "departure": "Sun Jun 28",
+      "return": "Sat Jul 18",
+      "dep_iso": "2026-06-28",
+      "ret_iso": "2026-07-18",
+      "dep_month": "2026-06",
+      "nights": 20,
+      "price": "$1,756",
+      "price_num": 1756
+    },
+    {
+      "departure": "Mon Jun 29",
+      "return": "Sat Jul 18",
+      "dep_iso": "2026-06-29",
+      "ret_iso": "2026-07-18",
+      "dep_month": "2026-06",
+      "nights": 19,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Thu Jul 2",
+      "return": "Sat Jul 18",
+      "dep_iso": "2026-07-02",
+      "ret_iso": "2026-07-18",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,161",
+      "price_num": 1161
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Sat Jul 11",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-11",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,989",
+      "price_num": 1989
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Sat Jul 11",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-11",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,689",
+      "price_num": 1689
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,168",
+      "price_num": 1168
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-07",
+      "nights": 9,
+      "price": "$868",
+      "price_num": 868
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,008",
+      "price_num": 1008
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Tue Jul 14",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-14",
+      "dep_month": "2026-07",
+      "nights": 5,
+      "price": "$946",
+      "price_num": 946
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,049",
+      "price_num": 1049
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-07",
+      "nights": 10,
+      "price": "$749",
+      "price_num": 749
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$889",
+      "price_num": 889
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Wed Jul 15",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-15",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$827",
+      "price_num": 827
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$839",
+      "price_num": 839
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$989",
+      "price_num": 989
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Thu Jul 16",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-16",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$907",
+      "price_num": 907
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 19,
+      "price": "$1,153",
+      "price_num": 1153
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$839",
+      "price_num": 839
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$993",
+      "price_num": 993
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$911",
+      "price_num": 911
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,049",
+      "price_num": 1049
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$749",
+      "price_num": 749
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 15,
+      "price": "$889",
+      "price_num": 889
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$807",
+      "price_num": 807
+    },
+    {
+      "departure": "Fri Jul 3",
+      "return": "Sat Jul 25",
+      "dep_iso": "2026-07-03",
+      "ret_iso": "2026-07-25",
+      "dep_month": "2026-07",
+      "nights": 22,
+      "price": "$1,357",
+      "price_num": 1357
+    },
+    {
+      "departure": "Sun Jul 5",
+      "return": "Sat Jul 25",
+      "dep_iso": "2026-07-05",
+      "ret_iso": "2026-07-25",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,057",
+      "price_num": 1057
+    },
+    {
+      "departure": "Wed Jul 8",
+      "return": "Sat Jul 25",
+      "dep_iso": "2026-07-08",
+      "ret_iso": "2026-07-25",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,197",
+      "price_num": 1197
+    },
+    {
+      "departure": "Thu Jul 9",
+      "return": "Sat Jul 25",
+      "dep_iso": "2026-07-09",
+      "ret_iso": "2026-07-25",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,115",
+      "price_num": 1115
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Sat Jul 18",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-18",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Sat Jul 18",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-18",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,116",
+      "price_num": 1116
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 9,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,286",
+      "price_num": 1286
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Tue Jul 21",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-07-21",
+      "dep_month": "2026-07",
+      "nights": 5,
+      "price": "$1,014",
+      "price_num": 1014
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,033",
+      "price_num": 1033
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 10,
+      "price": "$839",
+      "price_num": 839
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$1,171",
+      "price_num": 1171
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Wed Jul 22",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-07-22",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$929",
+      "price_num": 929
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$749",
+      "price_num": 749
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Thu Jul 23",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-07-23",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$807",
+      "price_num": 807
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,054",
+      "price_num": 1054
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$868",
+      "price_num": 868
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,192",
+      "price_num": 1192
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$932",
+      "price_num": 932
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 19,
+      "price": "$1,198",
+      "price_num": 1198
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,336",
+      "price_num": 1336
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 15,
+      "price": "$1,467",
+      "price_num": 1467
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,207",
+      "price_num": 1207
+    },
+    {
+      "departure": "Fri Jul 10",
+      "return": "Sat Aug 1",
+      "dep_iso": "2026-07-10",
+      "ret_iso": "2026-08-01",
+      "dep_month": "2026-07",
+      "nights": 22,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Sun Jul 12",
+      "return": "Sat Aug 1",
+      "dep_iso": "2026-07-12",
+      "ret_iso": "2026-08-01",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Wed Jul 15",
+      "return": "Sat Aug 1",
+      "dep_iso": "2026-07-15",
+      "ret_iso": "2026-08-01",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,627",
+      "price_num": 1627
+    },
+    {
+      "departure": "Thu Jul 16",
+      "return": "Sat Aug 1",
+      "dep_iso": "2026-07-16",
+      "ret_iso": "2026-08-01",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,367",
+      "price_num": 1367
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Sat Jul 25",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-07-25",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,357",
+      "price_num": 1357
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Sat Jul 25",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-07-25",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,229",
+      "price_num": 1229
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,174",
+      "price_num": 1174
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 9,
+      "price": "$1,047",
+      "price_num": 1047
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,014",
+      "price_num": 1014
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Tue Jul 28",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-07-28",
+      "dep_month": "2026-07",
+      "nights": 5,
+      "price": "$1,014",
+      "price_num": 1014
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,318",
+      "price_num": 1318
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 10,
+      "price": "$1,191",
+      "price_num": 1191
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$1,158",
+      "price_num": 1158
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Wed Jul 29",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-07-29",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,158",
+      "price_num": 1158
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,449",
+      "price_num": 1449
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,322",
+      "price_num": 1322
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,289",
+      "price_num": 1289
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Thu Jul 30",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-07-30",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$1,289",
+      "price_num": 1289
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,182",
+      "price_num": 1182
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 19,
+      "price": "$1,367",
+      "price_num": 1367
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,240",
+      "price_num": 1240
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,207",
+      "price_num": 1207
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,207",
+      "price_num": 1207
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,313",
+      "price_num": 1313
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,185",
+      "price_num": 1185
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 15,
+      "price": "$1,153",
+      "price_num": 1153
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,153",
+      "price_num": 1153
+    },
+    {
+      "departure": "Fri Jul 17",
+      "return": "Sat Aug 8",
+      "dep_iso": "2026-07-17",
+      "ret_iso": "2026-08-08",
+      "dep_month": "2026-07",
+      "nights": 22,
+      "price": "$1,532",
+      "price_num": 1532
+    },
+    {
+      "departure": "Sun Jul 19",
+      "return": "Sat Aug 8",
+      "dep_iso": "2026-07-19",
+      "ret_iso": "2026-08-08",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,405",
+      "price_num": 1405
+    },
+    {
+      "departure": "Wed Jul 22",
+      "return": "Sat Aug 8",
+      "dep_iso": "2026-07-22",
+      "ret_iso": "2026-08-08",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,372",
+      "price_num": 1372
+    },
+    {
+      "departure": "Thu Jul 23",
+      "return": "Sat Aug 8",
+      "dep_iso": "2026-07-23",
+      "ret_iso": "2026-08-08",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,372",
+      "price_num": 1372
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Sat Aug 1",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-01",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,670",
+      "price_num": 1670
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Sat Aug 1",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-01",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,412",
+      "price_num": 1412
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,370",
+      "price_num": 1370
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 9,
+      "price": "$1,112",
+      "price_num": 1112
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Tue Aug 4",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-04",
+      "dep_month": "2026-07",
+      "nights": 5,
+      "price": "$1,375",
+      "price_num": 1375
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,428",
+      "price_num": 1428
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 10,
+      "price": "$1,170",
+      "price_num": 1170
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$1,134",
+      "price_num": 1134
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Wed Aug 5",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-05",
+      "dep_month": "2026-07",
+      "nights": 6,
+      "price": "$1,453",
+      "price_num": 1453
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,373",
+      "price_num": 1373
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,115",
+      "price_num": 1115
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,079",
+      "price_num": 1079
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Thu Aug 6",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-06",
+      "dep_month": "2026-07",
+      "nights": 7,
+      "price": "$1,346",
+      "price_num": 1346
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,370",
+      "price_num": 1370
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,112",
+      "price_num": 1112
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,343",
+      "price_num": 1343
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-07",
+      "nights": 19,
+      "price": "$1,510",
+      "price_num": 1510
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,252",
+      "price_num": 1252
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,216",
+      "price_num": 1216
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,483",
+      "price_num": 1483
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$2,010",
+      "price_num": 2010
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,752",
+      "price_num": 1752
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-07",
+      "nights": 15,
+      "price": "$1,716",
+      "price_num": 1716
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-07",
+      "nights": 14,
+      "price": "$1,983",
+      "price_num": 1983
+    },
+    {
+      "departure": "Fri Jul 24",
+      "return": "Sat Aug 15",
+      "dep_iso": "2026-07-24",
+      "ret_iso": "2026-08-15",
+      "dep_month": "2026-07",
+      "nights": 22,
+      "price": "$1,670",
+      "price_num": 1670
+    },
+    {
+      "departure": "Sun Jul 26",
+      "return": "Sat Aug 15",
+      "dep_iso": "2026-07-26",
+      "ret_iso": "2026-08-15",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,412",
+      "price_num": 1412
+    },
+    {
+      "departure": "Wed Jul 29",
+      "return": "Sat Aug 15",
+      "dep_iso": "2026-07-29",
+      "ret_iso": "2026-08-15",
+      "dep_month": "2026-07",
+      "nights": 17,
+      "price": "$1,376",
+      "price_num": 1376
+    },
+    {
+      "departure": "Thu Jul 30",
+      "return": "Sat Aug 15",
+      "dep_iso": "2026-07-30",
+      "ret_iso": "2026-08-15",
+      "dep_month": "2026-07",
+      "nights": 16,
+      "price": "$1,643",
+      "price_num": 1643
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Sat Aug 8",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-08",
+      "dep_month": "2026-07",
+      "nights": 8,
+      "price": "$1,412",
+      "price_num": 1412
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Sat Aug 8",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-08",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,412",
+      "price_num": 1412
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-07",
+      "nights": 11,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-08",
+      "nights": 9,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,359",
+      "price_num": 1359
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Tue Aug 11",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-11",
+      "dep_month": "2026-08",
+      "nights": 5,
+      "price": "$1,359",
+      "price_num": 1359
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-07",
+      "nights": 12,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-08",
+      "nights": 10,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,467",
+      "price_num": 1467
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Wed Aug 12",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-12",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,499",
+      "price_num": 1499
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-07",
+      "nights": 13,
+      "price": "$1,829",
+      "price_num": 1829
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,829",
+      "price_num": 1829
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,967",
+      "price_num": 1967
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Thu Aug 13",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-13",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,967",
+      "price_num": 1967
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-07",
+      "nights": 18,
+      "price": "$1,523",
+      "price_num": 1523
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,523",
+      "price_num": 1523
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,661",
+      "price_num": 1661
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,661",
+      "price_num": 1661
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-07",
+      "nights": 19,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-07",
+      "nights": 20,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 15,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Fri Jul 31",
+      "return": "Sat Aug 22",
+      "dep_iso": "2026-07-31",
+      "ret_iso": "2026-08-22",
+      "dep_month": "2026-07",
+      "nights": 22,
+      "price": "$1,550",
+      "price_num": 1550
+    },
+    {
+      "departure": "Sun Aug 2",
+      "return": "Sat Aug 22",
+      "dep_iso": "2026-08-02",
+      "ret_iso": "2026-08-22",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,550",
+      "price_num": 1550
+    },
+    {
+      "departure": "Wed Aug 5",
+      "return": "Sat Aug 22",
+      "dep_iso": "2026-08-05",
+      "ret_iso": "2026-08-22",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,688",
+      "price_num": 1688
+    },
+    {
+      "departure": "Thu Aug 6",
+      "return": "Sat Aug 22",
+      "dep_iso": "2026-08-06",
+      "ret_iso": "2026-08-22",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,688",
+      "price_num": 1688
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Sat Aug 15",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-15",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Sat Aug 15",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-15",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,609",
+      "price_num": 1609
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,343",
+      "price_num": 1343
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 9,
+      "price": "$1,643",
+      "price_num": 1643
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,527",
+      "price_num": 1527
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Tue Aug 18",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-18",
+      "dep_month": "2026-08",
+      "nights": 5,
+      "price": "$1,725",
+      "price_num": 1725
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 10,
+      "price": "$1,627",
+      "price_num": 1627
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,479",
+      "price_num": 1479
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Wed Aug 19",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-19",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,709",
+      "price_num": 1709
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,627",
+      "price_num": 1627
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,479",
+      "price_num": 1479
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Thu Aug 20",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-20",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,327",
+      "price_num": 1327
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,627",
+      "price_num": 1627
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,479",
+      "price_num": 1479
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,645",
+      "price_num": 1645
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 19,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,449",
+      "price_num": 1449
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,301",
+      "price_num": 1301
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,467",
+      "price_num": 1467
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,539",
+      "price_num": 1539
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 15,
+      "price": "$1,391",
+      "price_num": 1391
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,557",
+      "price_num": 1557
+    },
+    {
+      "departure": "Fri Aug 7",
+      "return": "Sat Aug 29",
+      "dep_iso": "2026-08-07",
+      "ret_iso": "2026-08-29",
+      "dep_month": "2026-08",
+      "nights": 22,
+      "price": "$1,689",
+      "price_num": 1689
+    },
+    {
+      "departure": "Sun Aug 9",
+      "return": "Sat Aug 29",
+      "dep_iso": "2026-08-09",
+      "ret_iso": "2026-08-29",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,989",
+      "price_num": 1989
+    },
+    {
+      "departure": "Wed Aug 12",
+      "return": "Sat Aug 29",
+      "dep_iso": "2026-08-12",
+      "ret_iso": "2026-08-29",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,841",
+      "price_num": 1841
+    },
+    {
+      "departure": "Thu Aug 13",
+      "return": "Sat Aug 29",
+      "dep_iso": "2026-08-13",
+      "ret_iso": "2026-08-29",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$2,007",
+      "price_num": 2007
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Sat Aug 22",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-08-22",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,550",
+      "price_num": 1550
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Sat Aug 22",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-08-22",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,460",
+      "price_num": 1460
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,507",
+      "price_num": 1507
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 9,
+      "price": "$1,417",
+      "price_num": 1417
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,348",
+      "price_num": 1348
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Tue Aug 25",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-08-25",
+      "dep_month": "2026-08",
+      "nights": 5,
+      "price": "$1,286",
+      "price_num": 1286
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 10,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,138",
+      "price_num": 1138
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Wed Aug 26",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-08-26",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,419",
+      "price_num": 1419
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,228",
+      "price_num": 1228
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Thu Aug 27",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-08-27",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,166",
+      "price_num": 1166
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,329",
+      "price_num": 1329
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,239",
+      "price_num": 1239
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,138",
+      "price_num": 1138
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 19,
+      "price": "$1,570",
+      "price_num": 1570
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,480",
+      "price_num": 1480
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,379",
+      "price_num": 1379
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,317",
+      "price_num": 1317
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,829",
+      "price_num": 1829
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,739",
+      "price_num": 1739
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 15,
+      "price": "$1,638",
+      "price_num": 1638
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,576",
+      "price_num": 1576
+    },
+    {
+      "departure": "Fri Aug 14",
+      "return": "Sat Sep 5",
+      "dep_iso": "2026-08-14",
+      "ret_iso": "2026-09-05",
+      "dep_month": "2026-08",
+      "nights": 22,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Sun Aug 16",
+      "return": "Sat Sep 5",
+      "dep_iso": "2026-08-16",
+      "ret_iso": "2026-09-05",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,399",
+      "price_num": 1399
+    },
+    {
+      "departure": "Wed Aug 19",
+      "return": "Sat Sep 5",
+      "dep_iso": "2026-08-19",
+      "ret_iso": "2026-09-05",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,298",
+      "price_num": 1298
+    },
+    {
+      "departure": "Thu Aug 20",
+      "return": "Sat Sep 5",
+      "dep_iso": "2026-08-20",
+      "ret_iso": "2026-09-05",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Sat Aug 29",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-08-29",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,429",
+      "price_num": 1429
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Sat Aug 29",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-08-29",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,689",
+      "price_num": 1689
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$889",
+      "price_num": 889
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 9,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Tue Sep 1",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-01",
+      "dep_month": "2026-08",
+      "nights": 5,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,130",
+      "price_num": 1130
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 10,
+      "price": "$1,390",
+      "price_num": 1390
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,390",
+      "price_num": 1390
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Wed Sep 2",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-02",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,352",
+      "price_num": 1352
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,389",
+      "price_num": 1389
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,649",
+      "price_num": 1649
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,649",
+      "price_num": 1649
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Thu Sep 3",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-03",
+      "dep_month": "2026-08",
+      "nights": 7,
+      "price": "$1,576",
+      "price_num": 1576
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$807",
+      "price_num": 807
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-08",
+      "nights": 19,
+      "price": "$889",
+      "price_num": 889
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$749",
+      "price_num": 749
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-08",
+      "nights": 15,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-08",
+      "nights": 14,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Fri Aug 21",
+      "return": "Sat Sep 12",
+      "dep_iso": "2026-08-21",
+      "ret_iso": "2026-09-12",
+      "dep_month": "2026-08",
+      "nights": 22,
+      "price": "$929",
+      "price_num": 929
+    },
+    {
+      "departure": "Sun Aug 23",
+      "return": "Sat Sep 12",
+      "dep_iso": "2026-08-23",
+      "ret_iso": "2026-09-12",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Wed Aug 26",
+      "return": "Sat Sep 12",
+      "dep_iso": "2026-08-26",
+      "ret_iso": "2026-09-12",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Thu Aug 27",
+      "return": "Sat Sep 12",
+      "dep_iso": "2026-08-27",
+      "ret_iso": "2026-09-12",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,116",
+      "price_num": 1116
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Sat Sep 5",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-05",
+      "dep_month": "2026-08",
+      "nights": 8,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Sat Sep 5",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-05",
+      "dep_month": "2026-08",
+      "nights": 6,
+      "price": "$1,410",
+      "price_num": 1410
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-08",
+      "nights": 9,
+      "price": "$1,168",
+      "price_num": 1168
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,011",
+      "price_num": 1011
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Tue Sep 8",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-08",
+      "dep_month": "2026-09",
+      "nights": 5,
+      "price": "$1,159",
+      "price_num": 1159
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-08",
+      "nights": 12,
+      "price": "$1,149",
+      "price_num": 1149
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-08",
+      "nights": 10,
+      "price": "$1,250",
+      "price_num": 1250
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$1,076",
+      "price_num": 1076
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Wed Sep 9",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-09",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,224",
+      "price_num": 1224
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-08",
+      "nights": 13,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-08",
+      "nights": 11,
+      "price": "$1,110",
+      "price_num": 1110
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Thu Sep 10",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-10",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-08",
+      "nights": 16,
+      "price": "$1,037",
+      "price_num": 1037
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$863",
+      "price_num": 863
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-08",
+      "nights": 19,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-08",
+      "nights": 17,
+      "price": "$1,037",
+      "price_num": 1037
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$863",
+      "price_num": 863
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-08",
+      "nights": 18,
+      "price": "$1,147",
+      "price_num": 1147
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-09",
+      "nights": 15,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$1,104",
+      "price_num": 1104
+    },
+    {
+      "departure": "Fri Aug 28",
+      "return": "Sat Sep 19",
+      "dep_iso": "2026-08-28",
+      "ret_iso": "2026-09-19",
+      "dep_month": "2026-08",
+      "nights": 22,
+      "price": "$1,099",
+      "price_num": 1099
+    },
+    {
+      "departure": "Sun Aug 30",
+      "return": "Sat Sep 19",
+      "dep_iso": "2026-08-30",
+      "ret_iso": "2026-09-19",
+      "dep_month": "2026-08",
+      "nights": 20,
+      "price": "$1,200",
+      "price_num": 1200
+    },
+    {
+      "departure": "Wed Sep 2",
+      "return": "Sat Sep 19",
+      "dep_iso": "2026-09-02",
+      "ret_iso": "2026-09-19",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,026",
+      "price_num": 1026
+    },
+    {
+      "departure": "Thu Sep 3",
+      "return": "Sat Sep 19",
+      "dep_iso": "2026-09-03",
+      "ret_iso": "2026-09-19",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,157",
+      "price_num": 1157
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Sat Sep 12",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-12",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,116",
+      "price_num": 1116
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Sat Sep 12",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-12",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,489",
+      "price_num": 1489
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$863",
+      "price_num": 863
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-09",
+      "nights": 9,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,032",
+      "price_num": 1032
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Tue Sep 15",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-15",
+      "dep_month": "2026-09",
+      "nights": 5,
+      "price": "$1,011",
+      "price_num": 1011
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$863",
+      "price_num": 863
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-09",
+      "nights": 10,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$1,032",
+      "price_num": 1032
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Wed Sep 16",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-16",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,011",
+      "price_num": 1011
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$1,346",
+      "price_num": 1346
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,142",
+      "price_num": 1142
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Thu Sep 17",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-17",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$1,104",
+      "price_num": 1104
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,367",
+      "price_num": 1367
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$1,163",
+      "price_num": 1163
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$1,125",
+      "price_num": 1125
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 19,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,309",
+      "price_num": 1309
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$1,105",
+      "price_num": 1105
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$1,367",
+      "price_num": 1367
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 15,
+      "price": "$1,163",
+      "price_num": 1163
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$1,125",
+      "price_num": 1125
+    },
+    {
+      "departure": "Fri Sep 4",
+      "return": "Sat Sep 26",
+      "dep_iso": "2026-09-04",
+      "ret_iso": "2026-09-26",
+      "dep_month": "2026-09",
+      "nights": 22,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Sun Sep 6",
+      "return": "Sat Sep 26",
+      "dep_iso": "2026-09-06",
+      "ret_iso": "2026-09-26",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$1,609",
+      "price_num": 1609
+    },
+    {
+      "departure": "Wed Sep 9",
+      "return": "Sat Sep 26",
+      "dep_iso": "2026-09-09",
+      "ret_iso": "2026-09-26",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,405",
+      "price_num": 1405
+    },
+    {
+      "departure": "Thu Sep 10",
+      "return": "Sat Sep 26",
+      "dep_iso": "2026-09-10",
+      "ret_iso": "2026-09-26",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,367",
+      "price_num": 1367
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Sat Sep 19",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-09-19",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,026",
+      "price_num": 1026
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Sat Sep 19",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-09-19",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,099",
+      "price_num": 1099
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 9,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,094",
+      "price_num": 1094
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Tue Sep 22",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-09-22",
+      "dep_month": "2026-09",
+      "nights": 5,
+      "price": "$1,011",
+      "price_num": 1011
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 10,
+      "price": "$1,004",
+      "price_num": 1004
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$999",
+      "price_num": 999
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Wed Sep 23",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-09-23",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,072",
+      "price_num": 1072
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Thu Sep 24",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-09-24",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,004",
+      "price_num": 1004
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$999",
+      "price_num": 999
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 19,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,004",
+      "price_num": 1004
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$999",
+      "price_num": 999
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$1,004",
+      "price_num": 1004
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 15,
+      "price": "$999",
+      "price_num": 999
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Fri Sep 11",
+      "return": "Sat Oct 3",
+      "dep_iso": "2026-09-11",
+      "ret_iso": "2026-10-03",
+      "dep_month": "2026-09",
+      "nights": 22,
+      "price": "$1,026",
+      "price_num": 1026
+    },
+    {
+      "departure": "Sun Sep 13",
+      "return": "Sat Oct 3",
+      "dep_iso": "2026-09-13",
+      "ret_iso": "2026-10-03",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$1,099",
+      "price_num": 1099
+    },
+    {
+      "departure": "Wed Sep 16",
+      "return": "Sat Oct 3",
+      "dep_iso": "2026-09-16",
+      "ret_iso": "2026-10-03",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,104",
+      "price_num": 1104
+    },
+    {
+      "departure": "Thu Sep 17",
+      "return": "Sat Oct 3",
+      "dep_iso": "2026-09-17",
+      "ret_iso": "2026-10-03",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,026",
+      "price_num": 1026
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Sat Sep 26",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-09-26",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,399",
+      "price_num": 1399
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Sat Sep 26",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-09-26",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,410",
+      "price_num": 1410
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$1,094",
+      "price_num": 1094
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 9,
+      "price": "$1,105",
+      "price_num": 1105
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$936",
+      "price_num": 936
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Tue Sep 29",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-09-29",
+      "dep_month": "2026-09",
+      "nights": 5,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$1,094",
+      "price_num": 1094
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 10,
+      "price": "$1,105",
+      "price_num": 1105
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Wed Sep 30",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-09-30",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$1,094",
+      "price_num": 1094
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$1,105",
+      "price_num": 1105
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Thu Oct 1",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-10-01",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$999",
+      "price_num": 999
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$1,157",
+      "price_num": 1157
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,168",
+      "price_num": 1168
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$1,062",
+      "price_num": 1062
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 19,
+      "price": "$1,157",
+      "price_num": 1157
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,168",
+      "price_num": 1168
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$1,062",
+      "price_num": 1062
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$1,157",
+      "price_num": 1157
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$1,168",
+      "price_num": 1168
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 15,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$1,062",
+      "price_num": 1062
+    },
+    {
+      "departure": "Fri Sep 18",
+      "return": "Sat Oct 10",
+      "dep_iso": "2026-09-18",
+      "ret_iso": "2026-10-10",
+      "dep_month": "2026-09",
+      "nights": 22,
+      "price": "$1,399",
+      "price_num": 1399
+    },
+    {
+      "departure": "Sun Sep 20",
+      "return": "Sat Oct 10",
+      "dep_iso": "2026-09-20",
+      "ret_iso": "2026-10-10",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$1,410",
+      "price_num": 1410
+    },
+    {
+      "departure": "Wed Sep 23",
+      "return": "Sat Oct 10",
+      "dep_iso": "2026-09-23",
+      "ret_iso": "2026-10-10",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,236",
+      "price_num": 1236
+    },
+    {
+      "departure": "Thu Sep 24",
+      "return": "Sat Oct 10",
+      "dep_iso": "2026-09-24",
+      "ret_iso": "2026-10-10",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,304",
+      "price_num": 1304
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Sat Oct 3",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-03",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,099",
+      "price_num": 1099
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Sat Oct 3",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-03",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,279",
+      "price_num": 1279
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 9,
+      "price": "$1,247",
+      "price_num": 1247
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-09",
+      "nights": 6,
+      "price": "$1,159",
+      "price_num": 1159
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Tue Oct 6",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-06",
+      "dep_month": "2026-10",
+      "nights": 5,
+      "price": "$1,011",
+      "price_num": 1011
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 12,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 10,
+      "price": "$1,247",
+      "price_num": 1247
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-09",
+      "nights": 7,
+      "price": "$1,125",
+      "price_num": 1125
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Wed Oct 7",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-07",
+      "dep_month": "2026-10",
+      "nights": 6,
+      "price": "$1,011",
+      "price_num": 1011
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 11,
+      "price": "$1,247",
+      "price_num": 1247
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-09",
+      "nights": 8,
+      "price": "$1,125",
+      "price_num": 1125
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Thu Oct 8",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-08",
+      "dep_month": "2026-10",
+      "nights": 7,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Tue Oct 13",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-13",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$1,004",
+      "price_num": 1004
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Tue Oct 13",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-13",
+      "dep_month": "2026-09",
+      "nights": 16,
+      "price": "$1,184",
+      "price_num": 1184
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Tue Oct 13",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-13",
+      "dep_month": "2026-09",
+      "nights": 13,
+      "price": "$1,062",
+      "price_num": 1062
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Tue Oct 13",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-13",
+      "dep_month": "2026-10",
+      "nights": 12,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Wed Oct 14",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-14",
+      "dep_month": "2026-09",
+      "nights": 19,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Wed Oct 14",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-14",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,247",
+      "price_num": 1247
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Wed Oct 14",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-14",
+      "dep_month": "2026-09",
+      "nights": 14,
+      "price": "$1,125",
+      "price_num": 1125
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Wed Oct 14",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-14",
+      "dep_month": "2026-10",
+      "nights": 13,
+      "price": "$994",
+      "price_num": 994
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Thu Oct 15",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-15",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$1,004",
+      "price_num": 1004
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Thu Oct 15",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-15",
+      "dep_month": "2026-09",
+      "nights": 18,
+      "price": "$1,184",
+      "price_num": 1184
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Thu Oct 15",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-15",
+      "dep_month": "2026-09",
+      "nights": 15,
+      "price": "$1,062",
+      "price_num": 1062
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Thu Oct 15",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-15",
+      "dep_month": "2026-10",
+      "nights": 14,
+      "price": "$931",
+      "price_num": 931
+    },
+    {
+      "departure": "Fri Sep 25",
+      "return": "Sat Oct 17",
+      "dep_iso": "2026-09-25",
+      "ret_iso": "2026-10-17",
+      "dep_month": "2026-09",
+      "nights": 22,
+      "price": "$1,009",
+      "price_num": 1009
+    },
+    {
+      "departure": "Sun Sep 27",
+      "return": "Sat Oct 17",
+      "dep_iso": "2026-09-27",
+      "ret_iso": "2026-10-17",
+      "dep_month": "2026-09",
+      "nights": 20,
+      "price": "$1,189",
+      "price_num": 1189
+    },
+    {
+      "departure": "Wed Sep 30",
+      "return": "Sat Oct 17",
+      "dep_iso": "2026-09-30",
+      "ret_iso": "2026-10-17",
+      "dep_month": "2026-09",
+      "nights": 17,
+      "price": "$1,067",
+      "price_num": 1067
+    },
+    {
+      "departure": "Thu Oct 1",
+      "return": "Sat Oct 17",
+      "dep_iso": "2026-10-01",
+      "ret_iso": "2026-10-17",
+      "dep_month": "2026-10",
+      "nights": 16,
+      "price": "$936",
+      "price_num": 936
+    }
+  ]
+}
